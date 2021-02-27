@@ -510,7 +510,7 @@ hr {
 }
 
 .about-bottom-pic .circle {
-  background-image: url('/assets/images/ik/BlackWhiteEindhovenKerkPlein.jpg');
+  background-image: url('../assets/images/ik/BlackWhiteEindhovenKerkPlein.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

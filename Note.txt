@@ -1,0 +1,4 @@
+- close button is on right side
+- lightbox for video's
+- lightbox for pictures need to be selected e.g. <img data-lightbox = 'lightbox'
+- meta tags for SEO

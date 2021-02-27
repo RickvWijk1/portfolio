@@ -1,0 +1,81 @@
+body html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+}
+
+#graywell{
+    font-family: Prociono,serif;
+    position: relative;
+    width: 600px;
+    float: left;
+    z-index: 1;
+    background-color: #222;
+    -webkit-box-shadow: inset 0 2px 10px #000;
+    -moz-box-shadow: inset 0 2px 10px #000;
+    box-shadow: inset 0 2px 10px #000;
+    padding: 10px 20px 120px;
+    color: #fff;
+    
+}
+
+.wellshadow{
+    -webkit-box-shadow: 0 2px 7px #000;
+    -moz-box-shadow: 0 2px 7px #000;
+    box-shadow: 0 2px 7px #000;
+}
+
+.post {
+    position: relative;
+    float: left;
+    width: 600px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.posttitle{
+    font-size: 28px;
+    color: #ffbd2e;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 3px #000;
+    filter: dropshadow(color=blackb,offx=0,offy=2);
+}
+
+.content_author{
+    
+}
+.post p {
+    display: block;
+}
+p {
+    margin: 10px 0;
+    font-family: Helvetica,sans-serif;
+}
+
+.posttext {
+    width: 600px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    display: block;
+}
+
+.posttext, .posttext p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 24px;
+}
+
+.post h3 {
+    font-size: 18px;
+}
+
+.tab {position:absolute;left:150px; }
+
+video {
+    pointer-events: none;
+  }

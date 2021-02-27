@@ -1,7 +1,7 @@
 {
     "name": "PWAConf",
     "short_name": "PWAConf",
-    "start_url": "https://www.rickvwijk1.github.io/portfolio/",
+    "start_url": "https://rickvwijk1.github.io/portfolio/",
     "display": "standalone",
     "prefer-related_applications": false,
     "background_color": "#2A3443",

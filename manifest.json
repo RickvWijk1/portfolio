@@ -5,7 +5,7 @@
     "display": "standalone",
     "prefer-related_applications": false,
     "background_color": "#242424",
-    "description": "A demo app for a fictional conference",
+    "description": "ICT & Media Design portfolio",
     "theme_color": "#242424",
     "scope": "./",
     "icons": [

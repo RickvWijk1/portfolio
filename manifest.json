@@ -1,18 +1,23 @@
 {
-    "name": "Rick van Wijk",
-    "short_name": "Rick van Wijk",
+    "name": "Rick v Wijk",
+    "short_name": "Rick v Wijk",
     "start_url": "https://rickvwijk1.github.io/portfolio/index.html",
     "display": "standalone",
     "prefer-related_applications": false,
     "background_color": "#242424",
     "description": "A demo app for a fictional conference",
-    "theme_color": "#2A3443",
+    "theme_color": "#242424",
     "scope": "./",
     "icons": [
       {
-        "src": "favicon.ico",
-        "sizes": "512x512",
-        "type": "image/png"
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      },
+      {
+          "src": "/android-chrome-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
       }
-    ]
+  ],
   }

@@ -1,10 +1,10 @@
 {
-    "name": "PWAConf",
-    "short_name": "PWAConf",
+    "name": "Rick van Wijk",
+    "short_name": "Rick van Wijk",
     "start_url": "https://rickvwijk1.github.io/portfolio/index.html",
     "display": "standalone",
     "prefer-related_applications": false,
-    "background_color": "#2A3443",
+    "background_color": "#242424",
     "description": "A demo app for a fictional conference",
     "theme_color": "#2A3443",
     "scope": "./",

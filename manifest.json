@@ -7,7 +7,7 @@
     "background_color": "#242424",
     "description": "ICT & Media Design portfolio",
     "theme_color": "#242424",
-    "scope": "./",
+    "scope": "https://rickvwijk1.github.io/portfolio/",
     "icons": [
       {
           "src": "../android-chrome-192x192.png",

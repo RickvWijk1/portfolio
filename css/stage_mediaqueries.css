@@ -1,0 +1,89 @@
+@media only screen and (max-device-width: 600px) {
+    .nav{display: flex; justify-content: center;}
+    .nav-home {
+        display: flex;
+        padding: 5%;
+        border: 2px solid #4758FB;
+        border-radius: 10px;
+        justify-self: center;
+        align-self: center;
+    }
+    .nav-home:hover{
+        background-color: #2738DE;
+        color: #fff;
+    }
+    .nav-name{color: #fff; font-family: louis_george_caflight;}
+    .last-brace{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .line::before {
+        left: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .line>li {
+        min-height: 100px;
+        margin-bottom: 100px;
+    }
+    .line li .rightone{left: 50%;}
+}
+
+@media (min-width: 768px) {
+    .line>li .line-image {
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+    }
+}
+
+.line>li.line-inverted>.line-panel {
+    float: right;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .line>li .line-panel {
+        float: left;
+        width: 41%;
+        padding: 0 30px 20px 30px;
+        text-align: right;
+    }
+    .line .btnModalClose{
+        float: right;
+}
+    .line-inverted .btnModalClose{
+        float: left;
+}
+}
+
+@media (min-width: 992px) {
+    .line>li .line-panel {
+        padding: 0 20px 20px;
+    }
+}
+@media (max-width: 992px) {
+    .widget-controller{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .modal-labels {
+        flex-direction: column;
+    }
+    .label-modal {
+        margin-right: unset;
+        max-width: 100%;   
+    }
+
+    .modal-title h1{line-height: 1.2em;}
+
+    .col-lg-8{max-width: 75%;}
+    .slide-paragraph {margin: 0 20px 0px 20px;}
+}

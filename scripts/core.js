@@ -28,39 +28,42 @@
 //   });
 // }
 
-// window.onload = function () {
-//   settingUpEvents();
-// };
 
-//nav system
-function showTab(page) {
-  //elk element met de klasse 'tab' wordt onzichtbaar gemaakt.
-  [].forEach.call(document.querySelectorAll('.tab'), tab => tab.style.display = 'none');
-  document.querySelector(`#${page}`).style.display = 'initial';
-  [].forEach.call(document.querySelectorAll('.nav ul li a'), a => {
-    a.parentNode.className = ''
-  })
-  document.querySelector(`a[href='${page}']`).parentNode.className = 'active-page'
-}
 
-document.addEventListener('DOMContentLoaded', () => {
-  [].forEach.call(document.querySelectorAll('.nav a'), a => {
-    a.addEventListener('click', e => {
-      e.preventDefault()
-      let page = a.attributes['href'].value
-      showTab(page)
-      history.pushState({
-        page: page
-      }, page.toUpperCase(), page)
+  function showTab(page) {
+    //elk element met de klasse 'tab' wordt onzichtbaar gemaakt.
+    [].forEach.call(document.querySelectorAll('.tab'), tab => tab.style.display = 'none');
+    document.querySelector(`#${page}`).style.display = 'initial';
+    [].forEach.call(document.querySelectorAll('.nav ul li a'), a => {
+      a.parentNode.className = ''
     })
+    document.querySelector(`a[href='${page}']`).parentNode.className = 'active-page'
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    [].forEach.call(document.querySelectorAll('.nav a'), a => {
+      a.addEventListener('click', e => {
+        e.preventDefault()
+        let page = a.attributes['href'].value
+        showTab(page)
+        history.pushState({
+          page: page
+        }, page.toUpperCase(), page)
+      })
+    })
+
+    showTab('home')
   })
 
-  showTab('home')
-})
+  window.addEventListener('popstate', e => {
+    if (e.state.page) showTab(e.state.page)
+  });
 
-window.addEventListener('popstate', e => {
-  if (e.state.page) showTab(e.state.page)
-});
+  
+
+
+
+  
 
 // function loadAbout() {
 //     var xhttp = new XMLHttpRequest();

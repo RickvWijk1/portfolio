@@ -36,9 +36,16 @@
     <link rel="apple-touch-startup-image" href="images/splash/launch-2048x2732.png"
         media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
     <!-- Linking Styles & Scripts -->
     <link rel="stylesheet" href="css/fontAwesome.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/svg.css">
     <link rel="stylesheet" href="css/keyframes.css">
     <link rel="stylesheet" href="css/lightBox.css">
     <link rel="stylesheet" href="css/MediaQuery.css">
@@ -59,9 +66,9 @@
                     <div class="last-brace" style="">}</div>
                     <div class="dropdown-content" style="display: none;">
                         <div class="dropdown-line-1"> <span style="color: #4758fc;">age</span>: <span
-                                style="color: #B000FF;">19<span style="color: #C78224;">yr</span></span>;</div>
+                                style="color: #B000FF;">20<span style="color: #C78224;">yr</span></span>;</div>
                         <div class="dropdown-line-2"><span style="color: #4758fc;">passion</span>: <span
-                                style="color: #B000FF;">we-development</span>;</div>
+                                style="color: #B000FF;">web-development</span>;</div>
                         <div class="dropdown-line-3">
                             <span style="color: #4758fc;">nationality</span>: <span
                                 style="color: #B000FF;">dutch</span>;
@@ -76,6 +83,7 @@
                 <li><a href="about" class="about-link">About</a></li>
                 <li><a href="projects" class="projects-link">Projects</a></li>
                 <li><a href="interests" class="interests-link">Interests</a></li>
+                <li><a id="stage_link">Internship</a></li>
             </ul>
         </div>
         <div class="content">
@@ -215,6 +223,7 @@ I love making pages come to life.</pre>
             <!------------------------------------------PROJECTS-------------------------------------------------------------------------------------->
             <div class="tab" id="projects">
                 <h1 class="home-base-title">Projects</h1>
+                <p class="home-base-p">A few of my study related projects highlighted.</p>
                 <div class="row grid-holder">
                     <!------------------------------------------QuaQuiz-------------------------------------------------------------------------------------->
                     <div id="overview-grid" class="overview-grid" data-modal="quaquiz"
@@ -231,7 +240,7 @@ I love making pages come to life.</pre>
                         <div class="modal-dialog modal-lg"></div>
                         <div class="modal-content">
                             <div class="modal-header">
-                                <a class="modal-close" data-dismiss="modal">×</a>
+                                <a id="modal-close" class="modal-close" data-dismiss="modal">×</a>
                                 <div class="modal-title"><img src="assets/images/logo.png" style="max-width: 250px;"
                                         width="20%" alt=""></div>
                             </div>
@@ -305,7 +314,7 @@ I love making pages come to life.</pre>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button class="btnModalClose" data-dismiss="modal">Close</button>
+                                <button id="btnModalClose" class="btnModalClose" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -324,7 +333,7 @@ I love making pages come to life.</pre>
                         <div class="modal-dialog modal-lg"></div>
                         <div class="modal-content">
                             <div class="modal-header">
-                                <a class="modal-close">×</a>
+                                <a id="modal-close" class="modal-close">×</a>
                                 <div class="modal-title"><img src="assets/images/MFM_Logo.png" width="30%" alt="">
                                 </div>
                             </div>
@@ -427,7 +436,7 @@ I love making pages come to life.</pre>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button class="btnModalClose">Close</button>
+                                <button id="btnModalClose" class="btnModalClose">Close</button>
                             </div>
                         </div>
                     </div>
@@ -447,7 +456,7 @@ I love making pages come to life.</pre>
                         <div class="modal-dialog modal-lg"></div>
                         <div class="modal-content">
                             <div class="modal-header">
-                                <a class="modal-close" data-dismiss="modal">×</a>
+                                <a id="modal-close" class="modal-close" data-dismiss="modal">×</a>
                                 <div class="modal-title"><img src="assets/images/solidsight.png"
                                         style="max-width: 250px;" width="20%" alt=""></div>
                             </div>
@@ -517,7 +526,8 @@ I love making pages come to life.</pre>
                                         <img src="assets/images/solidsight/setup2_page.png" style="" width="100%"
                                             alt="">
                                         <br><br><br>
-                                        <p>Now that the user is set up, the user can search/gets recommended products.
+                                        <p>Now that the user is set up, the user can search for/gets recommended
+                                            products.
                                         </p>
                                         <br><br><br>
                                         <img src="assets/images/solidsight/home_page.png" style="" width="100%" alt="">
@@ -558,7 +568,7 @@ I love making pages come to life.</pre>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button class="btnModalClose" data-dismiss="modal">Close</button>
+                                <button id="btnModalClose" class="btnModalClose" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -567,6 +577,7 @@ I love making pages come to life.</pre>
             <!------------------------------------------INTERESTS-------------------------------------------------------------------------------------->
             <div class="tab" id="interests">
                 <h1 class="home-base-title">Interests</h1>
+                <p class="home-base-p">A few of my spare time projects.</p>
                 <div class="row grid-holder">
                     <!------------------------------------------VFX editing-------------------------------------------------------------------------------------->
                     <div id="overview-grid" class="overview-grid" data-modal="hp"
@@ -586,7 +597,7 @@ I love making pages come to life.</pre>
                         <div class="modal-dialog modal-lg"></div>
                         <div class="modal-content">
                             <div class="modal-header">
-                                <a class="modal-close" data-dismiss="modal">×</a>
+                                <a id="modal-close" class="modal-close" data-dismiss="modal">×</a>
                                 <div class="modal-title"><img src="assets/images/hpTitle.png" width="40%" alt=""></div>
                             </div>
                             <div class="modalbody-container">
@@ -652,7 +663,7 @@ I love making pages come to life.</pre>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button class="btnModalClose" data-dismiss="modal">Close</button>
+                                <button id="btnModalClose" class="btnModalClose" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -671,7 +682,7 @@ I love making pages come to life.</pre>
                         <div class="modal-dialog modal-lg"></div>
                         <div class="modal-content">
                             <div class="modal-header">
-                                <a class="modal-close">×</a>
+                                <a id="modal-close" class="modal-close">×</a>
                                 <div class="modal-title"><img src="assets/images/p5.png" width="30%" alt=""></div>
                             </div>
                             <div class="modalbody-container">
@@ -728,13 +739,13 @@ I love making pages come to life.</pre>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button class="btnModalClose">Close</button>
+                                <button id="btnModalClose" class="btnModalClose">Close</button>
                             </div>
                         </div>
                     </div>
                     <!------------------------------------------Pixel Art-------------------------------------------------------------------------------------->
                     <div id="overview-grid" class="overview-grid" data-modal="pixelart"
-                        style="background-image: url('assets/images/pixelart/AppleCiderPixel.png'); aspect-ratio: 16/9; width: 80%; height: 80%;">
+                        style="background-image: url('assets/images/pixelart/AppleCiderPixel.png')">
                         <div class="a-ghostbtn">
                             <a class="a-ghostbtn">
                                 <div id="hover-box" class="hover-box">
@@ -745,67 +756,30 @@ I love making pages come to life.</pre>
                         </div>
                     </div>
                     <div id="pixelart" class="modal">
-                        <div class="modal-dialog modal-lg"></div>
                         <div class="modal-content">
                             <div class="modal-header">
-                                <a class="modal-close">×</a>
-                                <div class="modal-title"><img src="assets/images/p5.png" width="30%" alt=""></div>
+                                <a id="modal-close" class="modal-close">×</a>
+                                <!-- <div class="modal-title"><img src="assets/images/p5.png" width="30%" alt=""></div> -->
                             </div>
                             <div class="modalbody-container">
                                 <br>
                                 <div class="col-lg-8 mx-auto">
-                                    <i>p5 is a cool JavaScript library used for web art.
+                                    <i>Project under construction!
                                     </i>
                                     <br><br><br>
-                                    <img src="assets/images/p5_tile.png" width="100%" alt="">
-                                    <br>
-                                    <italic>Made with p5</italic>
-                                    <br><br><br>
-                                    <div class="paddedText">
-                                        <p>
-                                            p5 can be a useful skill to learn for web design since instead of using a
-                                            static image you
-                                            can use p5 to create dynamic elements for the design of your website. This
-                                            gives you the chance
-                                            of creating beautiful, interactive user experiences.
-                                        </p>
-                                        <div class="paddedTextLine"></div>
-                                    </div>
-
-
+                                    <svg role="img" class="constrPlaceh">
+                                        <use xlink:href="assets/images/stage/constr_placeh.svg#constr_placeh"
+                                            href="assets/images/stage/constr_placeh.svg#constr_placeh"></use>
+                                    </svg>
                                 </div>
                                 <br><br><br><br>
                                 <div class="col-lg-8 mx-auto">
                                     <div class="modal-body">
-
-                                        <p>With p5 I created the login page below.</p>
-                                        <br>
-                                        <video width="100%" height="340" controls="" src="assets/vids/p5.mp4"
-                                            data-video="0"></video>
-
-
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <a target="_blank" href="https://github.com/RickvWijk1/p5_Login">
-                                            <div class="paddedText">
-                                                <p>View the repo for more information here</p>
-                                                <br>
-
-                                                <img src="assets/icons/github.svg" style="width: 10%;" alt="Github">
-                                            </div>
-                                        </a>
-                                        <br>
-
                                     </div>
-                                </div>
-
-                                <div class="col-lg-8 mx-auto">
-
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button class="btnModalClose">Close</button>
+                                <button id="btnModalClose" class="btnModalClose">Close</button>
                             </div>
                         </div>
                     </div>
@@ -819,6 +793,7 @@ I love making pages come to life.</pre>
     <script src="scripts/app.js"></script>
     <script src="scripts/particles.js"></script>
     <script src="scripts/bgAnimation.js"></script>
+    <script src="/scripts/navigate.js"></script>
     <script src="scripts/logo_dropdown.js"></script>
     <script src="scripts/modal.js"></script>
     <script src="scripts/lightBox.js"></script>

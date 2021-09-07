@@ -144,8 +144,8 @@
 }
 
 /*Vertical screen devices*/
-@media only screen and (max-device-width: 600px) {
-  body {}
+@media only screen and (max-width: 600px) {
+  
 
   .wrapper {
     grid-template-columns: 2fr 9fr 2fr;
@@ -229,6 +229,11 @@
     max-width: 100%;
     height: auto;
     margin-top: auto;
+  }
+
+  .modal-content {
+    margin: 0% auto;
+    width: 100%;
   }
 
 }

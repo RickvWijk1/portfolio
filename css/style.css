@@ -718,7 +718,7 @@ hr {
   bottom: 0;
   left: 0;
   z-index: 3;
-  /* overflow-y: auto; */
+  overflow-y: auto;
   animation: modal-anim 0.3s;
 }
 

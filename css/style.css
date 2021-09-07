@@ -155,7 +155,6 @@ p {
 
 i {
   text-align: center;
-  font-size: 120%;
 }
 
 italic {
@@ -619,7 +618,7 @@ hr {
   position: relative;
   width: 100%;
   float: left !important;
-  font-size: 1.6rem;
+
 }
 
 .overview-grid {
@@ -777,10 +776,6 @@ hr {
   opacity: .6;
 }
 
-.modal-title {
-  margin-top: 3%;
-  font-size: 140%;
-}
 
 .fas {
   position: absolute;
@@ -927,7 +922,6 @@ hr {
   color: #fff;
   background-color: #242424;
   border: 2px solid #707070;
-  font-size: 2rem;
   font-weight: 100;
   border-radius: 0.3em;
   overflow: hidden;

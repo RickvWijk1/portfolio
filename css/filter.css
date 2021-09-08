@@ -1,0 +1,53 @@
+input[type="radio"] {
+    display: none;
+}
+
+ol {
+    list-style: none;
+}
+
+
+.filters {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .filters * {
+    display: inline-block;
+  }
+  
+  .filters label {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 2rem;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+  
+  .filters label:hover {
+    background-color: #2738DE;
+  }
+
+/* FILTERING RULES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All"]:checked~.filters [for="All"],
+[value="User_Interaction"]:checked~.filters [for="User_Interaction"],
+[value="Infrastructure"]:checked~.filters [for="Infrastructure"],
+[value="Software Engineering"]:checked~.filters [for="Software Engineering"],
+[value="Hardware"]:checked~.filters [for="Hardware"]{
+    background-color: #2738DE;
+  }
+
+
+[value="All"]:checked~.row [data-category] {
+    display: grid;
+}
+
+[value="User_Interaction"]:checked~.row .overview-grid:not([data-category~="User_Interaction"]),
+[value="Infrastructure"]:checked~.row .overview-grid:not([data-category~="Infrastructure"]),
+[value="Software Engineering"]:checked~.row .overview-grid:not([data-category~="Software Engineering"]),
+[value="Hardware"]:checked~.row .overview-grid:not([data-category~="Hardware"]) {
+    display: none;
+}

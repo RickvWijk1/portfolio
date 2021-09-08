@@ -143,7 +143,6 @@
 
 /*Vertical screen devices*/
 @media only screen and (max-width: 600px) {
-  
 
   .wrapper {
     grid-template-columns: 2fr 9fr 2fr;
@@ -185,9 +184,14 @@
     white-space: nowrap;
   }
 
+  .nav ul li:last-child{
+    display: none;
+  }
+
   .nav ul li {
     margin-right: 1em;
   }
+
 
   .nav ul li:first-child {
     display: unset;

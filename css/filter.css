@@ -6,6 +6,15 @@ input[type="radio"]:focus {
   outline: none;
 }
 
+input[type='radio']:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+::-moz-focus-inner{
+  border: 0;
+}
+
 ol {
   list-style: none;
 }
@@ -65,13 +74,6 @@ ol {
   line-height: normal;
   cursor: pointer;
   transition: all 0.3s;
-}
-
-.filters label:focus,
-.filters-learning-goals label:focus{
-  outline-style: none;
-box-shadow: none;
-border-color: transparent;
 }
 
 .filters label:hover {

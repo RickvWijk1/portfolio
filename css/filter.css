@@ -1,53 +1,136 @@
 input[type="radio"] {
-    display: none;
+  display: none;
+}
+
+input[type="radio"]:focus {
+  outline: none;
 }
 
 ol {
-    list-style: none;
+  list-style: none;
+}
+
+.filters-cont{
+  display: flex;
+  justify-content: center;
+}
+
+.filters{
+  padding: 2rem 0 0 0;
+}
+
+.filters.POC-padding{
+  padding: 0 0 2rem 0;
+}
+
+.filters-learning-goals{
+  padding: 1rem 0 2rem 0;
+}
+
+.filters,
+.filters-learning-goals {
+  text-align: center;
 }
 
 
-.filters {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+.filters *,
+.filters-learning-goals * {
+  display: inline-block;
   
-  .filters * {
-    display: inline-block;
-  }
-  
-  .filters label {
-    padding: 0.5rem 1rem;
-    margin-bottom: 0.25rem;
-    border-radius: 2rem;
-    min-width: 50px;
-    line-height: normal;
-    cursor: pointer;
-    transition: all 0.1s;
-  }
-  
-  .filters label:hover {
-    background-color: #2738DE;
-  }
+}
 
-/* FILTERING RULES
+.filters label{
+  border: 2px solid #2738DE;
+}
+.filters-learning-goals label{
+  border: 2px solid #646464;
+}
+
+.filters label,
+.filters-learning-goals label {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+  border-radius: 2rem;
+  min-width: 50px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.3s;
+  
+}
+
+.filters label:hover {
+  background-color: #2738DE;
+}
+
+.filters-learning-goals label:hover {
+  background-color: #646464;
+}
+
+/* /* PRODUCTS LEARNING GOALS FILTERS ROW
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-[value="All"]:checked~.filters [for="All"],
+[value="All_learngoals"]:checked~.filters [for="All_learngoals"],
 [value="User_Interaction"]:checked~.filters [for="User_Interaction"],
 [value="Infrastructure"]:checked~.filters [for="Infrastructure"],
-[value="Software Engineering"]:checked~.filters [for="Software Engineering"],
-[value="Hardware"]:checked~.filters [for="Hardware"]{
-    background-color: #2738DE;
-  }
+[value="Software_Engineering"]:checked~.filters [for="Software_Engineering"],
+[value="Hardware"]:checked~.filters [for="Hardware"] {
+  background-color: #2738DE;
+}
 
-
-[value="All"]:checked~.row [data-category] {
-    display: grid;
+[value="All_learngoals"]:checked~.row [data-category] {
+  display: grid;
 }
 
 [value="User_Interaction"]:checked~.row .overview-grid:not([data-category~="User_Interaction"]),
 [value="Infrastructure"]:checked~.row .overview-grid:not([data-category~="Infrastructure"]),
-[value="Software Engineering"]:checked~.row .overview-grid:not([data-category~="Software Engineering"]),
+[value="Software_Engineering"]:checked~.row .overview-grid:not([data-category~="Software_Engineering"]),
 [value="Hardware"]:checked~.row .overview-grid:not([data-category~="Hardware"]) {
-    display: none;
+  display: none;
+}
+
+
+/* PRODUCTS LEARNING ACTIVITIES FILTERS ROW 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All_activities"]:checked~.filters-learning-goals [for="All_activities"],
+[value="Analyse"]:checked~.filters-learning-goals [for="Analyse"],
+[value="Advise"]:checked~.filters-learning-goals [for="Advise"],
+[value="Design"]:checked~.filters-learning-goals [for="Design"],
+[value="Realise"]:checked~.filters-learning-goals [for="Realise"],
+[value="Manage"]:checked~.filters-learning-goals [for="Manage"] {
+  background-color: #646464;
+}
+
+[value="All_activities"]:checked~.row [data-category] {
+  display: grid;
+}
+
+[value="Analyse"]:checked~.row .overview-grid:not([data-category~="Analyse"]),
+[value="Advise"]:checked~.row .overview-grid:not([data-category~="Advise"]),
+[value="Design"]:checked~.row .overview-grid:not([data-category~="Design"]),
+[value="Realise"]:checked~.row .overview-grid:not([data-category~="Realise"]),
+[value="Manage"]:checked~.row .overview-grid:not([data-category~="Manage"]) {
+  display: none;
+}
+
+
+
+/* POC'S TECH FILTERS ROW 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All_tech"]:checked~.filters [for="All_tech"],
+[value="iOS"]:checked~.filters [for="iOS"],
+[value="Android"]:checked~.filters [for="Android"],
+[value="Hybrid"]:checked~.filters [for="Hybrid"],
+[value="Backend"]:checked~.filters [for="Backend"],
+[value="Frontend"]:checked~.filters [for="Frontend"] {
+  background-color: #2738DE;
+}
+
+[value="All_tech"]:checked~.row.poc.grid-holder [data-category] {
+  display: grid;
+}
+[value="iOS"]:checked~.row.poc .overview-grid:not([data-category~="iOS"]),
+[value="Android"]:checked~.row.poc .overview-grid:not([data-category~="Android"]),
+[value="Hybrid"]:checked~.row.poc .overview-grid:not([data-category~="Hybrid"]),
+[value="Backend"]:checked~.row.poc .overview-grid:not([data-category~="Backend"]),
+[value="Frontend"]:checked~.row.poc .overview-grid:not([data-category~="Frontend"]) {
+  display: none;
 }

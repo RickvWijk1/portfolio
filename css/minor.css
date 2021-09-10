@@ -1,17 +1,32 @@
-.timeline{
+.timeline {
     flex-direction: column;
+    align-items: center;
 }
 
-.row{
+.row {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 1rem;
     align-self: center;
     align-items: center;
     max-width: 100%;
+    min-height: 192px;
+    
 }
 
-.overview-grid{
+hr{
+    width: 100%;
+    text-decoration: none;
+    border: 2px dashed #646464;
+}
+
+.POC-padding{
+    padding: 0 0 1rem 0;
+}
+
+
+
+.overview-grid {
     max-width: 80%;
     margin: 0;
     min-height: 10rem;
@@ -19,8 +34,13 @@
     justify-self: center;
 }
 
+.ghostbutton-p {
+    margin: 0;
+}
+
+
 .modal-content {
     margin: unset;
     width: unset;
     max-width: 60rem;
-  }
+}

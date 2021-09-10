@@ -112,6 +112,9 @@ li {
     margin-right: -15px;
     margin-left: -15px;
 }
+.tl-row h1{
+    letter-spacing: 5px;
+}
 
 .tl-row:first-child {
     font-family: sans-serif;

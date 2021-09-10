@@ -173,8 +173,14 @@
     display: none;
   }
 
+  :focus{
+    outline-style: none;
+box-shadow: none;
+border-color: transparent;
+  }
+
   .nav-name {
-    font-size: 220%;
+    font-size: 30px;
     white-space: nowrap;
   }
 

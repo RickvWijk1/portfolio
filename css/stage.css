@@ -147,7 +147,7 @@ li {
     width: 10rem;
 }
 
-.src-buttons ul li:last-child {
+.src-buttons ul .labels{
     margin-right: 0;
 }
 

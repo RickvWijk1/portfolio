@@ -16,15 +16,25 @@ ol {
 }
 
 .filters{
-  padding: 2rem 0 0 0;
+  padding: 0rem 0 0 0;
 }
 
 .filters.POC-padding{
-  padding: 0 0 2rem 0;
+  padding: 0rem 0 2rem 0;
 }
 
 .filters-learning-goals{
   padding: 1rem 0 2rem 0;
+}
+
+@media (min-width: 640px) {
+  .filters{
+    padding: 2rem 0 0 0;
+  }
+  
+  .filters.POC-padding{
+    padding: 2rem 0 2rem 0;
+  }
 }
 
 .filters,
@@ -43,13 +53,13 @@ ol {
   border: 2px solid #2738DE;
 }
 .filters-learning-goals label{
-  border: 2px solid #646464;
+  border: 2px solid #707070;
 }
 
 .filters label,
 .filters-learning-goals label {
   padding: 0.5rem 1rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   border-radius: 2rem;
   min-width: 50px;
   line-height: normal;
@@ -63,7 +73,7 @@ ol {
 }
 
 .filters-learning-goals label:hover {
-  background-color: #646464;
+  background-color: #707070;
 }
 
 /* /* PRODUCTS LEARNING GOALS FILTERS ROW
@@ -96,7 +106,7 @@ ol {
 [value="Design"]:checked~.filters-learning-goals [for="Design"],
 [value="Realise"]:checked~.filters-learning-goals [for="Realise"],
 [value="Manage"]:checked~.filters-learning-goals [for="Manage"] {
-  background-color: #646464;
+  background-color: #707070;
 }
 
 [value="All_activities"]:checked~.row [data-category] {

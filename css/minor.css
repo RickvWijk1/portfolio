@@ -1,6 +1,12 @@
+.resources {
+    display: flex;
+    padding: 0rem 0 2rem 0;
+}
+
 .timeline {
     flex-direction: column;
     align-items: center;
+    padding: 2rem 0;
 }
 
 .row {
@@ -10,20 +16,17 @@
     align-self: center;
     align-items: center;
     max-width: 100%;
-    min-height: 192px;
-    
+    min-height: 160px;
+
 }
 
-hr{
+.dotted-line {
     width: 100%;
-    text-decoration: none;
-    border: 2px dashed #646464;
+    height: 1px;
+    background-image: linear-gradient(to right, #707070 0%, #707070 50%, transparent 50%);
+    background-size: 20px;
+    background-repeat: repeat-x;
 }
-
-.POC-padding{
-    padding: 0 0 1rem 0;
-}
-
 
 
 .overview-grid {

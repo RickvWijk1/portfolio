@@ -115,6 +115,7 @@ li {
 }
 .tl-row h1{
     letter-spacing: 5px;
+    line-height: 40px;
 }
 
 .tl-row:first-child {
@@ -196,7 +197,7 @@ li {
 }
 
 .label-cont {
-    width: 60%;
+
     align-content: center;
     align-self: center;
     text-align: left;

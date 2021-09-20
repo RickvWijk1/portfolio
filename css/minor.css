@@ -17,7 +17,6 @@
     align-items: center;
     max-width: 100%;
     min-height: 160px;
-
 }
 
 .dotted-line {
@@ -46,4 +45,24 @@
     margin: unset;
     width: unset;
     max-width: 60rem;
+}
+
+.modal-body{
+    background-color: unset;
+}
+
+.learned-cont{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.learned-cont h3{
+    margin: unset;
+}
+
+.learned-cont img{
+    max-width: 5%;
+    width: 100%;
+    height: auto;
 }

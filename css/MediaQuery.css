@@ -173,12 +173,6 @@
     display: none;
   }
 
-  :focus{
-    outline-style: none;
-box-shadow: none;
-border-color: transparent;
-  }
-
   .nav-name {
     font-size: 30px;
     white-space: nowrap;
@@ -242,6 +236,10 @@ border-color: transparent;
   .modal-content {
     margin: 0% auto;
     width: 100%;
+  }
+
+  .modal-header, .modal-footer{
+    border-radius: 0rem;
   }
 
 }

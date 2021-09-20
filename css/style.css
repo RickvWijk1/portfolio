@@ -743,19 +743,12 @@ hr {
   color: #fff;
 }
 
-.modalbody-container img:hover {
-  cursor: pointer;
-  color: #fff;
-  opacity: .5;
-}
-
 .modal-header {
   font-family: louis_george_cafregular;
   background: var(--modal-color);
   padding: 25px;
   color: #fff;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
 
@@ -905,7 +898,7 @@ hr {
   background: var(--modal-color);
   padding: 5%;
   color: #fff;
-  border-radius: 0.5em;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
   justify-content: flex-end;
 }
 

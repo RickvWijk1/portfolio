@@ -1,5 +1,5 @@
 //element that triggers the modal to open
-let openModal = document.querySelectorAll('#overview-grid');
+let openModal = document.querySelectorAll('.overview-grid, .stage_assignment');
 // document.getElementsByTagName("BODY").style.overflowY = "auto";
 //each modal opens the moment the trigger elemnent gets clicked.
 openModal.forEach((trigger) => {
@@ -17,7 +17,7 @@ openModal.forEach((trigger) => {
 });
 
 //element that triggers the modal to close
-let closeModal = document.querySelectorAll('#modal-close, #btnModalClose');
+let closeModal = document.querySelectorAll('.close-modal');
 
 //each modal closes the moment one of the trigger elements gets clicked
 closeModal.forEach((trigger) => {
@@ -46,4 +46,10 @@ window.addEventListener('keydown', e => {
 
 //routing
 window.onload = (event) => {
+    if(location.hash==='#row2-modal1'){
+        document.getElementById('flutter_hw_pubdev').style.display = "block";
+        document.getElementById('flutter_hw_pubdev').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('flutter_hw_pubdev').style.overflowY = "auto";
+    }
 };

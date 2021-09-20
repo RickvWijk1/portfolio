@@ -51,7 +51,7 @@
     <link rel="stylesheet" href="../css/MediaQuery.css">
     <link rel="stylesheet" href="../css/stage.css">
     <link rel="stylesheet" href="../css/stage_mediaqueries.css">
-    <link rel="stylesheet" href="../css/lightBox.css">
+    <!-- <link rel="stylesheet" href="../css/lightBox.css"> -->
     <link rel="stylesheet" href="../css/minor.css">
     <link rel="stylesheet" href="../css/filter.css">
     <link rel="stylesheet" href="../css/minor_mediaqueries.css">
@@ -95,12 +95,12 @@
                     </div>
                     <div class="src-buttons">
                         <ul class="src-buttons-ul">
-                            <li class="pf-abstract btnModalClose" id="stage_assignment" data-modal="port-abstract">
+                            <li class="pf-abstract btnModalClose stage_assignment" data-modal="port-abstract">
                                 Portfolio Abstract</li>
                             <div id="port-abstract" class="modal">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <a id="modal-close" class="modal-close">×</a>
+                                        <a class="close-modal modal-close">×</a>
                                         <div class="modal-title">
                                             <h1>Portfolio Abstract</h1>
                                         </div>
@@ -120,17 +120,17 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button id="btnModalClose" class="btnModalClose">Close</button>
+                                        <button class="close-modal btnModalClose">Close</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <li class="labels btnModalClose" id="stage_assignment" data-modal="l-goals">Learning Goals
+                            <li class="labels btnModalClose stage_assignment" data-modal="l-goals">Learning Goals
                             </li>
                             <div id="l-goals" class="modal">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <a id="modal-close" class="modal-close">×</a>
+                                        <a class="close-modal modal-close">×</a>
                                         <div class="modal-title">
                                             <h1>Learning Goals</h1>
                                         </div>
@@ -322,7 +322,7 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button id="btnModalClose" class="btnModalClose">Close</button>
+                                        <button class="close-modal btnModalClose">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -412,20 +412,12 @@
                     <div id="placeholder" class="modal">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <a id="modal-close" class="modal-close">×</a>
+                                <a class="close-modal modal-close">×</a>
                                 <div class="modal-title">
                                     <h1>Assignment Orientation & Stakeholders</h1>
                                 </div>
 
-                                <div class="modal-labels">
-                                    <div class="label-know label-modal">Knowledge &
-                                        Insight
-                                    </div>
-                                    <div class="label-def label-modal">Analysis | Problem
-                                        definition</div>
-                                    <div class="label-man label-modal">Manage & Control</div>
-                                    <div class="label-pro label-modal">Prof. skills</div>
-                                </div>
+
                             </div>
                             <div class="modalbody-container">
                                 <div class="col-lg-8 mx-auto">
@@ -772,7 +764,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button id="btnModalClose" class="btnModalClose">Close</button>
+                                <button class="close-modal btnModalClose">Close</button>
                             </div>
                         </div>
                     </div>
@@ -818,412 +810,74 @@
 
 
                 <div class="row poc grid-holder">
-                    <!------------------------------------------QuaQuiz-------------------------------------------------------------------------------------->
-                    <div id="overview-grid" class="overview-grid" data-modal="placeholder" data-category="iOS"
-                        style="background-image: url('../assets/images/stage/persona/Data\ based\ minor\ student\ –\ 2.jpg')">
+                    <div id="overview-grid" class="overview-grid" data-modal="flutter_hw_pubdev"
+                        data-category="Hybrid Frontend"
+                        style="background-image: url('assets/bg_images/flutter_pubdev.jpg')">
                         <div class="a-ghostbtn">
-                            <a class="a-ghostbtn">
+                            <a href="#row2-modal1" class="a-ghostbtn">
                                 <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
-
                                     <div class="ghostbutton">
-                                        <p class="ghostbutton-p">Placeholder</p><span
+                                        <p class="ghostbutton-p">Flutter - Hello World with Dart package</p><span
                                             class="fa fa-external-link-alt"></span>
                                     </div>
-
-
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div id="placeholder" class="modal">
-
+                    <div id="flutter_hw_pubdev" class="modal">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <a id="modal-close" class="modal-close">×</a>
+                                <a class="close-modal modal-close">×</a>
                                 <div class="modal-title">
-                                    <h1>Assignment Orientation &amp; Stakeholders</h1>
+                                    <h1>Flutter - Hello World with Dart package</h1>
                                 </div>
-
-                                <div class="modal-labels">
-                                    <div class="label-know label-modal">Knowledge &amp;
-                                        Insight
-                                    </div>
-                                    <div class="label-def label-modal">Analysis | Problem
-                                        definition</div>
-                                    <div class="label-man label-modal">Manage &amp; Control</div>
-                                    <div class="label-pro label-modal">Prof. skills</div>
-                                </div>
-
                             </div>
                             <div class="modalbody-container">
-
                                 <div class="col-lg-8 mx-auto">
-                                    <div class="header text">
-                                        <h2>The assignment</h2>
-                                        <i>Read the paragraphs below to read about the
-                                            assignment.</i>
-                                        <div class="paddedTextLine"></div>
-                                    </div>
                                     <div class="text">
-                                        <h3>New assignment</h3>
-                                        <p>Unfortunately the assignment of designing and
-                                            developing the running app had already been taken.
-                                            Luckily Olaf and Bernd-Jan came up with a new, challenging
-                                            assignment for me:
-                                        </p>
-                                        <p>
-                                            <i>"How can we, the MER project, professionally present
-                                                ourselves and our work to stakeholders so that they
-                                                get informed and can use our research (products)?"
-                                            </i>
-                                        </p>
-                                        <p></p>
-                                        <p>After having discussed what end products I would deliver, I
-                                            translated the assignment into the following
-                                            Design Challenge below 🡫</p>
-                                        <div class="paddedText">
-                                            <h3>Design Challenge</h3>
-                                            <p><i>
-                                                    Design and develop a platform on which project
-                                                    info/data is provided and apply the designed
-                                                    style
-                                                    guide to the platform so that the PR objectives are
-                                                    met and the stakeholders are informed about the
-                                                    project.
-                                                </i></p>
-                                            <div class="whiteLine paddedTextLine"></div>
+                                        <div class="learned-cont">
+                                            <h3>What have I learned?</h3>
+                                            <img src="./assets/icons/learn_more.png" alt="">
                                         </div>
-                                        <p>I accepted the proposed assignment and thus after signing
-                                            some papers I officially became an IxD Lectorship intern.
-                                        </p>
-                                    </div>
-                                    <div class="text">
-                                        <h3>My first week</h3>
-                                        <p>In my first week of the internship there was a standup
-                                            meeting planned on Monday and Thursday. The
-                                            schedule remained like this throughout the internship.
-
-                                        </p>
-                                        <p>In this week I setup a few things like writing a project
-                                            plan,
-                                            creating a scrum board
-                                            for planning and reading up on the project so that I knew in
-                                            what direction the project was headed and what stakeholders
-                                            were involved. Furthermore, I thought about what kind of
-                                            platform would be most suitable for the Design Challenge. I
-                                            decided a website would be the best platform to provide
-                                            stakeholders with info/data, because:
-                                        </p>
-                                        <ul class="list">
-                                            <li>Websites are very
-                                                accessible; websites can easily be shared through
-                                                links. A native app for example can't easily be
-                                                shared.
-                                            </li>
-                                            <li>Websites can contain a lot of information; the
-                                                stakeholders will most likely be active on a desktop
-                                                screen which means there's a lot of space available
-                                                to provide information (in the right way). This is
-                                                useful since a lot of research output will have to
-                                                be provided. Apps made for mobile devices have a lot
-                                                less space to work with since mobile devices are
-                                                significantly smaller.
-                                            </li>
-                                            <li>Websites are easy to maintain since there's a lot of
-                                                support (documentation, tools &amp; communities)
-                                                available. Native or hybrid apps can be tricky to
-                                                maintain because of certain exclusive native
-                                                features and subscriptions.
-                                            </li>
-                                            <ul>
+                                        <div class="label-cont">
+                                            <ul class="list">
+                                                <li class="list-bullet">Setting up Flutter; installing, set up with
+                                                    VScode
+                                                    and
+                                                    Android emulator</li>
+                                                <li class="list-bullet">Using and managing external packages; adding
+                                                    dependencies and assets to 'pubspec.yaml' and importing to a file
+                                                </li>
                                             </ul>
-                                        </ul>
-                                    </div>
-                                    <div class="text">
-                                        <h3>Trends</h3>
-                                        <p>After deciding the platform was going to be a
-                                            website I started looking for inspiration
-                                            from
-                                            innovative projects/businesses with regard
-                                            to human vitality that used
-                                            a website as platform.</p>
-                                        <p>The websites I took inspiration from are:</p>
-                                        <ul class="list">
-                                            <li><a target="_blank" href="https://www.arion.run/">Arion</a>;
-                                                Arion offers innovative running
-                                                wearables and
-                                                software.
-                                                Their
-                                                main goal is to sell their products. Arion showcases
-                                                their products on their home/landing page but they also
-                                                tell a lot about themselves as a brand.
-                                            </li>
-                                            <li><a target="_blank" href="https://www.arion.run/">Data
-                                                    Enabled Running</a>;
-                                                Just like the MER project, Data Enabled
-                                                Running is an innovative project run by
-                                                a knowledge
-                                                institution (TUE) within the field of
-                                                Human Vitality. Their goal is to
-                                                spread their research information. What's interesting is
-                                                that their website is a one pager and they link their
-                                                research to external websites. This might be because
-                                                it's easier to spread their research by posting their
-                                                research onto known research platforms.
-                                            </li>
-                                            <li><a target="_blank"
-                                                    href="https://www.listenalphabeats.com/">Alphabeats</a>;
-                                                Alphabeats offers innovative software.
-                                                They sell neurofeedback technology that
-                                                reduces stress.
-                                                Their
-                                                main goal is to sell their products. Alphabeats has a
-                                                lot of 'Call To Action' elements on their website. They
-                                                are clearly trying to activate the user to engage with
-                                                their products. On the home/landing page they clearly
-                                                want to shift the user's attention to their products.
-                                            </li>
-                                            <li><a target="_blank" href="https://dex.software/">DeX</a>;
-                                                DeX is a platform made by Fontys ICT
-                                                software students. On this platform
-                                                students can upload their projects so
-                                                that other can use these resources and
-                                                can take inspiration from them. Their
-                                                goal is dissemination of projects. What's interesting
-                                                and possibly useful to the MER website is
-                                                that they have a research card for each project that's
-                                                posted on the website and that the user can filter them.
-                                            </li>
-                                        </ul>
-                                        <h3>Observations</h3>
-                                        <p>I noticed that pretty much all of these
-                                            websites had a video as hero view
-                                            background. I also noticed that most of the websites had a
-                                            lot of different sections that were distinguishable by their
-                                            difference in background colours. </p>
-                                    </div>
-
-                                    <div class="paddedTextLine"></div>
-                                    <div class="header text">
-                                        <h2>Products</h2>
-                                        <i>View the products I produced in this period down below.</i>
-                                        <div class="paddedTextLine"></div>
-                                    </div>
-                                    <div class="text">
-                                        <h3>Project Plan</h3>
-                                        <p>I created a <a target="_blank"
-                                                href="../assets/pdf/ProjectPlan2.0.pdf">project
-                                                plan</a>. The purpose of this project plan was to write
-                                            down what the assignment entailed from my point of view so
-                                            that I could get feedback from my internship supervisors in
-                                            case my interpretation of the assignment wasn't exactly what
-                                            they had in mind. It also helped me make a schedule by
-                                            having to write down what the potential methods and products
-                                            I was most likely going to use/produce during the internship
-                                            and dividing these over the internship period.
-                                        </p>
-                                        <div class="image-description">
-                                            <embed src="../assets/pdf/ProjectPlan2.0.pdf" width="100%" height="800"
-                                                type="application/pdf">
-                                            <i>Click <a target="_blank" href="../assets/pdf/ProjectPlan2.0.pdf">here</a>
-                                                to
-                                                open
-                                                the
-                                                PDF in a new tab.</i>
                                         </div>
+                                        <div class="paddedTextLine"> </div>
                                     </div>
-                                    <div class="text">
-                                        <h3>Trello Scrum Board</h3>
-                                        <p>In order to manage my assignment tasks better, I created a
-                                            personal scrum board with Trello. You can read more about
-                                            the scrum method in my <a target="_blank"
-                                                href="../assets/pdf/ProjectPlan2.0.pdf#page=9">project
-                                                plan</a>.
-                                        </p>
-                                        <div class="image-description">
-                                            <img src="../assets/images/stage/scrumBoard.png" width="100%"
-                                                alt="the project showcased at ICT In Practice">
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <h3>Stakeholder Mapping</h3>
-                                        <p>An important aspect of the assignment is getting to know the
-                                            stakeholders. For this reason I made a visualization where I
-                                            mapped all the direct and indirect stakeholders. During this
-                                            process I realized there were more parties involved than I
-                                            initially thought. The information was mainly gathered
-                                            through desktop research, but also by talking to Olaf en
-                                            Bernd-Jan who of course knew some of the stakeholders
-                                            already.
-                                            After Olaf and Bernd-Jan gave me feedback
-                                            on my first version of the chart I improved quite a few
-                                            things.
-                                            Check out all the iterations below.
-                                        </p>
-                                    </div>
-
-
-                                    <div id="mySwipe" class="swipe">
-                                        <div class="swipe-wrap">
-                                            <div><img loading="lazy"
-                                                    src="../assets/images/stage/Stakeholders_explained.jpg" width="100%"
-                                                    style="margin: 0;" alt="the project showcased at ICT In Practice">
-                                                <img src="../assets/images/stage/gif/swiperTrans.gif"
-                                                    alt="Swipe to see next image" width="40px" height="40px">
-                                                <div class="slide-paragraph text">
-                                                    <h3>Version 1</h3>
-                                                    <p>This visualization shows the hierarchy of the
-                                                        stakeholders that caused the MER project to be
-                                                        initiated. At the top of the hierarchy we have
-                                                        the indirect initiators of the MER project, the
-                                                        municipality of Eindhoven and Brainport
-                                                        Eindhoven. Brainport Eindhoven is an innovative
-                                                        co-operation with regard to technology,
-                                                        innovation and vitality. These two entities
-                                                        launched a lot of innovation programs with the
-                                                        main goal being to <a target="_blank"
-                                                            href="https://sportsandtechnology.com/nieuws/vitality-living-lab-wil-met-innovaties-meer-brabanders-beweging-krijgen/">further
-                                                            develop Eindhoven
-                                                            into a city with healthy citizens.</a>.
-                                                    </p>
-                                                    <p>One of the many innovative programs, The Vitality
-                                                        Living Lab, focusses on human
-                                                        vitality within public spaces (e.g. outdoor
-                                                        activities). The MER project is one of the many
-                                                        projects that does research on the subject.
-                                                        Another organization that helps/sets up projects
-                                                        is Cluster Sports &amp; Technology. This
-                                                        organization is also an external project manager
-                                                        of the Vitality Living Lab and thus helps
-                                                        projects like the MER project if necessary.</p>
-                                                    <p>On the third row from the top you can see the lab
-                                                        partners. The IxD Lectorship is one of them. The
-                                                        lab partners do the actual research on different
-                                                        subjects within the field of human vitality.
-                                                        Team Up, Music Enable Running and PLUS - Playful
-                                                        Layer Urban Sports are all innovative projects
-                                                        working under the IxD
-                                                        Lectorship.</p>
-                                                </div>
-                                            </div>
-                                            <div><img loading="lazy"
-                                                    src="../assets/images/stage/Stakeholders_explained_2.0.jpg"
-                                                    width="100%" alt="the project showcased at ICT In Practice">
-                                                <div class="slide-paragraph text">
-                                                    <h3>Version 2</h3>
-                                                    <p>I changed my first version slightly before
-                                                        getting feedback from Olaf and Bernd-Jan. I
-                                                        decided to focus on what was relevant to the MER
-                                                        project by lowering the opacity of less relevant
-                                                        entities and highlighting the relevant ones by
-                                                        bordering them.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div><img loading="lazy"
-                                                    src="../assets/images/stage/Stakeholders_explained_3.0.jpg"
-                                                    width="100%" alt="the project showcased at ICT In Practice">
-                                                <div class="slide-paragraph text">
-                                                    <h3>Version 3</h3>
-                                                    <p>After getting feedback I added another row to the
-                                                        visualization, because Fontys University isn't
-                                                        the same organisation as the IxD Lectorship.
-                                                        The IXD Lectorship is a research chair at Fontys
-                                                        School of Information and Communication
-                                                        Technology, department of Fontys University of
-                                                        Applied Sciences.
-                                                        The TU/e is also a research institution, but not
-                                                        directly a lab partner of the Vitality Living
-                                                        Lab.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div><img loading="lazy"
-                                                    src="../assets/images/stage/Stakeholders_explained_4.0.jpg"
-                                                    width="100%" alt="the project showcased at ICT In Practice">
-                                                <div class="slide-paragraph text">
-                                                    <h3>Version 4</h3>
-                                                    <p>In this final version I added another row that
-                                                        shows an important group of stakeholders; the
-                                                        researchers.
-                                                        Each project, including the MER project, has
-                                                        lecturers and students that do
-                                                        research and put work into practice. Researchers
-                                                        sometimes use research of others for their own
-                                                        research. This is why the research output from
-                                                        the MER
-                                                        project will have to be made available for this
-                                                        particular group of stakeholders.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="slide-controls">
-
-
-                                            <a class="prev-next-btn" id="prev">Prev</a>
-                                            <a class="prev-next-btn" id="next">Next</a>
-
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <h3>Glossary</h3>
-                                        <p>I created a <a target="_blank"
-                                                href="../assets/pdf/Begrippenlijst.pdf">glossary</a>.
-                                            From
-                                            the very start the project members used jargon which made it
-                                            more difficult for me to understand what the project
-                                            entailed. For this reason I wrote down all the words I
-                                            didn't fully understand and after looking up and asking what
-                                            they meant I put the words and their definition in a table.
-                                            I also added what the relation to the project was so that
-                                            this glossary could potentially help new project members.
-                                        </p>
-                                        <div class="image-description">
-                                            <embed src="../assets/pdf/Begrippenlijst.pdf" width="100%" height="800"
-                                                type="application/pdf">
-                                            <i>Click <a target="_blank" href="../assets/pdf/Begrippenlijst.pdf">here</a>
-                                                to
-                                                open
-                                                the
-                                                PDF in a new tab.</i>
-                                        </div>
-
-                                    </div>
-                                    <div class="paddedTextLine"></div>
-
-
-                                    <!-- <svg role="img" class="constrPlaceh">
-                                            <use xlink:href="assets/images/stage/constr_placeh.svg#constr_placeh"
-                                                href="../assets/images/stage/constr_placeh.svg#constr_placeh">
-                                            </use>
-                                        </svg> -->
                                 </div>
-
-                                <div class="col-lg-8">
-                                    <div class="modal-body"></div>
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="modal-body">
+                                        <div class="text">
+                                            <p>Hi</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button id="btnModalClose" class="btnModalClose">Close</button>
+                                <button class="close-modal btnModalClose">Close</button>
                             </div>
                         </div>
                     </div>
-
                 </div>
-            </section>
         </div>
+        </section>
     </div>
-    <!-- <div class="widget-controller">
-            <button class="btnModalClose widget-btn">Glossary</button>
-        </div> -->
     </div>
+
 
     <script src="/node_modules/swipejs/swipe.js"></script>
     <script src="./scripts/slider.js"></script>
     <script src="scripts/modal.js"></script>
     <script src="../scripts/logo_dropdown.js"></script>
-    <script src="../scripts/lightBox.js"></script>
+    <!-- <script src="../scripts/lightBox.js"></script> -->
     <script src="scripts/labelMarks.js"></script>
 
 

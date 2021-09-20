@@ -8,6 +8,7 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
         max-width: 60rem;
         justify-content: space-between;
+        min-height: 192px;
     }
 
     .overview-grid {

@@ -22,5 +22,10 @@
     border: 1px solid white;
   }
 
+  .modalbody-container img:hover {
+    cursor: pointer;
+    color: #fff;
+    opacity: .5;
+}
   
   

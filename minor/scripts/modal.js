@@ -52,4 +52,10 @@ window.onload = (event) => {
         document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
         document.getElementById('flutter_hw_pubdev').style.overflowY = "auto";
     }
+    if(location.hash==='#row2-modal2'){
+        document.getElementById('reactnative_hw').style.display = "block";
+        document.getElementById('reactnative_hw').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('reactnative_hw').style.overflowY = "auto";
+    }
 };

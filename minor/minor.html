@@ -196,7 +196,7 @@
 
 
                 <div class="row grid-holder">
-                    <div id="overview-grid" class="overview-grid" data-modal="flutter_hw_pubdev"
+                    <div id="overview-grid" class="overview-grid" data-modal="placeholder"
                         data-category="Hybrid Frontend"
                         style="background-image: url('assets/bg_images/flutter_pubdev.jpg')">
                         <div class="a-ghostbtn">
@@ -210,7 +210,7 @@
                             </a>
                         </div>
                     </div>
-                    <div id="flutter_hw_pubdev" class="modal">
+                    <div id="placeholder" class="modal">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <a class="close-modal modal-close">×</a>
@@ -415,7 +415,7 @@ import 'dart:math';</p></code></pre>
 
 
                 <div class="row grid-holder">
-                    <div id="overview-grid" class="overview-grid" data-modal="flutter_hw_pubdev"
+                    <div id="overview-grid" class="overview-grid" data-modal="placeholder"
                         data-category="Hybrid Frontend"
                         style="background-image: url('assets/bg_images/flutter_pubdev.jpg')">
                         <div class="a-ghostbtn">
@@ -429,7 +429,7 @@ import 'dart:math';</p></code></pre>
                             </a>
                         </div>
                     </div>
-                    <div id="flutter_hw_pubdev" class="modal">
+                    <div id="placeholder" class="modal">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <a class="close-modal modal-close">×</a>
@@ -638,7 +638,7 @@ import 'dart:math';</p></code></pre>
 
 
                 <div class="row grid-holder">
-                    <div id="overview-grid" class="overview-grid" data-modal="flutter_hw_pubdev"
+                    <div id="overview-grid" class="overview-grid" data-modal="placeholder"
                         data-category="Hybrid Frontend"
                         style="background-image: url('assets/bg_images/flutter_pubdev.jpg')">
                         <div class="a-ghostbtn">
@@ -652,7 +652,7 @@ import 'dart:math';</p></code></pre>
                             </a>
                         </div>
                     </div>
-                    <div id="flutter_hw_pubdev" class="modal">
+                    <div id="placeholder" class="modal">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <a class="close-modal modal-close">×</a>
@@ -857,7 +857,7 @@ import 'dart:math';</p></code></pre>
 
 
                 <div class="row grid-holder">
-                    <div id="overview-grid" class="overview-grid" data-modal="flutter_hw_pubdev"
+                    <div id="overview-grid" class="overview-grid" data-modal="placeholder"
                         data-category="Hybrid Frontend"
                         style="background-image: url('assets/bg_images/flutter_pubdev.jpg')">
                         <div class="a-ghostbtn">
@@ -871,7 +871,7 @@ import 'dart:math';</p></code></pre>
                             </a>
                         </div>
                     </div>
-                    <div id="flutter_hw_pubdev" class="modal">
+                    <div id="placeholder" class="modal">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <a class="close-modal modal-close">×</a>
@@ -1194,10 +1194,6 @@ import 'dart:math';</p></code></pre>
                                                     alt="">
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-8 mx-auto">
-                                    <div class="modal-body">
                                         <div class="text">
                                             <a target="_blank"
                                                 href="https://git.fhict.nl/I374693/sm7_hybrid_poc/-/tree/hybrid-pocs/flutter_application_poc">
@@ -1287,39 +1283,58 @@ import 'dart:math';</p></code></pre>
                                                 <div class="box-circle">
                                                     <p>1</p>
                                                 </div>
-                                                <p>First I installed Flutter and set up VScode for Flutter by
-                                                    downloading the necessary <a
-                                                        href="https://flutter.dev/docs/get-started/editor?tab=vscode target="
-                                                        target="__blank">extensions</a>.</p>
+                                                <p>First I installed React-Native with help of the official <a
+                                                        href="https://reactnative.dev/docs/environment-setup"
+                                                        target="__blank">documentation</a>. There are a lot of
+                                                    requirements in order to use React-Native. Node.js, a JDK and
+                                                    Android Studio with certain SDK's have to be installed.</p>
                                             </div>
                                             <div class="text-header">
                                                 <div class="box-circle">
                                                     <p>2</p>
                                                 </div>
-                                                <p>I made a new Flutter project, imported the <a
-                                                        href="https://pub.dev/packages/english_words"
-                                                        target="__blank">'english_words'</a> package
-                                                    from pub.dev and the 'math' library in 'main.dart' and added it to
-                                                    the dependencies in
-                                                    'pubspec.yaml'.<p>
+                                                <p>I followed the 'learn the basics' <a
+                                                        href="https://reactnative.dev/docs/tutorial"
+                                                        target="__blank">documentation</a> of React-Native which first
+                                                    gives an example of importing components and making a View with a
+                                                    simple Text component with
+                                                    'Hello World'
+                                                    as the string.<p>
                                             </div>
-                                            <pre data-file="main.dart"><code class="language-dart"><p>import 'package:english_words/english_words.dart';
-import 'dart:math';</p></code></pre>
-                                            <pre data-file="pubspec.yaml"><code class="language-yaml"><p>
-    dependencies:
-        english_words: ^4.0.0
-    </p></code></pre>
+                                            <pre data-file="App.js"><code class="language-js"><p>import React from 'react';
+import { Text, View } from 'react-native';
+
+const HelloWorldApp = () => {
+  return (
+    &lt;View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center"
+        }}>
+        &lt;Text>Hello, world!&lt;/Text>
+    &lt;/View>
+  )
+}
+export default HelloWorldApp;</p></code></pre>
+
                                             <div class="text-header">
                                                 <div class="box-circle">
                                                     <p>3</p>
                                                 </div>
-                                                <p>In 'main.dart' I added the following variable to get two random words
-                                                    pasted together. The output is shown in a 'Text' widget.<p>
+                                                <p>The documentation explained about using state in React-Native which
+                                                    allows components to have their output changed. A click counter is
+                                                    an example where state needs to be applied since the output has to
+                                                    be changed.<p>
                                             </div>
-                                            <pre
-                                                data-file="main.dart"><code class="language-dart"><p>final wordPair = WordPair.random();</p></code></pre>
-                                            <pre
-                                                data-file="main.dart"><code class="language-dart"><p>Text(wordPair.asString),</p></code></pre>
+                                            <pre data-file="App.js"><code class="language-js"><p>return (
+    &lt;View style={styles.container}>
+        &lt;Text>You clicked {count} times&lt;/Text>
+            &lt;Button
+                onPress={() => setCount(count + 1)}
+                title="Click POC"/>
+    &lt;/View> 
+);</p></code></pre>
                                         </div>
                                         <div class="text">
                                             <h3>Result</h3>
@@ -1330,13 +1345,25 @@ import 'dart:math';</p></code></pre>
                                                     alt="">
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-8 mx-auto">
-                                    <div class="modal-body">
+                                        <div class="text">
+                                            <div class="learned-cont">
+                                                <h3>Evalution</h3>
+                                                <img src="./assets/icons/motivation.png" alt="">
+                                            </div>
+                                            <div class="label-cont">
+                                                <p>For the 'Hybrid App' assignment I needed to pick the most suitable
+                                                    hybrid
+                                                    framework for the concept. Prior to this POC I already had
+                                                    experience
+                                                    with React-Native. However, this was a while back so it was
+                                                    necessary to
+                                                    see if I still remembered the basics. This POC helped me refresh my
+                                                    memory and helped me make my choice on what framework to choose.</p>
+                                            </div>
+                                        </div>
                                         <div class="text">
                                             <a target="_blank"
-                                                href="https://git.fhict.nl/I374693/sm7_hybrid_poc/-/tree/hybrid-pocs/flutter_application_poc">
+                                                href="https://git.fhict.nl/I374693/sm7_hybrid_poc/-/tree/hybrid-pocs/reactnativePOC">
                                                 <div class="paddedText">
                                                     <p>View the repo for more information here</p>
                                                     <br>
@@ -1348,6 +1375,7 @@ import 'dart:math';</p></code></pre>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                             <div class="modal-footer">
                                 <button class="close-modal btnModalClose">Close</button>

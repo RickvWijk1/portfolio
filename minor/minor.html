@@ -107,7 +107,6 @@
                                     </div>
                                     <div class="modalbody-container">
                                         <div class="pdf-padding">
-
                                             <div class="image-description">
                                                 <embed src="./assets/pdf/placeholder.pdf" width="100%" height="1000"
                                                     type="application/pdf">
@@ -565,6 +564,189 @@ import 'dart:math';</p></code></pre>
                             </div>
                         </div>
                     </div>
+
+                    <div id="overview-grid" class="overview-grid" data-modal="choose_hybrid_framework"
+                        data-category="Hybrid Frontend"
+                        style="background-image: url('assets/bg_images/flutter_pubdev.jpg')">
+                        <div class="a-ghostbtn">
+                            <a href="#row2-modal3" class="a-ghostbtn">
+                                <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
+                                    <div class="ghostbutton">
+                                        <p class="ghostbutton-p">What hybrid framework?</p><span
+                                            class="fa fa-external-link-alt"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="choose_hybrid_framework" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a class="close-modal modal-close">×</a>
+                                <div class="modal-title">
+                                    <h1>Choosing a hybrid framework</h1>
+                                </div>
+                            </div>
+                            <div class="modalbody-container">
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="text">
+                                        <h3>Research strategies</h3>
+                                        <div class="research-tags-cont">
+                                            <div class="research-tag research-active research-desktop">
+                                                <p>Desktop</p>
+                                                <img src="./assets/icons/research_strats/library.png" alt="">
+                                            </div>
+                                            <div class="research-tag research-field">
+                                                <p>Field</p>
+                                                <img src="./assets/icons/research_strats/field.png" alt="">
+                                            </div>
+                                            <div class="research-tag research-lab">
+                                                <p>Lab</p>
+                                                <img src="./assets/icons/research_strats/lab.png" alt="">
+                                            </div>
+
+                                            <div class="research-tag research-active research-workshop">
+                                                <p>Workshop</p>
+                                                <img src="./assets/icons/research_strats/workshop.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div class="learned-cont">
+                                            <h3>What have I learned?</h3>
+                                            <img src="./assets/icons/learn_more.png" alt="">
+                                        </div>
+                                        <div class="label-cont">
+                                            <ul class="list">
+                                                <li class="list-bullet">Setting up the React-Native DEV environment</li>
+                                                <li class="list-bullet">Using state hooks to update the state of
+                                                    components
+                                                </li>
+                                                <li class="list-bullet">Importing RN components and adding dependencies
+                                                    to 'package.json'
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div class="learned-cont">
+                                            <h3>Motivation</h3>
+                                            <img src="./assets/icons/motivation.png" alt="">
+                                        </div>
+                                        <div class="label-cont">
+                                            <p>For the 'Hybrid App' assignment I needed to pick the most suitable hybrid
+                                                framework for the concept. Prior to this POC I already had experience
+                                                with React-Native. However, this was a while back so it was necessary to
+                                                see if I still remembered the basics. This POC helped me refresh my
+                                                memory and helped me make my choice on what framework to choose.</p>
+                                        </div>
+                                        <div class="paddedTextLine"> </div>
+                                        <div class="text">
+                                            <h2>Click counter</h2>
+                                            <p>A simple React-Native click counter</p>
+                                            <div class="text-header">
+                                                <div class="box-circle">
+                                                    <p>1</p>
+                                                </div>
+                                                <p>First I installed React-Native with help of the official <a
+                                                        href="https://reactnative.dev/docs/environment-setup"
+                                                        target="__blank">documentation</a>. There are a lot of
+                                                    requirements in order to use React-Native. Node.js, a JDK and
+                                                    Android Studio with certain SDK's have to be installed.</p>
+                                            </div>
+                                            <div class="text-header">
+                                                <div class="box-circle">
+                                                    <p>2</p>
+                                                </div>
+                                                <p>I followed the 'learn the basics' <a
+                                                        href="https://reactnative.dev/docs/tutorial"
+                                                        target="__blank">documentation</a> of React-Native which first
+                                                    gives an example of importing components and making a View with a
+                                                    simple Text component with
+                                                    'Hello World'
+                                                    as the string.<p>
+                                            </div>
+                                            <pre data-file="App.js"><code class="language-js"><p>import React from 'react';
+import { Text, View } from 'react-native';
+
+const HelloWorldApp = () => {
+  return (
+    &lt;View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center"
+        }}>
+        &lt;Text>Hello, world!&lt;/Text>
+    &lt;/View>
+  )
+}
+export default HelloWorldApp;</p></code></pre>
+
+                                            <div class="text-header">
+                                                <div class="box-circle">
+                                                    <p>3</p>
+                                                </div>
+                                                <p>The documentation explained about using state in React-Native which
+                                                    allows components to have their output changed. A click counter is
+                                                    an example where state needs to be applied since the output has to
+                                                    be changed.<p>
+                                            </div>
+                                            <pre data-file="App.js"><code class="language-js"><p>return (
+    &lt;View style={styles.container}>
+        &lt;Text>You clicked {count} times&lt;/Text>
+            &lt;Button
+                onPress={() => setCount(count + 1)}
+                title="Click POC"/>
+    &lt;/View> 
+);</p></code></pre>
+                                        </div>
+                                        <div class="text">
+                                            <h3>Result</h3>
+                                            <div class="img-grid">
+                                                <img style="width: 400px" src="assets/jpg/english_words_result.png"
+                                                    alt="">
+                                                <img style="width: 400px" src="assets/jpg/english_words_result2.png"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <div class="learned-cont">
+                                                <h3>Evaluation</h3>
+                                                <img src="./assets/icons/motivation.png" alt="">
+                                            </div>
+                                            <div class="label-cont">
+                                                <p>What I like about React-Native is that the styling is very similar to
+                                                    CSS. However, from my prior experience with React-Native I
+                                                    remembered that I struggled to understand and apply 'state' and
+                                                    'props'. This
+                                                    is vital to understand since it can make an app dynamic. In <a
+                                                        href="">choosing hybrid framework</a> I discussed the advantages
+                                                    and disadvantages I found further.</p>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <a target="_blank"
+                                                href="https://git.fhict.nl/I374693/sm7_hybrid_poc/-/tree/hybrid-pocs/reactnativePOC">
+                                                <div class="paddedText">
+                                                    <p>View the repo for more information here</p>
+                                                    <br>
+
+                                                    <img class="gitImg" src="../assets/icons/github.svg"
+                                                        style="width: 10%;" alt="Github">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button class="close-modal btnModalClose">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
             <div class="dotted-line"></div>
@@ -1347,18 +1529,18 @@ export default HelloWorldApp;</p></code></pre>
                                         </div>
                                         <div class="text">
                                             <div class="learned-cont">
-                                                <h3>Evalution</h3>
+                                                <h3>Evaluation</h3>
                                                 <img src="./assets/icons/motivation.png" alt="">
                                             </div>
                                             <div class="label-cont">
-                                                <p>For the 'Hybrid App' assignment I needed to pick the most suitable
-                                                    hybrid
-                                                    framework for the concept. Prior to this POC I already had
-                                                    experience
-                                                    with React-Native. However, this was a while back so it was
-                                                    necessary to
-                                                    see if I still remembered the basics. This POC helped me refresh my
-                                                    memory and helped me make my choice on what framework to choose.</p>
+                                                <p>What I like about React-Native is that the styling is very similar to
+                                                    CSS. However, from my prior experience with React-Native I
+                                                    remembered that I struggled to understand and apply 'state' and
+                                                    'props'. This
+                                                    is vital to understand since it can make an app dynamic. In <a
+                                                        href="https://rickvwijk1.github.io/portfolio/minor/minor.html/row2-modal3">What
+                                                        hybrid framework?</a> I discussed the advantages
+                                                    and disadvantages I found further.</p>
                                             </div>
                                         </div>
                                         <div class="text">

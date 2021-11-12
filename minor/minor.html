@@ -55,6 +55,7 @@
     <!-- <link rel="stylesheet" href="../css/lightBox.css"> -->
     <link rel="stylesheet" href="../css/minor.css">
     <link rel="stylesheet" href="../css/filter.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
     <link rel="stylesheet" href="../css/minor_mediaqueries.css">
     <title>Rick van Wijk</title>
     <link rel="manifest" href="manifest.json">
@@ -155,6 +156,18 @@
                 <input type="radio" id="group-realise" name="group_activities" value="group-realise">
                 <input type="radio" id="group-manage" name="group_activities" value="group-manage">
                 <ol class="filters">
+                    <li class="tooltip">
+                        <img class="info-png" src="/minor/assets/icons/info.png" alt="">
+                        <div class="right">
+                            <!-- put GIF here to show how  -->
+                            <div class="text-content">
+                                <p>Want to see the project in chronological order? The products are in order by
+                                    default. Make sure the 'All' filter is selected.</p>
+                            </div>
+                            <i></i>
+                        </div>
+                    </li>
+
                     <li>
                         <label for="All_groupProject">All</label>
                     </li>
@@ -1482,10 +1495,9 @@ import 'dart:math';</p></code></pre>
                                             </div>
                                             <pre data-file="main.dart"><code class="language-dart"><p>import 'package:english_words/english_words.dart';
 import 'dart:math';</p></code></pre>
-                                            <pre data-file="pubspec.yaml"><code class="language-yaml"><p>
-    dependencies:
-        english_words: ^4.0.0
-    </p></code></pre>
+
+                                            <pre data-file="pubspec.yaml"><code class="language-yaml"><p>dependencies:
+        english_words: ^4.0.0</p></code></pre>
                                             <div class="text-header">
                                                 <div class="box-circle">
                                                     <p>3</p>
@@ -1736,9 +1748,10 @@ import 'dart:math';</p></code></pre>
                                                     CSS. However, from my prior experience with React-Native I
                                                     remembered that I struggled to understand and apply 'state' and
                                                     'props'. This
-                                                    is vital to understand since it can make an app dynamic. In <a
-                                                        href="https://rickvwijk1.github.io/portfolio/minor/minor.html#row2-modal3">What
-                                                        hybrid framework?</a> I discussed the advantages
+                                                    is vital to understand since it can make an app dynamic. In '<a
+                                                        href="https://rickvwijk1.github.io/portfolio/minor/minor.html#row2-modal3"
+                                                        onclick="window.location.reload(true);">What
+                                                        hybrid framework?</a>' I discussed the advantages
                                                     and disadvantages I found further.</p>
                                             </div>
                                         </div>

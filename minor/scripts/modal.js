@@ -47,15 +47,45 @@ window.addEventListener('keydown', e => {
 //routing
 window.onload = (event) => {
     if(location.hash==='#row2-modal1'){
+        document.getElementById('hybr_tech_research').style.display = "block";
+        document.getElementById('hybr_tech_research').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('hybr_tech_research').style.overflowY = "auto";
+    }
+    if(location.hash==='#row2-modal2'){
         document.getElementById('flutter_hw_pubdev').style.display = "block";
         document.getElementById('flutter_hw_pubdev').style.visibility = "visible";
         document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
         document.getElementById('flutter_hw_pubdev').style.overflowY = "auto";
     }
-    if(location.hash==='#row2-modal2'){
+    if(location.hash==='#row2-modal3'){
         document.getElementById('reactnative_hw').style.display = "block";
         document.getElementById('reactnative_hw').style.visibility = "visible";
         document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
         document.getElementById('reactnative_hw').style.overflowY = "auto";
+    }
+    if(location.hash==='#row2-modal4'){
+        document.getElementById('hybr_market_analysis').style.display = "block";
+        document.getElementById('hybr_market_analysis').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('hybr_market_analysis').style.overflowY = "auto";
+    }
+    if(location.hash==='#row2-modal5'){
+        document.getElementById('hybr_concept').style.display = "block";
+        document.getElementById('hybr_concept').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('hybr_concept').style.overflowY = "auto";
+    }
+    if(location.hash==='#row2-modal6'){
+        document.getElementById('hybr_market_analysis').style.display = "block";
+        document.getElementById('hybr_market_analysis').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('hybr_market_analysis').style.overflowY = "auto";
+    }
+    if(location.hash==='#row2-modalX'){
+        document.getElementById('hybr_market_analysis').style.display = "block";
+        document.getElementById('hybr_market_analysis').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('hybr_market_analysis').style.overflowY = "auto";
     }
 };

@@ -183,6 +183,10 @@ pre[data-file]:before {
     gap: 1rem;
 }
 
+.paddedTextLine{
+    
+}
+
 .paddedText {
     display: flex;
     align-items: center;

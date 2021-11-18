@@ -10,7 +10,7 @@ p {
 
 .pdf-padding{
     text-align: left;
-    padding: 0rem 4rem 2rem 4rem;
+    padding: 0rem 4rem 0.5rem 4rem;
 }
 
 .timeline {
@@ -60,6 +60,9 @@ p {
     margin: 0;
 }
 
+.col-lg-8{
+    padding-bottom: 2rem;
+}
 
 .modal-content {
     margin: unset;
@@ -142,6 +145,7 @@ p {
 }
 
 .label-cont {
+    align-self: unset;
     padding: 1rem 0 0 0;
 }
 

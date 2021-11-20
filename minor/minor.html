@@ -1698,15 +1698,15 @@ export default HelloWorldApp;</p></code></pre>
                                         </div>
                                         <div class="label-cont">
                                             <ul class="list">
-                                                <li class="list-bullet">Learned what kind of concert streaming platforms
-                                                    exist</li>
-                                                <li class="list-bullet">Learned what the strengths & weaknesses of
-                                                    certain concert streaming
-                                                    platforms are
-                                                </li>
-                                                <li class="list-bullet">Learned what the target audience of certain
-                                                    concert streaming
-                                                    platforms are
+                                                <li class="list-bullet">Learned to use 'git stash' so that I could
+                                                    temporarily shelve
+                                                    changes and reapply them later on</li>
+                                                <li class="list-bullet">Learned to import widgets from <a
+                                                        target="__blank" href="https://pub.dev/">pub.dev so that I could
+                                                        use them</a></li>
+                                                <li class="list-bullet">Learned to set up everything for iOS</li>
+                                                <li class="list-bullet">Learned to work with Flutter's VScode extensions
+                                                    so that I could improve my workflow
                                                 </li>
                                             </ul>
                                         </div>
@@ -1729,15 +1729,114 @@ export default HelloWorldApp;</p></code></pre>
                                     </div>
                                     <div class="paddedTextLine"></div>
                                     <div class="text">
-                                        <h3>Market research - competitive analysis</h3>
+                                        <h3>Git</h3>
                                         <p>My contribution to this research:</p>
-                                        <ol class="list">
-                                            <li>Came up with the research proposal; the goal and research questions</li>
-                                            <li>Searched for competitors in the App Store, Play Store and on the web.
-                                            </li>
-                                            <li>Researched the 'Stream Live' platform.</li>
-                                        </ol>
                                     </div>
+                                    <div class="text">
+                                        <h3>Using widgets</h3>
+                                        <p>My contribution to this research:</p>
+                                        <p>VScode extension helped:</p>
+                                        <ul class="list">
+                                            <li class="list-bullet">Pubspec yaml adding dependencies</li>
+                                            <li class="list-bullet">Line between start widget and close widget extension
+                                            </li>
+                                        </ul>
+                                        <p>Widgets I used:</p>
+                                        <ul class="list">
+                                            <li class="list-bullet">glassmorphism</li>
+                                        </ul>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Using widgets</h3>
+                                        <p>At first I had a hard time understanding the way widgets worked and were
+                                            structured. What also didn't help was that it's hard to see where each
+                                            widget closed. Take the code below as an example.
+                                        </p>
+
+                                        <pre data-file=".dart"><code class="language-dart"><p>child: Column(
+children: [
+    Stack(
+    alignment: Alignment.center,
+    children: [
+        Image.asset(
+        'assets/jpg/streamPOV_bg.jpg',
+        height: 240,
+        ),
+        Positioned.fill(
+        child: GlassmorphicContainer(
+            width: MediaQuery.of(context).size.width,
+            height: 0,
+            borderRadius: 0,
+            blur: 1,
+            alignment: Alignment.center,
+            border: 0,
+            linearGradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                Color(0xFF000000).withOpacity(0.5),
+                Color(0xFF000000).withOpacity(0.24),
+                ],
+                stops: [
+                0.1,
+                1,
+                ]),
+            borderGradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+                Color(0xFFffffff).withOpacity(0),
+                Color((0xFFFFFFFF)).withOpacity(0),
+            ],
+            ),
+            child: null,
+        ),
+        ),
+        GestureDetector(
+        onTap: () {
+            Navigator.push(
+                context,
+                new MaterialPageRoute(
+                    builder: (context) => AddStream()));
+        },
+        child: Column(
+            children: [
+            Icon(
+                Icons.video_call,
+                color: Colors.white,
+                size: 100,
+            ),
+            Text(
+                'Start Streaming',
+                textAlign: TextAlign.center,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+            )
+            ],
+        ),
+        ),
+    ],
+    ),
+],
+)),</p></code></pre>
+                                        <p>I found all widgets
+                                            on either the Flutter documentation or
+                                            pub.dev website.</p>
+                                        <p>VScode extension helped:</p>
+                                        <ul class="list">
+                                            <li class="list-bullet">Pubspec yaml adding dependencies</li>
+                                            <li class="list-bullet">Line between start widget and close widget extension
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Statefull & Stateless</h3>
+                                        <p>My contribution to this research:</p>
+                                    </div>
+
                                 </div>
                                 <div class="modalbody-container">
                                     <div class="pdf-padding">

@@ -1698,12 +1698,12 @@ export default HelloWorldApp;</p></code></pre>
                                         </div>
                                         <div class="label-cont">
                                             <ul class="list">
-                                                <li class="list-bullet">Learned to use 'git stash' so that I could
-                                                    temporarily shelve
-                                                    changes and reapply them later on</li>
                                                 <li class="list-bullet">Learned to import widgets from <a
                                                         target="__blank" href="https://pub.dev/">pub.dev so that I could
                                                         use them</a></li>
+                                                <li class="list-bullet">Learned to use 'git stash' so that I could
+                                                    temporarily shelve
+                                                    changes and reapply them later on</li>
                                                 <li class="list-bullet">Learned to set up everything for iOS</li>
                                                 <li class="list-bullet">Learned to work with Flutter's VScode extensions
                                                     so that I could improve my workflow
@@ -1728,11 +1728,7 @@ export default HelloWorldApp;</p></code></pre>
                                         </div>
                                     </div>
                                     <div class="paddedTextLine"></div>
-                                    <div class="text">
-                                        <h3>Git</h3>
-                                        <p>My contribution to this research:</p>
-                                    </div>
-                                    <div class="text">
+                                    <div id="usingWidgets" class="text">
                                         <h3>Using widgets</h3>
                                         <p>My contribution to this research:</p>
                                         <p>VScode extension helped:</p>
@@ -1743,11 +1739,10 @@ export default HelloWorldApp;</p></code></pre>
                                         </ul>
                                         <p>Widgets I used:</p>
                                         <ul class="list">
-                                            <li class="list-bullet">glassmorphism</li>
+                                            <li class="list-bullet">Glassmorphism</li>
                                         </ul>
                                     </div>
                                     <div class="text">
-                                        <h3>Using widgets</h3>
                                         <p>At first I had a hard time understanding the way widgets worked and were
                                             structured. What also didn't help was that it's hard to see where each
                                             widget closed. Take the code below as an example.
@@ -1827,7 +1822,10 @@ children: [
                                             pub.dev website.</p>
                                         <p>VScode extension helped:</p>
                                         <ul class="list">
-                                            <li class="list-bullet">Pubspec yaml adding dependencies</li>
+                                            <li class="list-bullet">Pubspec Assist; adding dependencies for widgets to
+                                                pubspec.yaml
+                                            </li>
+                                            <img src="./assets/gif/pubspecassist.gif" alt="">
                                             <li class="list-bullet">Line between start widget and close widget extension
                                             </li>
                                         </ul>
@@ -1835,6 +1833,15 @@ children: [
                                     <div class="text">
                                         <h3>Statefull & Stateless</h3>
                                         <p>My contribution to this research:</p>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Testing</h3>
+                                        <p>Since we worked in different branches (Marco mainly in the backend branch, I
+                                            myself in the frontend branch) we had tho merge the branches to test if
+                                            everything would work like we intended. This was not the case since there
+                                            were some overflow issues and problems with the Agora livestreaming
+                                            functions. These problems were eventually solved. Marco started a stream on
+                                            his phone and I was able to watch his stream on my phone.</p>
                                     </div>
 
                                 </div>
@@ -1859,107 +1866,110 @@ children: [
                                                 <h3>Evaluation</h3>
                                                 <img src="./assets/icons/evaluation.png" alt="">
                                             </div>
-                                            <p>After the market analysis was finished, the concept was <a
-                                                    href="#concept">
-                                                    changed to focus
-                                                    on festivals specifically
-                                                </a> instead of concerts.
+                                            <p>Looking back at the project we were mostly working on designing,
+                                                researching the frameworks and livestreaming SDK's. This is in my
+                                                opinion logical as doing research and design correctly is essential and
+                                                indirectly also helps
+                                                developing faster.</p>
+                                            <br>
+                                            <p>Learning Flutter was a bit of a <a href="#usingWidgets">learning
+                                                    curve</a>, but once I understood how to use it I began to like and
+                                                appreciate Flutter. Especially the way the community can simply
+                                                upload new widgets to the pub.dev website to let others use it I
+                                                found very positive.
                                             </p>
-                                            <p>
-                                                Because of this, the final conclusion was:
-                                            </p>
+                                            <br>
+                                            <p>Me and Marco worked efficiently, because we both applied our expertise.
+                                                Marco was mostly working on backend, researching and applying the
+                                                livestreaming SDK while I was mostly working on design and frontend.
+                                                What could have went more smoothly is our version control with git.
+                                                Marco is more experienced with git and that's why he had to explain a
+                                                couple of things. Marco explained how to merge branches, remove files
+                                                without having to stage them and
+                                                gave me advise on how to write my commit messages. Sometimes I forgot to
+                                                pull from the remote repo since I often switched between my own laptop,
+                                                my loaned MacBook and desktop at home. This caused me to think I already
+                                                pulled the latest version, but sometimes I had not pulled on all devices
+                                                which meant we unnecessarily had to deal with merge conflicts. Since
+                                                then I always make sure to 'git pull' before I start working in the
+                                                repo.</p>
                                         </div>
-                                        <div class="paddedText">
-                                            <p><i>
-                                                    The above research shows that the competitors main selling point
-                                                    are artists that are
-                                                    popular among young people. They do not focus on streaming
-                                                    festivals, but rather on
-                                                    streaming events from individual artists.
-                                                    Our concept has sufficient differences between the already
-                                                    existing livestreaming apps.
-                                                    Given the high amount of visitors to Dutch festivals we can be
-                                                    confident that we can occupy
-                                                    a niche in the market.
-                                                </i></p>
-                                            <div class="whiteLine paddedTextLine"></div>
+                                    </div>
+                                    <div class="col-lg-8 mx-auto">
+                                        <div class="modal-body">
+                                            <div class="text">
+                                                <a target="_blank"
+                                                    href="https://git.fhict.nl/I404350/hybrid_concert_app">
+                                                    <div class="paddedText">
+                                                        <p>View the repo for more information here</p>
+                                                        <br>
+
+                                                        <img class="gitImg" src="../assets/icons/github.svg"
+                                                            style="width: 10%;" alt="Github">
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-8 mx-auto">
-                                    <div class="modal-body">
+                                <div class="modal-footer">
+                                    <button class="close-modal btnModalClose">Close</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="hybr_designdocu" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <a class="close-modal modal-close">×</a>
+                                    <div class="modal-title">
+                                        <h1>Design Document</h1>
+                                    </div>
+                                </div>
+                                <div class="modalbody-container">
+                                    <div class="col-lg-8 mx-auto">
                                         <div class="text">
-                                            <a target="_blank"
-                                                href="https://git.fhict.nl/I374693/sm7_hybrid_poc/-/tree/hybrid-pocs/flutter_application_poc">
-                                                <div class="paddedText">
-                                                    <p>View the repo for more information here</p>
-                                                    <br>
-
-                                                    <img class="gitImg" src="../assets/icons/github.svg"
-                                                        style="width: 10%;" alt="Github">
-                                                </div>
-                                            </a>
+                                            <p>The design document's purpose is to keep all the research and findings
+                                                with
+                                                regard to design in one place.</p>
+                                        </div>
+                                        <div class="paddedTextLine"></div>
+                                        <div class="text">
+                                            <h3>Design Document</h3>
+                                            <p>My contribution to this document:</p>
+                                            <ol class="list">
+                                                <li><a href="#">Concept & Analysis</a></li>
+                                                <li><a href="#">Market research</a></li>
+                                                <li><a href="#">Target audience</a></li>
+                                                <li>User stories</li>
+                                                <li><a href="#">First sketches</a></li>
+                                                <li><a href="#">Final design</a></li>
+                                                <li><a href="#">Color palette</a></li>
+                                            </ol>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="close-modal btnModalClose">Close</button>
+                                <div class="modalbody-container">
+                                    <div class="pdf-padding">
+
+                                        <div class="image-description">
+                                            <embed src="./assets/pdf/hybr_designdocu.pdf" width="100%" height="1000"
+                                                type="application/pdf">
+                                            <i>Click <a style="color: #4758fc;" target="_blank"
+                                                    href="./assets/pdf/hybr_designdocu.pdf">here</a>
+                                                to open
+                                                the
+                                                PDF in a new tab.</i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="close-modal btnModalClose">Close</button>
+                                </div>
                             </div>
                         </div>
+
                     </div>
-
-                    <div id="hybr_designdocu" class="modal">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <a class="close-modal modal-close">×</a>
-                                <div class="modal-title">
-                                    <h1>Design Document</h1>
-                                </div>
-                            </div>
-                            <div class="modalbody-container">
-                                <div class="col-lg-8 mx-auto">
-                                    <div class="text">
-                                        <p>The design document's purpose is to keep all the research and findings with
-                                            regard to design in one place.</p>
-                                    </div>
-                                    <div class="paddedTextLine"></div>
-                                    <div class="text">
-                                        <h3>Design Document</h3>
-                                        <p>My contribution to this document:</p>
-                                        <ol class="list">
-                                            <li><a href="#">Concept & Analysis</a></li>
-                                            <li><a href="#">Market research</a></li>
-                                            <li><a href="#">Target audience</a></li>
-                                            <li>User stories</li>
-                                            <li><a href="#">First sketches</a></li>
-                                            <li><a href="#">Final design</a></li>
-                                            <li><a href="#">Color palette</a></li>
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modalbody-container">
-                                <div class="pdf-padding">
-
-                                    <div class="image-description">
-                                        <embed src="./assets/pdf/hybr_designdocu.pdf" width="100%" height="1000"
-                                            type="application/pdf">
-                                        <i>Click <a style="color: #4758fc;" target="_blank"
-                                                href="./assets/pdf/hybr_designdocu.pdf">here</a>
-                                            to open
-                                            the
-                                            PDF in a new tab.</i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="close-modal btnModalClose">Close</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </section>
             <div class="dotted-line"></div>
             <section class="timeline">

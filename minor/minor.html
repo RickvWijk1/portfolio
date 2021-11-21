@@ -1699,12 +1699,13 @@ export default HelloWorldApp;</p></code></pre>
                                         <div class="label-cont">
                                             <ul class="list">
                                                 <li class="list-bullet">Learned to import widgets from <a
-                                                        target="__blank" href="https://pub.dev/">pub.dev so that I could
-                                                        use them</a></li>
+                                                        target="__blank" href="https://pub.dev/">pub.dev</a> so that I
+                                                    could
+                                                    use them</li>
                                                 <li class="list-bullet">Learned to use 'git stash' so that I could
                                                     temporarily shelve
                                                     changes and reapply them later on</li>
-                                                <li class="list-bullet">Learned to set up everything for iOS</li>
+                                                <li class="list-bullet">Learned to set up a Flutter project for iOS</li>
                                                 <li class="list-bullet">Learned to work with Flutter's VScode extensions
                                                     so that I could improve my workflow
                                                 </li>
@@ -1718,37 +1719,20 @@ export default HelloWorldApp;</p></code></pre>
                                             <img src="./assets/icons/motivation.png" alt="">
                                         </div>
                                         <div class="label-cont">
-                                            <p>The main motivation of doing market research was that I needed
-                                                inspiration. By doing this research I found out what features are a must
-                                                have for livestreaming apps so that I could later on include these key
-                                                features in the design. Another motivation was that by doing market
-                                                research, I could find out what audiences competitors focus on so that I
-                                                could try to find a different type of audience to target and design for.
+                                            <p>The concept has to be developed into a working prototype so that the
+                                                concept can be validated and tested.
                                             </p>
                                         </div>
                                     </div>
                                     <div class="paddedTextLine"></div>
                                     <div id="usingWidgets" class="text">
                                         <h3>Using widgets</h3>
-                                        <p>My contribution to this research:</p>
-                                        <p>VScode extension helped:</p>
-                                        <ul class="list">
-                                            <li class="list-bullet">Pubspec yaml adding dependencies</li>
-                                            <li class="list-bullet">Line between start widget and close widget extension
-                                            </li>
-                                        </ul>
-                                        <p>Widgets I used:</p>
-                                        <ul class="list">
-                                            <li class="list-bullet">Glassmorphism</li>
-                                        </ul>
-                                    </div>
-                                    <div class="text">
                                         <p>At first I had a hard time understanding the way widgets worked and were
                                             structured. What also didn't help was that it's hard to see where each
                                             widget closed. Take the code below as an example.
                                         </p>
-
-                                        <pre data-file=".dart"><code class="language-dart"><p>child: Column(
+                                    </div>
+                                    <pre data-file=".dart"><code class="language-dart"><p>child: Column(
 children: [
     Stack(
     alignment: Alignment.center,
@@ -1817,23 +1801,79 @@ children: [
     ),
 ],
 )),</p></code></pre>
-                                        <p>I found all widgets
-                                            on either the Flutter documentation or
+
+
+                                    <div class="text">
+                                        <p>At first I was very confused with the 'children' and 'child' properties.
+                                            Some
+                                            widgets gave errors if I used 'children' as a property. Through some
+                                            debugging I found out that some widgets can only contain a single child
+                                            and
+                                            not multiple. I found all widgets
+                                            on either the official Flutter documentation or
                                             pub.dev website.</p>
-                                        <p>VScode extension helped:</p>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Dev environment & tools</h3>
+                                        <p>I used Visual Studio Code over Android Studio since I am more used to it
+                                            and I like to have everything in one place. I installed some extensions
+                                            to help me program more efficiently.</p>
                                         <ul class="list">
-                                            <li class="list-bullet">Pubspec Assist; adding dependencies for widgets to
-                                                pubspec.yaml
-                                            </li>
+                                            <li class="list-bullet">Pubspec Assist; allows you to add dependencies
+                                                for widgets to the pubspec.yaml within VScode. This means you don't
+                                                have to look up the version and copy paste that.</li>
                                             <img src="./assets/gif/pubspecassist.gif" alt="">
-                                            <li class="list-bullet">Line between start widget and close widget extension
-                                            </li>
+                                            <li class="list-bullet">Awesome Flutter Snippets; a collection of
+                                                commonly used Flutter classes and methods</li>
+                                            <li class="list-bullet">Flutter Preview UI Guides; is part of the
+                                                Flutter extension that's mandatory to install for Flutter
+                                                development. There's a setting that allows you to see the
+                                                relationship between a parent widget and it's child more easily
+                                                through visual guidelines.</li>
+                                            <img src="./assets/jpg/flutter_ui_guidelines.png" alt="">
+                                            <li class="list-bullet">Flutter refactor; another feature of the Flutter
+                                                extension that allows you to refactor your code. You can, for example,
+                                                easily wrap another widget around a widget.</li>
+                                            <img src="./assets/gif/flutter_refactor.gif" alt="">
                                         </ul>
                                     </div>
                                     <div class="text">
-                                        <h3>Statefull & Stateless</h3>
-                                        <p>My contribution to this research:</p>
+                                        <h3>Stateful & Stateless</h3>
+                                        <p>In Flutter a widget is either stateful or stateless. State is (just like in
+                                            React-Native) used to make something dynamic. A stateless widget never
+                                            changes a.k.a. static. However, if you need something to happen after
+                                            the user clicks a button, you need to make a widget 'Stateful'. Take the
+                                            code below as an example. When the user clicks on a notification bell icon,
+                                            the bell gets a different color. It requires state.</p>
+                                        <pre data-file=".dart"><code class="language-dart"><p>class CustomCarouselFutureStreams extends StatefulWidget {
+@override
+CustomCarouselFutureStreamsState createState() =>
+    CustomCarouselFutureStreamsState();
+}
+
+class CustomCarouselFutureStreamsState
+    extends State<CustomCarouselFutureStreams> {
+Color notification_color = Colors.white;
+
+
+Material(
+    color: Colors.transparent,
+    child: IconButton(
+        color: notification_color,
+        onPressed: () {
+            setState(() {
+            notification_color =
+                AppTheme.colors.primaryColor;
+            });
+        },
+        icon: Icon(
+            Icons.notifications,
+            size: 70,
+        )),
+    ),
+                                                </p></code></pre>
                                     </div>
+
                                     <div class="text">
                                         <h3>Testing</h3>
                                         <p>Since we worked in different branches (Marco mainly in the backend branch, I
@@ -1844,20 +1884,13 @@ children: [
                                             his phone and I was able to watch his stream on my phone.</p>
                                     </div>
 
-                                </div>
-                                <div class="modalbody-container">
-                                    <div class="pdf-padding">
-                                        <div class="image-description">
-                                            <embed src="./assets/pdf/market_research.pdf" width="100%" height="1000"
-                                                type="application/pdf">
-                                            <i>Click <a style="color: #4758fc;" target="_blank"
-                                                    href="./assets/pdf/market_research.pdf">here</a>
-                                                to open
-                                                the
-                                                PDF in a new tab.</i>
+                                    <div class="text">
+                                        <h3>Result</h3>
+                                        <div class="img-grid">
+                                            <img style="width: 400px" src="assets/gif/reactNative_poc.gif" alt="">
+                                            <img style="width: 400px" src="assets/gif/reactNative_poc.gif" alt="">
                                         </div>
                                     </div>
-
                                 </div>
                                 <div class="col-lg-8 mx-auto">
                                     <div class="modal-body">
@@ -1895,23 +1928,23 @@ children: [
                                                 repo.</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-8 mx-auto">
-                                        <div class="modal-body">
-                                            <div class="text">
-                                                <a target="_blank"
-                                                    href="https://git.fhict.nl/I404350/hybrid_concert_app">
-                                                    <div class="paddedText">
-                                                        <p>View the repo for more information here</p>
-                                                        <br>
+                                </div>
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="modal-body">
+                                        <div class="text">
+                                            <a target="_blank" href="https://git.fhict.nl/I404350/hybrid_concert_app">
+                                                <div class="paddedText">
+                                                    <p>View the repo for more information here</p>
+                                                    <br>
 
-                                                        <img class="gitImg" src="../assets/icons/github.svg"
-                                                            style="width: 10%;" alt="Github">
-                                                    </div>
-                                                </a>
-                                            </div>
+                                                    <img class="gitImg" src="../assets/icons/github.svg"
+                                                        style="width: 10%;" alt="Github">
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="modal-footer">
                                     <button class="close-modal btnModalClose">Close</button>
                                 </div>

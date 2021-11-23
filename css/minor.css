@@ -8,7 +8,7 @@ p {
     padding: 0rem 0 2rem 0;
 }
 
-.pdf-padding{
+.pdf-padding {
     text-align: left;
     padding: 0rem 4rem 0.5rem 4rem;
 }
@@ -45,7 +45,7 @@ p {
     display: flex;
     align-self: center;
     padding: 1rem 0 1rem 0;
-   
+    text-align: left;
 }
 
 .overview-grid {
@@ -60,7 +60,7 @@ p {
     margin: 0;
 }
 
-.col-lg-8{
+.col-lg-8 {
     padding-bottom: 2rem;
 }
 
@@ -188,9 +188,7 @@ pre[data-file]:before {
     gap: 1rem;
 }
 
-.paddedTextLine{
-    
-}
+.paddedTextLine {}
 
 .paddedText {
     display: flex;
@@ -205,6 +203,3 @@ pre[data-file]:before {
     align-self: center;
     justify-self: center;
 }
-
-
-

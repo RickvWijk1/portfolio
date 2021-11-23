@@ -77,15 +77,27 @@ window.onload = (event) => {
         document.getElementById('hybr_concept').style.overflowY = "auto";
     }
     if(location.hash==='#row2-modal6'){
-        document.getElementById('hybr_market_analysis').style.display = "block";
-        document.getElementById('hybr_market_analysis').style.visibility = "visible";
+        document.getElementById('hybr_personas').style.display = "block";
+        document.getElementById('hybr_personas').style.visibility = "visible";
         document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
-        document.getElementById('hybr_market_analysis').style.overflowY = "auto";
+        document.getElementById('hybr_personas').style.overflowY = "auto";
     }
-    if(location.hash==='#row2-modalX'){
-        document.getElementById('hybr_market_analysis').style.display = "block";
-        document.getElementById('hybr_market_analysis').style.visibility = "visible";
+    if(location.hash==='#row2-modal7'){
+        document.getElementById('hybr_designs').style.display = "block";
+        document.getElementById('hybr_designs').style.visibility = "visible";
         document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
-        document.getElementById('hybr_market_analysis').style.overflowY = "auto";
+        document.getElementById('hybr_designs').style.overflowY = "auto";
+    }
+    if(location.hash==='#row2-modal8'){
+        document.getElementById('hybr_development').style.display = "block";
+        document.getElementById('hybr_development').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('hybr_development').style.overflowY = "auto";
+    }
+    if(location.hash==='#row2-modal9'){
+        document.getElementById('hybr_designdocu').style.display = "block";
+        document.getElementById('hybr_designdocu').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('hybr_designdocu').style.overflowY = "auto";
     }
 };

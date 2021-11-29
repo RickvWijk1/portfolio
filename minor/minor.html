@@ -238,7 +238,7 @@
                             </a>
                         </div>
                     </div>
-                    <div id="overview-grid" class="overview-grid" data-modal="sprint0"
+                    <div id="overview-grid" class="overview-grid" data-modal="sprint2"
                         data-category="All_hybr_activities"
                         style="background-image: url('assets/bg_images/hybr_techresearch.jpg')">
                         <div class="a-ghostbtn">
@@ -252,7 +252,7 @@
                             </a>
                         </div>
                     </div>
-                    <div id="overview-grid" class="overview-grid" data-modal="sprint0"
+                    <div id="overview-grid" class="overview-grid" data-modal="sprint3"
                         data-category="All_hybr_activities"
                         style="background-image: url('assets/bg_images/hybr_techresearch.jpg')">
                         <div class="a-ghostbtn">
@@ -266,7 +266,7 @@
                             </a>
                         </div>
                     </div>
-                    <div id="overview-grid" class="overview-grid" data-modal="sprint0"
+                    <div id="overview-grid" class="overview-grid" data-modal="sprint4"
                         data-category="All_hybr_activities"
                         style="background-image: url('assets/bg_images/hybr_techresearch.jpg')">
                         <div class="a-ghostbtn">
@@ -2199,26 +2199,56 @@ Material(
 
 
                 <div class="row grid-holder">
-                    <div id="overview-grid" class="overview-grid" data-modal="placeholder"
+                    <div id="overview-grid" class="overview-grid" data-modal="andr_concepting"
                         data-category="Hybrid Frontend"
                         style="background-image: url('assets/bg_images/flutter_pubdev.jpg')">
                         <div class="a-ghostbtn">
-                            <a href="#row2-modal1" class="a-ghostbtn">
+                            <a href="#row3-modal1" class="a-ghostbtn">
                                 <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
                                     <div class="ghostbutton">
-                                        <p class="ghostbutton-p">Placeholder</p><span
+                                        <p class="ghostbutton-p">Concepting</p><span
                                             class="fa fa-external-link-alt"></span>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div id="placeholder" class="modal">
+
+                    <div id="overview-grid" class="overview-grid" data-modal="andr_techresearch"
+                        data-category="Hybrid Frontend"
+                        style="background-image: url('assets/bg_images/flutter_pubdev.jpg')">
+                        <div class="a-ghostbtn">
+                            <a href="#row3-modal1" class="a-ghostbtn">
+                                <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
+                                    <div class="ghostbutton">
+                                        <p class="ghostbutton-p">Technical Research</p><span
+                                            class="fa fa-external-link-alt"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="overview-grid" class="overview-grid" data-modal="andr_endproduct"
+                        data-category="Hybrid Frontend"
+                        style="background-image: url('assets/bg_images/flutter_pubdev.jpg')">
+                        <div class="a-ghostbtn">
+                            <a href="#row3-modal1" class="a-ghostbtn">
+                                <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
+                                    <div class="ghostbutton">
+                                        <p class="ghostbutton-p">End Product</p><span
+                                            class="fa fa-external-link-alt"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="hybr_tech_research" class="modal">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <a class="close-modal modal-close">×</a>
                                 <div class="modal-title">
-                                    <h1>Flutter - Hello World with Dart package</h1>
+                                    <h1>Technical Research</h1>
                                 </div>
                             </div>
                             <div class="modalbody-container">
@@ -2238,7 +2268,10 @@ Material(
                                                 <p>Lab</p>
                                                 <img src="./assets/icons/research_strats/lab.png" alt="">
                                             </div>
-
+                                            <div class="research-tag research-showroom">
+                                                <p>Showroom</p>
+                                                <img src="./assets/icons/research_strats/showroom.png" alt="">
+                                            </div>
                                             <div class="research-tag research-active research-workshop">
                                                 <p>Workshop</p>
                                                 <img src="./assets/icons/research_strats/workshop.png" alt="">
@@ -2252,13 +2285,18 @@ Material(
                                         </div>
                                         <div class="label-cont">
                                             <ul class="list">
-                                                <li class="list-bullet">Setting up Flutter; installing, set up with
-                                                    VScode
-                                                    and
-                                                    Android emulator</li>
-                                                <li class="list-bullet">Using and managing external packages; adding
-                                                    dependencies and assets to 'pubspec.yaml' and importing to a Dart
-                                                    file
+                                                <li class="list-bullet">Learned what hybrid frameworks there are</li>
+                                                <li class="list-bullet">Learned the general strengths and weaknesses of
+                                                    some of the hybrid frameworks
+                                                </li>
+                                                <li class="list-bullet">Learned what the best hybrid framework is for
+                                                    the hybrid app concept
+                                                </li>
+                                                <li class="list-bullet">Learned what livestreaming SDK's there are for
+                                                    Flutter
+                                                </li>
+                                                <li class="list-bullet">Learned whether Quickblox was the most suitable
+                                                    livestreaming SDK
                                                 </li>
                                             </ul>
                                         </div>
@@ -2269,76 +2307,105 @@ Material(
                                             <img src="./assets/icons/motivation.png" alt="">
                                         </div>
                                         <div class="label-cont">
-                                            <p>For the 'Hybrid App' assignment I needed to pick the most suitable hybrid
-                                                framework for the concept. This POC helped me get a better understanding
-                                                of
-                                                Flutter and ultimately helped me make my hybrid framework decision.</p>
+                                            <p>For the 'Hybrid App' assignment I needed to find the most suitable hybrid
+                                                framework for the concept. This was needed in order to be able to
+                                                develop the app the way it was intended (see <a
+                                                    href="https://rickvwijk1.github.io/portfolio/minor/minor.html#row2-modal3"
+                                                    onclick="window.location.reload(true);">Designs</a>) and
+                                                to minimize
+                                                development time.</p>
                                         </div>
-                                        <div class="paddedTextLine"> </div>
-                                        <div class="text">
-                                            <h2>'english_words' package</h2>
-                                            <p>This package contains common English words.</p>
-                                            <div class="text-header">
-                                                <div class="box-circle">
-                                                    <p>1</p>
-                                                </div>
-                                                <p>First I installed Flutter and set up VScode for Flutter by
-                                                    downloading the necessary <a
-                                                        href="https://flutter.dev/docs/get-started/editor?tab=vscode target="
-                                                        target="__blank">extensions</a>.</p>
-                                            </div>
-                                            <div class="text-header">
-                                                <div class="box-circle">
-                                                    <p>2</p>
-                                                </div>
-                                                <p>I made a new Flutter project, imported the <a
-                                                        href="https://pub.dev/packages/english_words"
-                                                        target="__blank">'english_words'</a> package
-                                                    from pub.dev and the 'math' library in 'main.dart' and added it to
-                                                    the dependencies in
-                                                    'pubspec.yaml'.<p>
-                                            </div>
-                                            <pre data-file="main.dart"><code class="language-dart"><p>import 'package:english_words/english_words.dart';
-import 'dart:math';</p></code></pre>
-
-                                            <pre data-file="pubspec.yaml"><code class="language-yaml"><p>dependencies:
-        english_words: ^4.0.0</p></code></pre>
-                                            <div class="text-header">
-                                                <div class="box-circle">
-                                                    <p>3</p>
-                                                </div>
-                                                <p>In 'main.dart' I added the following variable to get two random words
-                                                    pasted together. The output is shown in a 'Text' widget.<p>
-                                            </div>
-                                            <pre
-                                                data-file="main.dart"><code class="language-dart"><p>final wordPair = WordPair.random();</p></code></pre>
-                                            <pre
-                                                data-file="main.dart"><code class="language-dart"><p>Text(wordPair.asString),</p></code></pre>
+                                    </div>
+                                    <div class="paddedTextLine"></div>
+                                    <div class="text">
+                                        <p>The technical research constists out of two parts:</p>
+                                        <ul class="list">
+                                            <li>Researching hybrid frameworks</li>
+                                            <li>Researching livestreaming SDK's</li>
+                                        </ul>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Researching hybrid frameworks</h3>
+                                        <p>My contribution to this research:</p>
+                                        <ol class="list">
+                                            <li>Came up with research questions that needed to be answered in order
+                                                to achieve the goal</li>
+                                            <li>Came up with a plan of action to determine how we would go about the
+                                                research and what type of methods would be used.</li>
+                                            <li>Contributed to criteria which would be used to determine whether the
+                                                researched frameworks would be suitable.</li>
+                                            <li>Researched Flutter, React-Native and NativeScript by trying to make
+                                                simple POC's and rating them based on my own experience and/or desktop
+                                                research through articles and documentation.</li>
+                                            <li>Contributed to the conclusion of the research.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="modalbody-container">
+                                    <div class="pdf-padding">
+                                        <div class="image-description">
+                                            <embed src="./assets/pdf/hybr_hybrid_frameworks.pdf" width="100%"
+                                                height="1000" type="application/pdf">
+                                            <i>Click <a style="color: #4758fc;" target="_blank"
+                                                    href="./assets/pdf/hybr_hybrid_frameworks.pdf">here</a>
+                                                to open
+                                                the
+                                                PDF in a new tab.</i>
                                         </div>
+                                    </div>
+                                    <div class="col-lg-8 mx-auto">
                                         <div class="text">
-                                            <h3>Result</h3>
-                                            <div class="img-grid">
-                                                <img style="width: 400px" src="assets/jpg/english_words_result.png"
-                                                    alt="">
-                                                <img style="width: 400px" src="assets/jpg/english_words_result2.png"
-                                                    alt="">
-                                            </div>
+                                            <h3>Researching livestreaming SDK's</h3>
+                                            <p>My contribution to this research:</p>
+                                            <ol class="list">
+                                                <li>Searched for livestream plugins/platforms/sdk's or anything that
+                                                    could potentially help implement livestreaming in the Flutter app.
+                                                </li>
+                                                <li>Researched the Quickblox livestreaming SDK by trying to implement it
+                                                    in a standard Flutter
+                                                    application and taking this experience into account in the
+                                                    conclusion.
+                                                </li>
+                                                <li>Contributed to criteria which would be used to determine whether the
+                                                    researched frameworks would be suitable.</li>
+                                                <li>Researched Flutter, React-Native and NativeScript by trying to make
+                                                    simple POC's and rating them based on my own experience and/or
+                                                    desktop
+                                                    research through articles and documentation.</li>
+                                                <li>Contributed to the conclusion of the research.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="pdf-padding">
+                                        <h3>Researching livestreaming SDK's</h3>
+                                        <div class="image-description">
+                                            <embed src="./assets/pdf/hybr_livestreaming_sdk.pdf" width="100%"
+                                                height="1000" type="application/pdf">
+                                            <i>Click <a style="color: #4758fc;" target="_blank"
+                                                    href="./assets/pdf/hybr_livestreaming_sdk.pdf">here</a>
+                                                to open
+                                                the
+                                                PDF in a new tab.</i>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-8 mx-auto">
-                                    <div class="modal-body">
-                                        <div class="text">
-                                            <a target="_blank"
-                                                href="https://git.fhict.nl/I374693/sm7_hybrid_poc/-/tree/hybrid-pocs/flutter_application_poc">
-                                                <div class="paddedText">
-                                                    <p>View the repo for more information here</p>
-                                                    <br>
-
-                                                    <img class="gitImg" src="../assets/icons/github.svg"
-                                                        style="width: 10%;" alt="Github">
-                                                </div>
-                                            </a>
+                                    <div class="paddedTextLine"> </div>
+                                    <div class="text">
+                                        <div class="learned-cont">
+                                            <h3>Evaluation</h3>
+                                            <img src="./assets/icons/evaluation.png" alt="">
+                                        </div>
+                                        <div class="label-cont">
+                                            <p>Our decision was to choose Flutter as the hybrid framework and Agora as
+                                                livestreaming SDK.
+                                                Researching the hybrid frameworks and livestreaming SDK's costed
+                                                about half the time of this project. However, it was needed,
+                                                because if we had chosen a random hybrid framework and livestreaming
+                                                SDK, it could have costed much more time if the livestreaming SDK wasn't
+                                                working well with the hybrid framework or if the framework had
+                                                no/limited
+                                                support for the features that were needed.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2513,7 +2580,34 @@ import 'dart:math';</p></code></pre>
 
 
                 <div class="row poc grid-holder">
+                    <div id="overview-grid" class="overview-grid" data-modal="expl_xml" data-category="Hybrid Frontend"
+                        style="background-image: url('assets/bg_images/flutter_pubdev.jpg')">
+                        <div class="a-ghostbtn">
+                            <a href="#row3-modal1" class="a-ghostbtn">
+                                <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
+                                    <div class="ghostbutton">
+                                        <p class="ghostbutton-p">Exploring Android XML</p><span
+                                            class="fa fa-external-link-alt"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
+                    <div id="overview-grid" class="overview-grid" data-modal="expl_kotlin"
+                        data-category="Hybrid Frontend"
+                        style="background-image: url('assets/bg_images/flutter_pubdev.jpg')">
+                        <div class="a-ghostbtn">
+                            <a href="#row3-modal1" class="a-ghostbtn">
+                                <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
+                                    <div class="ghostbutton">
+                                        <p class="ghostbutton-p">Kotlin logic - Tic Tac Toe</p><span
+                                            class="fa fa-external-link-alt"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
         </div>
         </section>

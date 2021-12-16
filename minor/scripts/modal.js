@@ -46,6 +46,36 @@ window.addEventListener('keydown', e => {
 
 //routing
 window.onload = (event) => {
+    if(location.hash==='#row1-modal1'){
+        document.getElementById('sprint0').style.display = "block";
+        document.getElementById('sprint0').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('sprint0').style.overflowY = "auto";
+    }
+    if(location.hash==='#row1-modal2'){
+        document.getElementById('sprint1').style.display = "block";
+        document.getElementById('sprint1').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('sprint1').style.overflowY = "auto";
+    }
+    if(location.hash==='#row1-modal3'){
+        document.getElementById('sprint2').style.display = "block";
+        document.getElementById('sprint2').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('sprint2').style.overflowY = "auto";
+    }
+    if(location.hash==='#row1-modal4'){
+        document.getElementById('sprint3').style.display = "block";
+        document.getElementById('sprint3').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('sprint3').style.overflowY = "auto";
+    }
+    if(location.hash==='#row1-modal5'){
+        document.getElementById('sprint4').style.display = "block";
+        document.getElementById('sprint4').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('sprint4').style.overflowY = "auto";
+    }
     if(location.hash==='#row2-modal1'){
         document.getElementById('hybr_tech_research').style.display = "block";
         document.getElementById('hybr_tech_research').style.visibility = "visible";
@@ -99,5 +129,36 @@ window.onload = (event) => {
         document.getElementById('hybr_designdocu').style.visibility = "visible";
         document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
         document.getElementById('hybr_designdocu').style.overflowY = "auto";
+    }
+    if(location.hash==='#row3-modal1'){
+        document.getElementById('andr_concepting').style.display = "block";
+        document.getElementById('andr_concepting').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('andr_concepting').style.overflowY = "auto";
+    }
+
+    if(location.hash==='#row3-modal2'){
+        document.getElementById('andr_techresearch').style.display = "block";
+        document.getElementById('andr_techresearch').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('andr_techresearch').style.overflowY = "auto";
+    }
+    if(location.hash==='#row3-modal3'){
+        document.getElementById('andr_xml').style.display = "block";
+        document.getElementById('andr_xml').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('andr_xml').style.overflowY = "auto";
+    }
+    if(location.hash==='#row3-modal4'){
+        document.getElementById('andr_kotlin').style.display = "block";
+        document.getElementById('andr_kotlin').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('andr_kotlin').style.overflowY = "auto";
+    }
+    if(location.hash==='#row3-modal5'){
+        document.getElementById('andr_endproduct').style.display = "block";
+        document.getElementById('andr_endproduct').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('andr_endproduct').style.overflowY = "auto";
     }
 };

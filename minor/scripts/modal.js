@@ -12,6 +12,12 @@ openModal.forEach((trigger) => {
         document.getElementById(modal).style.overflowY = "auto";
 
         document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+
+        //necessary to show a different slide for each modal
+        if(document.querySelector('#sprint1').style.visibility == "visible"){
+            document.querySelector('#mySwipe').style.display="block";
+            document.querySelector('#mySwipe').style.visibility="visible";
+        }
     };
     
 });
@@ -22,10 +28,11 @@ let closeModal = document.querySelectorAll('.close-modal');
 //each modal closes the moment one of the trigger elements gets clicked
 closeModal.forEach((trigger) => {
     trigger.onclick = () => {
-
         //the modal becomes invisible
         modal = trigger.closest('.modal').style.visibility = "hidden";
         document.getElementsByTagName("HTML")[0].style.overflowY="auto";
+        document.getElementById('mySwipe').style.visibility = "hidden";
+        document.getElementById('mySwipe').style.display = "none";
     };
 });
 
@@ -34,6 +41,8 @@ window.onclick = (e) => {
     if (e.target.className === 'modal') {
         e.target.style.visibility = "hidden";
         document.getElementsByTagName("HTML")[0].style.overflowY="auto";
+        document.getElementById('mySwipe').style.visibility = "hidden";
+        document.getElementById('mySwipe').style.display = "none";
     }
 };
 

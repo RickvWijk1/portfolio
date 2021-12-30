@@ -17,6 +17,12 @@ openModal.forEach((trigger) => {
         if(document.querySelector('#sprint1').style.visibility == "visible"){
             document.querySelector('#mySwipe').style.display="block";
             document.querySelector('#mySwipe').style.visibility="visible";
+            document.querySelector('#mySwipe2').style.display="block";
+            document.querySelector('#mySwipe2').style.visibility="visible";
+        }
+        if(document.querySelector('#sprint2').style.visibility == "visible"){
+            document.querySelector('#sprint2storyboards').style.display="block";
+            document.querySelector('#sprint2storyboards').style.visibility="visible";
         }
     };
     
@@ -33,6 +39,10 @@ closeModal.forEach((trigger) => {
         document.getElementsByTagName("HTML")[0].style.overflowY="auto";
         document.getElementById('mySwipe').style.visibility = "hidden";
         document.getElementById('mySwipe').style.display = "none";
+        document.getElementById('mySwipe2').style.visibility = "hidden";
+        document.getElementById('mySwipe2').style.display = "none";
+        document.getElementById('sprint2storyboards').style.visibility = "hidden";
+        document.getElementById('sprint2storyboards').style.display = "none";
     };
 });
 
@@ -43,6 +53,10 @@ window.onclick = (e) => {
         document.getElementsByTagName("HTML")[0].style.overflowY="auto";
         document.getElementById('mySwipe').style.visibility = "hidden";
         document.getElementById('mySwipe').style.display = "none";
+        document.getElementById('mySwipe2').style.visibility = "hidden";
+        document.getElementById('mySwipe2').style.display = "none";
+        document.getElementById('sprint2storyboards').style.visibility = "hidden";
+        document.getElementById('sprint2storyboards').style.display = "none";
     }
 };
 

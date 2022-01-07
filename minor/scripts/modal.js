@@ -24,6 +24,20 @@ openModal.forEach((trigger) => {
             document.querySelector('#sprint2storyboards').style.display="block";
             document.querySelector('#sprint2storyboards').style.visibility="visible";
         }
+        if(document.querySelector('#sprint3').style.visibility == "visible"){
+            document.querySelector('#sprint3storyboards').style.display="block";
+            document.querySelector('#sprint3storyboards').style.visibility="visible";
+        }
+        if(document.querySelector('#sprint4').style.visibility == "visible"){
+            document.querySelector('#sprint4storyboards').style.display="block";
+            document.querySelector('#sprint4storyboards').style.visibility="visible";
+            document.querySelector('#sprint4storyboards1').style.display="block";
+            document.querySelector('#sprint4storyboards1').style.visibility="visible";
+        }
+        if(document.querySelector('#sprint5').style.visibility == "visible"){
+            document.querySelector('#sprint5storyboards').style.display="block";
+            document.querySelector('#sprint5storyboards').style.visibility="visible";
+        }
     };
     
 });
@@ -43,6 +57,14 @@ closeModal.forEach((trigger) => {
         document.getElementById('mySwipe2').style.display = "none";
         document.getElementById('sprint2storyboards').style.visibility = "hidden";
         document.getElementById('sprint2storyboards').style.display = "none";
+        document.getElementById('sprint3storyboards').style.visibility = "hidden";
+        document.getElementById('sprint3storyboards').style.display = "none";
+        document.getElementById('sprint4storyboards').style.visibility = "hidden";
+        document.getElementById('sprint4storyboards').style.display = "none";
+        document.getElementById('sprint4storyboards1').style.visibility = "hidden";
+        document.getElementById('sprint4storyboards1').style.display = "none";
+        document.getElementById('sprint5storyboards').style.visibility = "hidden";
+        document.getElementById('sprint5storyboards').style.display = "none";
     };
 });
 
@@ -57,6 +79,14 @@ window.onclick = (e) => {
         document.getElementById('mySwipe2').style.display = "none";
         document.getElementById('sprint2storyboards').style.visibility = "hidden";
         document.getElementById('sprint2storyboards').style.display = "none";
+        document.getElementById('sprint3storyboards').style.visibility = "hidden";
+        document.getElementById('sprint3storyboards').style.display = "none";
+        document.getElementById('sprint4storyboards').style.visibility = "hidden";
+        document.getElementById('sprint4storyboards').style.display = "none";
+        document.getElementById('sprint4storyboards1').style.visibility = "hidden";
+        document.getElementById('sprint4storyboards1').style.display = "none";
+        document.getElementById('sprint5storyboards').style.visibility = "hidden";
+        document.getElementById('sprint5storyboards').style.display = "none";
     }
 };
 
@@ -98,6 +128,12 @@ window.onload = (event) => {
         document.getElementById('sprint4').style.visibility = "visible";
         document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
         document.getElementById('sprint4').style.overflowY = "auto";
+    }
+    if(location.hash==='#row1-modal6'){
+        document.getElementById('sprint5').style.display = "block";
+        document.getElementById('sprint5').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('sprint5').style.overflowY = "auto";
     }
     if(location.hash==='#row2-modal1'){
         document.getElementById('hybr_tech_research').style.display = "block";
@@ -183,5 +219,23 @@ window.onload = (event) => {
         document.getElementById('andr_endproduct').style.visibility = "visible";
         document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
         document.getElementById('andr_endproduct').style.overflowY = "auto";
+    }
+    if(location.hash==='#row4-modal1'){
+        document.getElementById('ios_workshop').style.display = "block";
+        document.getElementById('ios_workshop').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('ios_workshop').style.overflowY = "auto";
+    }
+    if(location.hash==='#row4-modal2'){
+        document.getElementById('ios_concept').style.display = "block";
+        document.getElementById('ios_concept').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('ios_concept').style.overflowY = "auto";
+    }
+    if(location.hash==='#row4-modal3'){
+        document.getElementById('ios_reality').style.display = "block";
+        document.getElementById('ios_reality').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('ios_reality').style.overflowY = "auto";
     }
 };

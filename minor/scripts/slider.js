@@ -5,7 +5,7 @@ var element3 = document.getElementById('sprint2storyboards')
 var element4 = document.getElementById('sprint3storyboards')
 var element5 = document.getElementById('sprint4storyboards')
 var element6 = document.getElementById('sprint4storyboards1')
-var element7 = document.getElementById('sprint5storyboards')
+// var element7 = document.getElementById('sprint5storyboards')
 // var element2 = document.getElementById('mySwipeDesign');
 // var element3 = document.getElementById('mySwipePersona');
 // var element4 = document.getElementById('mySwipeFinalDesign');
@@ -22,8 +22,8 @@ prevBtnMysprint4storyboards = document.getElementById('prevBtnMysprint4storyboar
 nextBtnMysprint4storyboards = document.getElementById('nextBtnMysprint4storyboards');
 prevBtnMysprint4storyboards1 = document.getElementById('prevBtnMysprint4storyboards1'),
 nextBtnMysprint4storyboards1 = document.getElementById('nextBtnMysprint4storyboards1');
-prevBtnMysprint5storyboards = document.getElementById('prevBtnMysprint5storyboards'),
-nextBtnMysprint5storyboards = document.getElementById('nextBtnMysprint5storyboards');
+// prevBtnMysprint5storyboards = document.getElementById('prevBtnMysprint5storyboards'),
+// nextBtnMysprint5storyboards = document.getElementById('nextBtnMysprint5storyboards');
 // prevBtnDesign = document.getElementById('prevDesign'),
 // nextBtnDesign = document.getElementById('nextDesign');
 // prevBtnPersona = document.getElementById('prevPersona'),
@@ -136,18 +136,18 @@ window.sprint4storyboards1 = new Swipe(element6, {
 prevBtnMysprint4storyboards1.onclick = sprint4storyboards1.prev;
 nextBtnMysprint4storyboards1.onclick = sprint4storyboards1.next;
 
-window.sprint5storyboards = new Swipe(element7, {
-    startSlide: 0,
-    speed: 0,
-    auto: 0,
-    draggable: true,
-    continuous: true,
-    disableScroll: false,
-    stopPropagation: false,
-    ignore: ".scroller",
-    callback: function (index, element) {},
-    transitionEnd: function (index, element) {}
-});
+// window.sprint5storyboards = new Swipe(element7, {
+//     startSlide: 0,
+//     speed: 0,
+//     auto: 0,
+//     draggable: true,
+//     continuous: true,
+//     disableScroll: false,
+//     stopPropagation: false,
+//     ignore: ".scroller",
+//     callback: function (index, element) {},
+//     transitionEnd: function (index, element) {}
+// });
 
-prevBtnMysprint5storyboards.onclick = sprint5storyboards.prev;
-nextBtnMysprint5storyboards.onclick = sprint5storyboards.next;
+// prevBtnMysprint5storyboards.onclick = sprint5storyboards.prev;
+// nextBtnMysprint5storyboards.onclick = sprint5storyboards.next;

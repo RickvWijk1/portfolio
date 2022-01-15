@@ -221,21 +221,39 @@ window.onload = (event) => {
         document.getElementById('andr_endproduct').style.overflowY = "auto";
     }
     if(location.hash==='#row4-modal1'){
-        document.getElementById('ios_workshop').style.display = "block";
-        document.getElementById('ios_workshop').style.visibility = "visible";
-        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
-        document.getElementById('ios_workshop').style.overflowY = "auto";
-    }
-    if(location.hash==='#row4-modal2'){
         document.getElementById('ios_concept').style.display = "block";
         document.getElementById('ios_concept').style.visibility = "visible";
         document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
         document.getElementById('ios_concept').style.overflowY = "auto";
     }
-    if(location.hash==='#row4-modal3'){
-        document.getElementById('ios_reality').style.display = "block";
-        document.getElementById('ios_reality').style.visibility = "visible";
+    if(location.hash==='#row4-modal2'){
+        document.getElementById('ios_workshops').style.display = "block";
+        document.getElementById('ios_workshops').style.visibility = "visible";
         document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
-        document.getElementById('ios_reality').style.overflowY = "auto";
+        document.getElementById('ios_workshops').style.overflowY = "auto";
+    }
+    if(location.hash==='#row4-modal3'){
+        document.getElementById('ios_design').style.display = "block";
+        document.getElementById('ios_design').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('ios_design').style.overflowY = "auto";
+    }
+    if(location.hash==='#row4-modal4'){
+        document.getElementById('ios_modelling').style.display = "block";
+        document.getElementById('ios_modelling').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('ios_modelling').style.overflowY = "auto";
+    }
+    if(location.hash==='#row4-modal5'){
+        document.getElementById('ios_pocs').style.display = "block";
+        document.getElementById('ios_pocs').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('ios_pocs').style.overflowY = "auto";
+    }
+    if(location.hash==='#row5-modal1'){
+        document.getElementById('myVision').style.display = "block";
+        document.getElementById('myVision').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('myVision').style.overflowY = "auto";
     }
 };

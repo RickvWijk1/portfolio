@@ -109,12 +109,13 @@
                                         </div>
                                     </div>
                                     <div class="modalbody-container">
+                                        <br><br>
                                         <div class="pdf-padding">
                                             <div class="image-description">
-                                                <embed src="./assets/pdf/placeholder.pdf" width="100%" height="1000"
-                                                    type="application/pdf">
+                                                <embed src="./assets/pdf/portfolio_abstract2022.pdf" width="100%"
+                                                    height="1000" type="application/pdf">
                                                 <i>Click <a style="color: #4758fc;" target="_blank"
-                                                        href="./assets/pdf/placeholder.pdf">here</a>
+                                                        href="./assets/pdf/portfolio_abstract2022.pdf">here</a>
                                                     to open
                                                     the
                                                     PDF in a new tab.</i>
@@ -2091,7 +2092,11 @@
                                         <p>In order to keep the code manageable, I made custom styles for certain
                                             components. For example, I defined the font size and weight for headers,
                                             subheaders and paragraph text in an XML file so that I could use this as a
-                                            property everytime I needed the right styling for an element.</p>
+                                            property everytime I needed the right styling for an element. Prior to this
+                                            I did research on how to achieve this. I used my earlier experience from the
+                                            Android project and used the information from <a target="__blank"
+                                                href="https://developer.android.com/studio/projects">this</a>
+                                            documentation to keep the repo manageable.</p>
                                         <p>I also made a seperate XML file to manage strings. This is much more
                                             manageable than to have to go through one big XML file.</p>
                                     </div>
@@ -3680,6 +3685,43 @@ Material(
                                     </div>
 
                                     <div class="text">
+                                        <h3>Flutter for iOS</h3>
+                                        <p>We used Android emulators to test our app since we couldn't borrow a Macbook
+                                            yet. After the project was (officially) over I managed to get my hands on a
+                                            Macbook. It was harder than I expected to make the Flutter app ready for iOS
+                                            devices.</p>
+                                        <div class="text-header">
+                                            <div class="box-circle">
+                                                <p>1</p>
+                                            </div>
+                                            <p>Install Xcode and Flutter</p>
+                                        </div>
+                                        <div class="text-header">
+                                            <div class="box-circle">
+                                                <p>2</p>
+                                            </div>
+                                            <p>Add the Flutter tool to the path</p>
+                                        </div>
+                                        <div class="text-header">
+                                            <div class="box-circle">
+                                                <p>3</p>
+                                            </div>
+                                            <p>Install CocaoPods dependencies</p>
+                                        </div>
+                                        <div class="text-header">
+                                            <div class="box-circle">
+                                                <p>4</p>
+                                            </div>
+                                            <p>Change a bunch of Xcode project settings (making and adding a development
+                                                team for example)</p>
+                                        </div>
+                                        <br>
+                                        <p>A lot of dependencies were missing or not the correct version. Besides that
+                                            there were problems with connecting Firebase because of missing Pods (which
+                                            for some reason weren't generated). After a lot of debugging the app finally
+                                            worked.</p>
+                                    </div>
+                                    <div class="text">
                                         <h3>Testing</h3>
                                         <p>Since we worked in different branches (Marco mainly in the backend branch, I
                                             myself in the frontend branch) we had tho merge the branches to test if
@@ -5025,7 +5067,7 @@ videoView.setOnPreparedListener(OnPreparedListener { mp -> mp.setVolume(0f, 0f) 
                                             <h3>Structs</h3>
                                             <p>At first when I was working on the Scrumdinger app, structs seemed very
                                                 similar
-                                                to classes for me. I then did some
+                                                to classes to me. I then did some
                                                 research and found out that structs are value types and classes are
                                                 reference types. Classes have more functionality, they can do anything
                                                 structs can and more. Classes can inherit from
@@ -5163,6 +5205,17 @@ videoView.setOnPreparedListener(OnPreparedListener { mp -> mp.setVolume(0f, 0f) 
                                                 the end of 2019) so the community is still discovering the
                                                 functionalities.</p>
                                         </div>
+                                    </div>
+                                    <div class="text">
+                                        <a target="_blank"
+                                            href="https://git.fhict.nl/I404350/sm_portfolio/-/tree/master/ios_workshops">
+                                            <div class="paddedText">
+                                                <p>View the repo for more information here</p>
+                                                <br>
+                                                <img class="gitImg" src="../assets/icons/github.svg" style="width: 10%;"
+                                                    alt="Github">
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -5611,6 +5664,9 @@ do {
                         </div>
                         <div class="modalbody-container">
                             <div class="pdf-padding">
+                                <br>
+                                <p>I made this presentation and presented our project process and findings.</p>
+                                <br>
                                 <div class="image-description">
                                     <embed src="./assets/pdf/presentation.pdf" width="100%" height="1000"
                                         type="application/pdf">
@@ -5666,7 +5722,7 @@ do {
                         <div class="modal-header">
                             <a class="close-modal modal-close">×</a>
                             <div class="modal-title">
-                                <h1>My Smart Mobile vision</h1>
+                                <h1>Vision of the future</h1>
                             </div>
                         </div>
                         <div class="modalbody-container">

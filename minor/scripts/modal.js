@@ -250,6 +250,12 @@ window.onload = (event) => {
         document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
         document.getElementById('ios_pocs').style.overflowY = "auto";
     }
+    if(location.hash==='#row4-modal6'){
+        document.getElementById('ios_presentation').style.display = "block";
+        document.getElementById('ios_presentation').style.visibility = "visible";
+        document.getElementsByTagName("HTML")[0].style.overflowY="hidden";
+        document.getElementById('ios_presentation').style.overflowY = "auto";
+    }
     if(location.hash==='#row5-modal1'){
         document.getElementById('myVision').style.display = "block";
         document.getElementById('myVision').style.visibility = "visible";

@@ -4750,7 +4750,8 @@ videoView.setOnPreparedListener(OnPreparedListener { mp -> mp.setVolume(0f, 0f) 
 
                 <div class="row grid-holder">
                     <div id="overview-grid" class="overview-grid" data-modal="ios_concept"
-                        data-category="Hybrid Frontend" style="background-image: url('assets/bg_images/garden.jpg')">
+                        data-category="ios-analyse ios-design"
+                        style="background-image: url('assets/bg_images/garden.jpg')">
                         <div class="a-ghostbtn">
                             <a href="#row4-modal1" class="a-ghostbtn">
                                 <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
@@ -4763,7 +4764,8 @@ videoView.setOnPreparedListener(OnPreparedListener { mp -> mp.setVolume(0f, 0f) 
                         </div>
                     </div>
                     <div id="overview-grid" class="overview-grid" data-modal="ios_workshops"
-                        data-category="Hybrid Frontend" style="background-image: url('assets/bg_images/swiftUI.png')">
+                        data-category="ios-analyse ios-Hardware ios-Software_Engineering ios-realise"
+                        style="background-image: url('assets/bg_images/swiftUI.png')">
                         <div class="a-ghostbtn">
                             <a href="#row4-modal2" class="a-ghostbtn">
                                 <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
@@ -4776,7 +4778,7 @@ videoView.setOnPreparedListener(OnPreparedListener { mp -> mp.setVolume(0f, 0f) 
                         </div>
                     </div>
                     <div id="overview-grid" class="overview-grid" data-modal="ios_design"
-                        data-category="Hybrid Frontend"
+                        data-category="ios-advise ios-analyse ios-design ios-manage ios-User_Interaction"
                         style="background-image: url('assets/bg_images/hybr_concept.jpg')">
                         <div class="a-ghostbtn">
                             <a href="#row4-modal3" class="a-ghostbtn">
@@ -4790,7 +4792,7 @@ videoView.setOnPreparedListener(OnPreparedListener { mp -> mp.setVolume(0f, 0f) 
                         </div>
                     </div>
                     <div id="overview-grid" class="overview-grid" data-modal="ios_modelling"
-                        data-category="Hybrid Frontend"
+                        data-category="ios-analyse ios-Hardware ios-Software_Engineering"
                         style="background-image: url('assets/bg_images/realitycomp.png')">
                         <div class="a-ghostbtn">
                             <a href="#row4-modal4" class="a-ghostbtn">
@@ -4803,13 +4805,28 @@ videoView.setOnPreparedListener(OnPreparedListener { mp -> mp.setVolume(0f, 0f) 
                             </a>
                         </div>
                     </div>
-                    <div id="overview-grid" class="overview-grid" data-modal="ios_pocs" data-category="Hybrid Frontend"
+                    <div id="overview-grid" class="overview-grid" data-modal="ios_pocs"
+                        data-category="ios-analyse ios-Hardware ios-Software_Engineering ios-realise"
                         style="background-image: url('assets/bg_images/pocs.jpg')">
                         <div class="a-ghostbtn">
                             <a href="#row4-modal5" class="a-ghostbtn">
                                 <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
                                     <div class="ghostbutton">
                                         <p class="ghostbutton-p">POC's</p><span class="fa fa-external-link-alt"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="overview-grid" class="overview-grid" data-modal="ios_presentation"
+                        data-category="ios-manage ios-analyse"
+                        style="background-image: url('assets/bg_images/ios_presentation.png')">
+                        <div class="a-ghostbtn">
+                            <a href="#row4-modal6" class="a-ghostbtn">
+                                <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
+                                    <div class="ghostbutton">
+                                        <p class="ghostbutton-p">Presentation</p><span
+                                            class="fa fa-external-link-alt"></span>
                                     </div>
                                 </div>
                             </a>
@@ -5403,7 +5420,7 @@ videoView.setOnPreparedListener(OnPreparedListener { mp -> mp.setVolume(0f, 0f) 
                         <div class="modal-header">
                             <a class="close-modal modal-close">×</a>
                             <div class="modal-title">
-                                <h1>Workshops</h1>
+                                <h1>POC's</h1>
                             </div>
                         </div>
                         <div class="modalbody-container">
@@ -5440,10 +5457,12 @@ videoView.setOnPreparedListener(OnPreparedListener { mp -> mp.setVolume(0f, 0f) 
                                     </div>
                                     <div class="label-cont">
                                         <ul class="list">
-                                            <li class="list-bullet">Learned what structs and protocols are and when
-                                                to use them</li>
-                                            <li class="list-bullet">Learned what ARKit does/how it works.</li>
-                                            <li class="list-bullet">Learned how to manage state</li>
+                                            <li class="list-bullet">Learned that Apple intends to include the Apple
+                                                Glasses with an accelerometer</li>
+                                            <li class="list-bullet">Learned that the Vision framework allows you to
+                                                track and perform a variety of tasks on input images and video</li>
+                                            <li class="list-bullet">Learned how to get raw accelerometer events with the
+                                                Core Motion framework</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -5453,41 +5472,94 @@ videoView.setOnPreparedListener(OnPreparedListener { mp -> mp.setVolume(0f, 0f) 
                                         <img src="./assets/icons/motivation.png" alt="">
                                     </div>
                                     <div class="label-cont">
-                                        <p>In my third semester I learned to develop with iOS, but a lot has
-                                            changed. In my third semester UIkit in combination with storyboards was
-                                            used the most. At the end of the third semester the beta of SwiftUI was
-                                            released which I tried out. Since it has been a while and a lot has
-                                            changed, I was motivated to follow these workshops in order to catchup
-                                            with the changes.</p>
+                                        <p>Some parts of the concept require the user to interact with virtual objects.
+                                            For instance, in a game of
+                                            Monopoly some dice must be rolled by the user. How would this interaction
+                                            work with AR? This needs to be researched.</p>
                                     </div>
                                 </div>
                                 <div class="paddedTextLine"> </div>
 
                                 <div class="text">
                                     <h3>Feedback</h3>
-                                    <p>Our teachers advised us to start with basic interactions/mechanics that
+                                    <p>Our teachers advised us to start with developing basic interactions/mechanics
+                                        that
                                         are common for board games.</p>
+                                    <br>
+                                    <p>I focused on how we can let the users interact with AR generated dice; are the
+                                        users supposed to make a throwing gesture or do they perhaps need to shake their
+                                        head?</p>
                                 </div>
+                            </div>
+                            <div class="modalbody-container">
+                                <div class="pdf-padding">
+                                    <div class="image-description">
+                                        <embed src="./assets/pdf/gesturesWithAR_research.pdf" width="100%" height="1000"
+                                            type="application/pdf">
+                                        <i>Click <a style="color: #4758fc;" target="_blank"
+                                                href="./assets/pdf/gesturesWithAR_research.pdf">here</a>
+                                            to open
+                                            the
+                                            PDF in a new tab.</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 mx-auto">
+                                <div class="text">
+                                    <h3>Vision framework</h3>
+                                    <p>I found out that the Vision framework can be used to track gestures. I downloaded
+                                        <a target="__blank"
+                                            href="https://developer.apple.com/documentation/vision/detecting_hand_poses_with_vision">this</a>
+                                        sample project that Apple provides.
+                                        It showcases how you can track the top of your thumb and index finger. Anchor
+                                        points are added to these spots and if the anchor points overlap eachother it
+                                        triggers an event that allows you to draw. You can use the
+                                        'VNDetectHumanBodyPoseRequest' to detect key body points. It already provides
+                                        resources to track common body parts (right ankle, left knee, right ear, etc.).
+                                    </p>
+                                    <pre data-file=".swift"><code class="language-swift"><p>// Get the CGImage on which to perform requests.
+guard let cgImage = UIImage(named: "bodypose")?.cgImage else { return }
 
+// Create a new image-request handler.
+let requestHandler = VNImageRequestHandler(cgImage: cgImage)
+
+// Create a new request to recognize a human body pose.
+let request = VNDetectHumanBodyPoseRequest(completionHandler: bodyPoseHandler)
+
+do {
+    // Perform the body pose-detection request.
+    try requestHandler.perform([request])
+} catch {
+    print("Unable to perform the request: \(error).")
+                                        }</p></code></pre>
+
+                                    <p>I researched if I could track a user shaking their fist and opening it, but for
+                                        this you need to do your own machine learning with CoreML which is not that
+                                        straightforward and time consuming so in the end I decided to drop the research
+                                        and tried to find a different solution.</p>
+                                </div>
+                                <div class="text">
+                                    <h3>Core Motion framework - Accelerometer</h3>
+                                    <p>I used the Core Motion framework to get the needed accelerometer data. The Apple
+                                        Glasses will most likely contain an accelerometer. This theoretically means we
+                                        could let the user throw a dice if they shake their head. This is not the most
+                                        natural way, but it's an option to provide handsfree functionality.</p>
+                                    <p>I looked at the <a target="__blank"
+                                            href="https://developer.apple.com/documentation/coremotion">official Apple
+                                            documentation</a> to </p>
+                                    <p>Unfortunately, I couldn't test if the code works by firing events, because I had
+                                        to work from home and didn't have any iOS devices at that moment, but since I
+                                        didn't get any errors and followed the offical documentation (which was pretty
+                                        clear) it looks like the acceloremeter data is being tracked properly.</p>
+                                </div>
+                                <img loading="lazy" src="./assets/jpg/ios_accelerometer.jpeg" alt="">
                                 <div class="text">
                                     <h3>Result</h3>
-                                    <div class="img-grid">
-                                        <div>
-                                            <video loading="lazy" style="border-style: none;" width="100%" height="auto"
-                                                controls="" src="assets/video/demo1.mp4" data-video="0"></video>
-                                            <div class="image-description">
-                                                <p>A single image gets detected and a plane with an anchor
-                                                    attached
-                                                    to it gets added so that the video stays in one place</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <video loading="lazy" style="border-style: none;" width="100%" height="auto"
-                                                controls="" src="assets/video/demo2.mp4" data-video="0"></video>
-                                            <div class="image-description">
-                                                <p>Multiple images get tracked and each gets a plane</p>
-                                            </div>
-                                        </div>
+
+                                    <video loading="lazy" style="border-style: none;" width="100%" height="auto"
+                                        controls="" src="assets/video/vision_framework1.mp4" data-video="0"></video>
+                                    <div class="image-description">
+                                        <p>Usage of the Vision framework</p>
                                     </div>
                                 </div>
                                 <div class="paddedTextLine"> </div>
@@ -5497,25 +5569,28 @@ videoView.setOnPreparedListener(OnPreparedListener { mp -> mp.setVolume(0f, 0f) 
                                         <img src="./assets/icons/evaluation.png" alt="">
                                     </div>
                                     <div class="label-cont">
-                                        <p>Even though I noticed that developing with SwiftUI is a lot faster
-                                            and
-                                            takes less code, I still feel like some of the simplicity
-                                            UIKit/Storyboards had was lost. I liked that you were able to drag
-                                            and
-                                            drop
-                                            with storyboards which is something I missed in SwiftUI. This is
-                                            probably because I'm more interested and experienced in designing
-                                            and
-                                            working on the frontend. Overall there's a good amount of
-                                            documentation
-                                            provided by Apple, but for some functionalities there's not much
-                                            information or examples yet (see <a target="__blank"
-                                                href="https://rickvwijk1.github.io/portfolio/minor/minor.html#row4-modal5"></a>
-                                            ). I think this is because SwiftUI is still very new (release date
-                                            was
-                                            the end of 2019) so the community is still discovering the
-                                            functionalities.</p>
+                                        <p>Since our main goal of the project was to come up with AR concepts for the
+                                            Apple Glasses, we
+                                            didn't have a lot of time left in the end to combine the POC's into
+                                            something that shows the concept. During the project we spent the most time
+                                            on ideating and exploring 3D modelling. I still learned a lot of useful
+                                            things, especially the knowledge on 3D modelling is something that will come
+                                            in handy when I'm done with my study since I expect organisations will want
+                                            to make AR applications that will need to contain AR content in the form of
+                                            3D models.</p>
                                     </div>
+                                </div>
+                                <div class="text">
+                                    <a target="_blank"
+                                        href="https://git.fhict.nl/I378011/smartmobileminoriosprojectar/-/tree/hand-gestures">
+                                        <div class="paddedText">
+                                            <p>View the repo for more information here</p>
+                                            <br>
+
+                                            <img class="gitImg" src="../assets/icons/github.svg" style="width: 10%;"
+                                                alt="Github">
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -5525,6 +5600,35 @@ videoView.setOnPreparedListener(OnPreparedListener { mp -> mp.setVolume(0f, 0f) 
                     </div>
 
                 </div>
+
+                <div id="ios_presentation" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <a class="close-modal modal-close">×</a>
+                            <div class="modal-title">
+                                <h1>iOS presentation</h1>
+                            </div>
+                        </div>
+                        <div class="modalbody-container">
+                            <div class="pdf-padding">
+                                <div class="image-description">
+                                    <embed src="./assets/pdf/presentation.pdf" width="100%" height="1000"
+                                        type="application/pdf">
+                                    <i>Click <a style="color: #4758fc;" target="_blank"
+                                            href="./assets/pdf/presentation.pdf">here</a>
+                                        to open
+                                        the
+                                        PDF in a new tab.</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="close-modal btnModalClose">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+
             </section>
 
 

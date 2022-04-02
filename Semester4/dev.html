@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/all.min.css">
-  <link rel='stylesheet' href='/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='/css/style.css'>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel='stylesheet' href='./css/bootstrap.min.css'>
+  <link rel='stylesheet' href='./css/style.css'>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
@@ -14,8 +14,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/javascript.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/javascript.js"></script>
 </head>
 
 <body>
@@ -24,8 +24,8 @@
       <button id="modal-btn-nav" class="buttonModal">ULES</button>
       <div id="imageID1">
         <a href="index.html">
-          <img id="normalLogo" src="/assets/icons/Rvw_Logo_Simple.png">
-          <img id="whiteLogo" src="/assets/icons/Rvw_Logo_Simple_White.png">
+          <img id="normalLogo" src="./assets/icons/Rvw_Logo_Simple.png">
+          <img id="whiteLogo" src="./assets/icons/Rvw_Logo_Simple_White.png">
         </a>
       </div>
     </div>
@@ -39,7 +39,7 @@
           <h2>Lorem</h2>
         </div>
         <div class="modal-body">
-          <img src="/assets/images/ColourPalette-1.png" width="100%" height="auto" style="border:2px solid #fff">
+          <img src="./assets/images/ColourPalette-1.png" width="100%" height="auto" style="border:2px solid #fff">
           <p>Lorem</p>
         </div>
         <div class="modal-footer">
@@ -66,10 +66,12 @@
   <section id="section01" class="background1" style="background-color: #325917; background-image: none;">
     <h1>DEV Assignments</h1>
     <a href="#section02"><span></span>Scroll</a>
-    </section>
+  </section>
 
 
-    <section id="section02"><h2 class="leerHeaders">Architectuur</h2></section>
+  <section id="section02">
+    <h2 class="leerHeaders">Architectuur</h2>
+  </section>
   <div class="row grid-holder">
 
     <div id="overview-grid" class="overview-grid"
@@ -104,7 +106,7 @@
                 </p>
                 <figure>
                   <figcaption>
-                    <img src="/assets/images/architecture.jpg" alt="">
+                    <img src="./assets/images/architecture.jpg" alt="">
                     Open dit architectuurdiagram in PDF <a class="linkColor" href="pdf/architecture.pdf"
                       target="_blank">hier</a>
                   </figcaption>
@@ -202,7 +204,7 @@
                   voor gebruikers om door middel van een zoekbalk bepaalde items te kunnen vinden. Hieronder staat de
                   functie die ik heb gemaakt.
                 </p>
-                
+
                 <pre class='code code-javascript'><label>JS</label><code>
 
 //this function filters categories (using the search bar)
@@ -232,16 +234,21 @@ function searchFunction() {
     }
 }
                 </code></pre>
-                <p>Om kort samen te vatten wat het doet: als een gebruiker typt in de zoekbalk, wordt er gekeken of de tekst input
+                <p>Om kort samen te vatten wat het doet: als een gebruiker typt in de zoekbalk, wordt er gekeken of de
+                  tekst input
                   matched met de 'h4' van een of meerdere grid items.
                 </p>
                 <br>
-                <p>Vervolgens ben ik gaan kijken hoe ik dit overdraagbaar kan maken. De eerste vraag die ik mezelf stelde was:
+                <p>Vervolgens ben ik gaan kijken hoe ik dit overdraagbaar kan maken. De eerste vraag die ik mezelf
+                  stelde was:
                   "Tot welke variabelen in mijn functie mag de gebruiker van mijn code toegang hebben en welke niet?"
-                  Ik vond dit lastig te bepalen dus heb ik dit gevraagd aan mijn DEV docent. Ik kreeg als feedback terug dat mijn
-                  code niet dynamisch was en dat het handiger was dit eerst dynamisch te maken zodat het een stuk makkelijker wordt de
-                  functie modulair te maken. Om het dynamisch te maken zijn <code>getElementById</code> en <code>getElementsByClassName</code>
-                  vervangen door querySelectorAll en de variabelen doorgegeven als parameters. 
+                  Ik vond dit lastig te bepalen dus heb ik dit gevraagd aan mijn DEV docent. Ik kreeg als feedback terug
+                  dat mijn
+                  code niet dynamisch was en dat het handiger was dit eerst dynamisch te maken zodat het een stuk
+                  makkelijker wordt de
+                  functie modulair te maken. Om het dynamisch te maken zijn <code>getElementById</code> en
+                  <code>getElementsByClassName</code>
+                  vervangen door querySelectorAll en de variabelen doorgegeven als parameters.
                 </p>
                 <pre class='code code-javascript'><label>JS</label><code>
                 let searching = function (input, subject, item) {
@@ -266,25 +273,29 @@ function searchFunction() {
               }
             </code>
             </pre>
-            
-            Vervolgens moet de hele 'search' functie gereturned worden om de functie beschikbaar te maken voor de global scope.
-<pre class='code code-javascript'><label>JS</label><code>return {
+
+                Vervolgens moet de hele 'search' functie gereturned worden om de functie beschikbaar te maken voor de
+                global scope.
+                <pre class='code code-javascript'><label>JS</label><code>return {
   searching
 };</code></pre>
-Als laatste wordt het <code>keyup</code> event gekoppeld aan de zoekbalk en kan de searchmodule gebruikt worden.
-<pre class='code code-javascript'><label>JS</label><code>
+                Als laatste wordt het <code>keyup</code> event gekoppeld aan de zoekbalk en kan de searchmodule gebruikt
+                worden.
+                <pre class='code code-javascript'><label>JS</label><code>
   document.getElementById('myInput').addEventListener('keyup', function(event){
     // debugger;
     SearchModule.searching(event.target.value,"h4",".location-image")
 });
 </code></pre>
-Klik <a href="https://git.fhict.nl/I404350/modular-search-bar" target="_blank">hier</a> voor de git repo van de search module.
-<br><br>
-<h2>Uitvoering 2</h2>
-<p>Nadat ik de vorige opdracht uitgelegd kreeg door mijn docent heb ik een nieuw stuk modulaire code gemaakt om te laten zien dat ik het nu
-  snap.
-</p>
-<pre class='code code-javascript'><label>JS</label><code>
+                Klik <a href="https://git.fhict.nl/I404350/modular-search-bar" target="_blank">hier</a> voor de git repo
+                van de search module.
+                <br><br>
+                <h2>Uitvoering 2</h2>
+                <p>Nadat ik de vorige opdracht uitgelegd kreeg door mijn docent heb ik een nieuw stuk modulaire code
+                  gemaakt om te laten zien dat ik het nu
+                  snap.
+                </p>
+                <pre class='code code-javascript'><label>JS</label><code>
   const changeTextModule = (function () {
     let text = 'Het stuk tekst is nu veranderd (als het goed is)!'
     const textChange = function(){
@@ -302,45 +313,59 @@ Klik <a href="https://git.fhict.nl/I404350/modular-search-bar" target="_blank">h
 
 changeTextModule.callTextChange();
 </code></pre>
-<p>Met bovenstaande code kan de gebruiker van mijn code een 'h1' element's value veranderen.
-  Zoals in de vorige modulaire functie, maak ik eerst de module functie aan waarin ik de 'textChange' functie stop zodat het in een
-  private scope staat. Nadat ik mijn functie heb geschreven, return ik een nieuwe functie genaamd 'callTextChange' waarin ik de
-  'textChange' functie stop. Op deze manier kunnen de gebruikers van mijn code 'textChange' niet veranderen, maar wel gebruiken door de
-  functie 'callTextChange' aan te roepen: <code>changeTextModule.callTextChange();</code>
-</p>
-<br><br>
-<h2>Resultaat</h2>
-<figcaption>
-<video width="520" height="340" controls src="/assets/GIF's/search_bar.mp4"></video>
-<p>Uitvoering 1: Search module</p>
-</figcaption>
-<figcaption>
-<video width="520" height="340" controls src="/assets/GIF's/textModule.mp4"></video>
-<p>Uitvoering 2: Text change module. Klik <a href="https://i404350.hera.fhict.nl/assets/GIF's/textModule.mp4" target="_blank">hier</a> voor een groter beeld.</p>
-</figcaption>
-<br><br>
-<h2>Bronnen</h2>
-<ul></ul>
-<li><a href="https://ultimatecourses.com/blog/mastering-the-module-pattern" target="_blank">Mastering the Module Pattern</a></i>
-<br><br>
-<h2>Git repo</h2>
-<p><a href="https://git.fhict.nl/I404350/modular-search-bar" target="_blank">Modules</a></p></p>
-<br>              
-</div>
+                <p>Met bovenstaande code kan de gebruiker van mijn code een 'h1' element's value veranderen.
+                  Zoals in de vorige modulaire functie, maak ik eerst de module functie aan waarin ik de 'textChange'
+                  functie stop zodat het in een
+                  private scope staat. Nadat ik mijn functie heb geschreven, return ik een nieuwe functie genaamd
+                  'callTextChange' waarin ik de
+                  'textChange' functie stop. Op deze manier kunnen de gebruikers van mijn code 'textChange' niet
+                  veranderen, maar wel gebruiken door de
+                  functie 'callTextChange' aan te roepen: <code>changeTextModule.callTextChange();</code>
+                </p>
+                <br><br>
+                <h2>Resultaat</h2>
+                <figcaption>
+                  <video width="520" height="340" controls src="./assets/GIF's/search_bar.mp4"></video>
+                  <p>Uitvoering 1: Search module</p>
+                </figcaption>
+                <figcaption>
+                  <video width="520" height="340" controls src="./assets/GIF's/textModule.mp4"></video>
+                  <p>Uitvoering 2: Text change module. Klik <a
+                      href="https://i404350.hera.fhict.nl/assets/GIF's/textModule.mp4" target="_blank">hier</a> voor een
+                    groter beeld.</p>
+                </figcaption>
+                <br><br>
+                <h2>Bronnen</h2>
+                <ul></ul>
+                <li><a href="https://ultimatecourses.com/blog/mastering-the-module-pattern" target="_blank">Mastering
+                    the Module Pattern</a></i>
+                  <br><br>
+                  <h2>Git repo</h2>
+                  <p><a href="https://git.fhict.nl/I404350/modular-search-bar" target="_blank">Modules</a></p>
+                  </p>
+                  <br>
+              </div>
             </div>
             <hr>
             <br>
             <div class="alignBeginningTxt">
               <h2>Reflectie</h2>
-              <p>Ik merkte dat ik moeite had met het toepassen van de theorie op mijn eigen functie. Ik denk dat ik meer tijd vrij moet maken
-                om mijn Javascript skills te verbeteren en ik dit het beste kan verbeteren door constant te blijven oefenen. Theorie is belangrijk,
-                maar ik heb nu vooral veel oefenen nodig. Ik kan wel zeggen dat ik veel heb geleerd uit deze opdracht. Ik had eerst geen idee
-                dat er design patterns bestonden in programmeren en hoe dit uberhaupt werkte. Ik weet nu dat design patterns heel handig zijn om
-                gestructureerde en overdraagbare code te maken. Ik heb geleerd dat je dit kan bereiken door bepaalde onderdelen van je code buiten
+              <p>Ik merkte dat ik moeite had met het toepassen van de theorie op mijn eigen functie. Ik denk dat ik meer
+                tijd vrij moet maken
+                om mijn Javascript skills te verbeteren en ik dit het beste kan verbeteren door constant te blijven
+                oefenen. Theorie is belangrijk,
+                maar ik heb nu vooral veel oefenen nodig. Ik kan wel zeggen dat ik veel heb geleerd uit deze opdracht.
+                Ik had eerst geen idee
+                dat er design patterns bestonden in programmeren en hoe dit uberhaupt werkte. Ik weet nu dat design
+                patterns heel handig zijn om
+                gestructureerde en overdraagbare code te maken. Ik heb geleerd dat je dit kan bereiken door bepaalde
+                onderdelen van je code buiten
                 de global scope te houden en deze te returnen als je deze wilt gebruiken in de global scope.
 
-                <br>Ik wil volgend semester een opdracht uitkiezen waarbij ik veel moet programmeren met Javascript om meer Javascript kennis te krijgen.
-                Ik merkte dat ik in dit semester meer aandacht gaf aan de andere vakken en ik hoop dit volgend semester om te draaien.
+                <br>Ik wil volgend semester een opdracht uitkiezen waarbij ik veel moet programmeren met Javascript om
+                meer Javascript kennis te krijgen.
+                Ik merkte dat ik in dit semester meer aandacht gaf aan de andere vakken en ik hoop dit volgend semester
+                om te draaien.
                 <p>
             </div>
           </div>
@@ -391,7 +416,7 @@ changeTextModule.callTextChange();
                   de MoSCoW methode te gebruiken
                   om de user stories prioriteiten te geven.
                 </p>
-                <img src="/assets/images/moscow.png" alt="">
+                <img src="./assets/images/moscow.png" alt="">
                 <br>
                 <p>Hieronder staan de user stories waaraan ik heb bijgedragen.</p>
                 <br>
@@ -413,7 +438,7 @@ changeTextModule.callTextChange();
                   gebruiker wil ik trending aanbiedingen zien staan zodat ik snel op de hoogte ben van trends' en
                   'als gebruiker wil ik relevante aanbiedingen gehighlight zien bovenaan de pagina zodat ik snel
                   aanbiedingen kan vinden die bij mij passen.' bij.
-                  <img src="/assets/images/home.png" alt="">
+                  <img src="./assets/images/home.png" alt="">
                   <br><br>
                   Ik heb dit bereikt door een grid aan te maken dat dient als trending sectie voor de gebruiker en door
                   een grid aan te maken dat een opvallende kleur en grotere afbeeldingen had aan te maken.
@@ -422,7 +447,7 @@ changeTextModule.callTextChange();
                 <li>Ik heb de categorieën pagina van SolidSight gerealiseerd. Hier hoorden de user stories
                   'als gebruiker wil ik een zoekbalk zodat ik de gewenste categorieën/producten kan vinden'
                   en 'als gebruiker wil ik categorieën kunnen bekijken zodat ik sneller een product kan vinden.' bij.
-                  <img src="/assets/images/categorypage.png" alt="">
+                  <img src="./assets/images/categorypage.png" alt="">
                   <br><br>
                   Ik heb dit bereikt door de zoekbalk een functie te geven waarmee de categorieën worden gefilterd en
                   door twee

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel='stylesheet' href='/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='/css/style.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/javascript.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div id="logo">
+      <button id="modal-btn-nav" class="buttonModal">ULES</button>
+      <div id="imageID1">
+        <a href="index.html">
+          <img id="normalLogo" src="/assets/icons/Rvw_Logo_Simple.png">
+          <img id="whiteLogo" src="/assets/icons/Rvw_Logo_Simple_White.png">
+        </a>
+      </div>
+    </div>
+    <div class="hamIcon" onclick="toggleNav()">
+      <h1>&#9776;</h1>
+    </div>
+    <div id="my-modal-nav" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div id="closeNav" class="closeModal">&times;</div>
+          <h2>Lorem</h2>
+        </div>
+        <div class="modal-body">
+          <img src="/assets/images/ColourPalette-1.png" width="100%" height="auto" style="border:2px solid #fff">
+          <p>Lorem</p>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+    <ul class="mainMenu">
+      <li><a href="#About">About<span class="tooltipTextShort">Who's this guy?</span></a></li>
+      <li><a href="sco.html">SCO<span class="tooltipTextLong">Strategy & Concepting</span></a></li>
+      <li><a href="ux.html">UX<span class="tooltipTextLong" style="margin-left: -75%;">User Experience</span></a></li>
+      <li><a class="active" href="dev.html">DEV<span class="tooltipTextShort"
+            style="margin-left: -75%; padding: 9% 0.6%;">Development</span></a></li>
+      <li><a href="ptm.html">PTM<span class="tooltipTextLong">Project Methodology</span></a></li>
+      <li><a href="po.html">PO<span class="tooltipTextLong">Professional Development</span></a></li>
+      <li><a href="sm.html">SM<span class="tooltipTextLong" style="margin-left: -70%;">Smart Mobile</span></a></li>
+      <li><a href="#Contact">Contact<span class="tooltipTextShort" style="margin-left: -70%; padding: 5.4% 0%;">Call me
+            maybe?</span></a></li>
+    </ul>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </nav>
+  <section id="section01" class="background1" style="background-color: #325917; background-image: none;">
+    <h1>DEV Assignments</h1>
+    <a href="#section02"><span></span>Scroll</a>
+    </section>
+
+
+    <section id="section02"><h2 class="leerHeaders">Architectuur</h2></section>
+  <div class="row grid-holder">
+
+    <div id="overview-grid" class="overview-grid"
+      style="background-image: url('https://cdn.newswire.com/files/x/bd/77/79b031d340c86e1e8fc4ee82ce30.jpg')">
+      <div id="AR1" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">Architectuurdiagram</h1>
+          </div>
+          <div class="modalbody-container">
+            <br>
+            <div class="alignBeginningTxt">
+              <i>De student heeft een applicatie gerealiseerd met een module pattern.
+                Externe libraries zijn gebruikt om de applicatie te ontwerpen.
+                De applicatie is tot stand gekomen via user stories en een schets van de architectuur.
+              </i>
+              <br><br>
+              <p>Ik probeer dit leerdoel aan te tonen door een architectuurdiagram te maken.</p>
+              <br>
+            </div>
+            <hr>
+
+            <br><br>
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <p>Ik heb een architectuurdiagram gemaakt van het inloggen en registreren op de SolidSight website.
+                  Het maken van dit diagram heeft mij een overzicht gegeven met welke onderdelen/systemen ik rekening
+                  moest houden
+                  toen ik de login van de SolidSight website ontwikkelde.
+                </p>
+                <figure>
+                  <figcaption>
+                    <img src="/assets/images/architecture.jpg" alt="">
+                    Open dit architectuurdiagram in PDF <a class="linkColor" href="pdf/architecture.pdf"
+                      target="_blank">hier</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <hr>
+            <br>
+            <div class="alignBeginningTxt">
+              <h2>Reflectie</h2>
+              <p>Dit was de eerste keer dat ik een architectuurdiagram heb gemaakt. Ik merkte dat ik bij het maken van
+                het diagram
+                soms flowchart elementen gebruikte, omdat de gebruiker bijvoorbeeld een keuze had. Ik realiseerde me dat
+                dit niet
+                de traditionele manier was om een architectuurdiagram samen te stellen, maar tijdens mijn onderzoek naar
+                het maken van een architectuurdiagram zag ik op blogs en forums dat er niet per se een verkeerde manier
+                is om een architectuurdiagram
+                te maken. Zolang het duidelijk is wat voor data er wordt verzonden en welke systemen hier een rol in
+                spelen wordt het architectuurdiagram
+                als acceptabel gezien (volgens de bronnen in de bronnenlijst hierboven). Ik vond het belangrijk om in
+                het architectuurdiagram over het inloggen
+                en registreren bij SolidSight de flowchart techniek toe te passen om duidelijk te maken dat er een
+                andere route was voor de gebruiker waarin
+                data wordt verstuurd dat verschilt van de andere route's data.
+                <p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+      <a data-toggle="modal" data-target="#AR1">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Architectuurdiagram<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+
+    <div id="overview-grid" class="overview-grid" style="background-image: url('https://miro.medium.com/max/5200/0*KCI539T6PQ3o_4Ia.png'); background-repeat: no-repeat;
+          background-position: center;">
+      <div id="AR2" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">Module</h1>
+          </div>
+          <div class="modalbody-container">
+            <br>
+            <div class="alignBeginningTxt">
+              <i>De student heeft een applicatie gerealiseerd met een module pattern.
+                Externe libraries zijn gebruikt om de applicatie te ontwerpen.
+                De applicatie is tot stand gekomen via user stories en een schets van de architectuur.
+              </i>
+              <br><br>
+              <p>Ik probeer dit leerdoel aan te tonen door mijn eigen module te ontwikkelen.</p>
+              <br>
+            </div>
+            <hr>
+
+            <br><br>
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2>Aanleiding</h2>
+                <p>Ja dit is een leerdoel dat ik verplicht moet aantonen, maar dat is niet de enige reden waarom ik
+                  onderzoek
+                  heb gedaan naar module patterns en een module pattern heb ontwikkeld. Nadat ik in semester 2 de basis
+                  van Javascript begreep,
+                  begon ik me af te vragen hoe ik mijn functies kon hergebruiken zonder dat ik steeds variabelen moest
+                  hernoemen en
+                  mijn code daardoor een grote bende werd.
+                  Dat heb ik dit semester onderzocht.
+                </p>
+                <br><br>
+                <h2>Onderzoek</h2>
+                <p>Mijn eerste kennismaking met module patterns was tijdens een DEV workshop. Ik kon niet goed volgen
+                  hoe het werkte,
+                  maar wat ik wel begreep was dat je met een module pattern je code als het ware zo ontwerpt dat je het
+                  makkelijk kan
+                  hergebruiken en delen met anderen. Vervolgens heb ik op het internet naar artikelen/posts/tutorials
+                  gezocht waarin wordt
+                  uitgelegd hoe je een module pattern maakt.
+                  Na heel wat browsen kwam ik erachter dat je (om je code modulair te maken) moet bepalen welke
+                  onderdelen je van je code
+                  toegankelijk wilt maken voor de gebruiker om te kunnen bewerken en welke stukken niet. Dit kan door
+                  een private
+                  scope te maken en met 'return' kun je vervolgens onderdelen van je code in de global scope zetten.
+                </p>
+                <br><br>
+                <h2>Uitvoering</h2>
+                <p>Allereerst heb ik vastgesteld wat voor een functie ik modulair wilde maken. Voor de SolidSight
+                  website is het handig
+                  voor gebruikers om door middel van een zoekbalk bepaalde items te kunnen vinden. Hieronder staat de
+                  functie die ik heb gemaakt.
+                </p>
+                
+                <pre class='code code-javascript'><label>JS</label><code>
+
+//this function filters categories (using the search bar)
+function searchFunction() {
+    //initializing variables
+    var input, filter, allcontainer, gridItem, h4, i;
+    //declaring variables
+    input = document.getElementById('myInput');
+    //set the input of the search bar to capital letters 
+    filter = input.value.toUpperCase();
+    allcontainer = document.getElementById('allcontainer');
+    gridItem = allcontainer.getElementsByClassName('location-image');
+
+    //keep running loop if 'i' is less than the grid item's length
+    for (i = 0; i < gridItem.length; i++) {
+        h4 = gridItem[i].getElementsByTagName('h4')[0];
+
+        //the text in h4 is set to uppercase in order too match the input value of filter (a.k.a. the search bar) which is also set to uppercase
+        //if the h4 text contains the value that is in the search bar... else...
+        if (h4.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            //item is displayed
+            gridItem[i].style.display = "";
+        } else {
+            //item is not displayed
+            gridItem[i].style.display = 'none';
+        }
+    }
+}
+                </code></pre>
+                <p>Om kort samen te vatten wat het doet: als een gebruiker typt in de zoekbalk, wordt er gekeken of de tekst input
+                  matched met de 'h4' van een of meerdere grid items.
+                </p>
+                <br>
+                <p>Vervolgens ben ik gaan kijken hoe ik dit overdraagbaar kan maken. De eerste vraag die ik mezelf stelde was:
+                  "Tot welke variabelen in mijn functie mag de gebruiker van mijn code toegang hebben en welke niet?"
+                  Ik vond dit lastig te bepalen dus heb ik dit gevraagd aan mijn DEV docent. Ik kreeg als feedback terug dat mijn
+                  code niet dynamisch was en dat het handiger was dit eerst dynamisch te maken zodat het een stuk makkelijker wordt de
+                  functie modulair te maken. Om het dynamisch te maken zijn <code>getElementById</code> en <code>getElementsByClassName</code>
+                  vervangen door querySelectorAll en de variabelen doorgegeven als parameters. 
+                </p>
+                <pre class='code code-javascript'><label>JS</label><code>
+                let searching = function (input, subject, item) {
+
+
+                  let gridItem = allcontainer.querySelectorAll(item);
+  
+  
+                  
+                  for (let i = 0; i < gridItem.length; i++) {
+                     let subjects = gridItem[i].querySelectorAll(subject)[0];
+  
+                      
+                      if (subjects.innerHTML.toUpperCase().indexOf(input.toUpperCase()) > -1) {
+                          gridItem[i].style.display = "";
+                      } else {
+                          gridItem[i].style.display = 'none';
+                      }
+                  }
+  
+  
+              }
+            </code>
+            </pre>
+            
+            Vervolgens moet de hele 'search' functie gereturned worden om de functie beschikbaar te maken voor de global scope.
+<pre class='code code-javascript'><label>JS</label><code>return {
+  searching
+};</code></pre>
+Als laatste wordt het <code>keyup</code> event gekoppeld aan de zoekbalk en kan de searchmodule gebruikt worden.
+<pre class='code code-javascript'><label>JS</label><code>
+  document.getElementById('myInput').addEventListener('keyup', function(event){
+    // debugger;
+    SearchModule.searching(event.target.value,"h4",".location-image")
+});
+</code></pre>
+Klik <a href="https://git.fhict.nl/I404350/modular-search-bar" target="_blank">hier</a> voor de git repo van de search module.
+<br><br>
+<h2>Uitvoering 2</h2>
+<p>Nadat ik de vorige opdracht uitgelegd kreeg door mijn docent heb ik een nieuw stuk modulaire code gemaakt om te laten zien dat ik het nu
+  snap.
+</p>
+<pre class='code code-javascript'><label>JS</label><code>
+  const changeTextModule = (function () {
+    let text = 'Het stuk tekst is nu veranderd (als het goed is)!'
+    const textChange = function(){
+        let element = document.querySelector('h1');
+        element.textContent = text;
+    }
+    
+    return {
+        callTextChange: function(){
+            textChange();
+            console.log(text);
+        }
+    }
+})();
+
+changeTextModule.callTextChange();
+</code></pre>
+<p>Met bovenstaande code kan de gebruiker van mijn code een 'h1' element's value veranderen.
+  Zoals in de vorige modulaire functie, maak ik eerst de module functie aan waarin ik de 'textChange' functie stop zodat het in een
+  private scope staat. Nadat ik mijn functie heb geschreven, return ik een nieuwe functie genaamd 'callTextChange' waarin ik de
+  'textChange' functie stop. Op deze manier kunnen de gebruikers van mijn code 'textChange' niet veranderen, maar wel gebruiken door de
+  functie 'callTextChange' aan te roepen: <code>changeTextModule.callTextChange();</code>
+</p>
+<br><br>
+<h2>Resultaat</h2>
+<figcaption>
+<video width="520" height="340" controls src="/assets/GIF's/search_bar.mp4"></video>
+<p>Uitvoering 1: Search module</p>
+</figcaption>
+<figcaption>
+<video width="520" height="340" controls src="/assets/GIF's/textModule.mp4"></video>
+<p>Uitvoering 2: Text change module. Klik <a href="https://i404350.hera.fhict.nl/assets/GIF's/textModule.mp4" target="_blank">hier</a> voor een groter beeld.</p>
+</figcaption>
+<br><br>
+<h2>Bronnen</h2>
+<ul></ul>
+<li><a href="https://ultimatecourses.com/blog/mastering-the-module-pattern" target="_blank">Mastering the Module Pattern</a></i>
+<br><br>
+<h2>Git repo</h2>
+<p><a href="https://git.fhict.nl/I404350/modular-search-bar" target="_blank">Modules</a></p></p>
+<br>              
+</div>
+            </div>
+            <hr>
+            <br>
+            <div class="alignBeginningTxt">
+              <h2>Reflectie</h2>
+              <p>Ik merkte dat ik moeite had met het toepassen van de theorie op mijn eigen functie. Ik denk dat ik meer tijd vrij moet maken
+                om mijn Javascript skills te verbeteren en ik dit het beste kan verbeteren door constant te blijven oefenen. Theorie is belangrijk,
+                maar ik heb nu vooral veel oefenen nodig. Ik kan wel zeggen dat ik veel heb geleerd uit deze opdracht. Ik had eerst geen idee
+                dat er design patterns bestonden in programmeren en hoe dit uberhaupt werkte. Ik weet nu dat design patterns heel handig zijn om
+                gestructureerde en overdraagbare code te maken. Ik heb geleerd dat je dit kan bereiken door bepaalde onderdelen van je code buiten
+                de global scope te houden en deze te returnen als je deze wilt gebruiken in de global scope.
+
+                <br>Ik wil volgend semester een opdracht uitkiezen waarbij ik veel moet programmeren met Javascript om meer Javascript kennis te krijgen.
+                Ik merkte dat ik in dit semester meer aandacht gaf aan de andere vakken en ik hoop dit volgend semester om te draaien.
+                <p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+      <a data-toggle="modal" data-target="#AR2">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Module<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+
+    <div id="overview-grid" class="overview-grid" style="background-image: url('https://img-a.udemycdn.com/course/750x422/2535564_129b_10.jpg'); background-repeat: no-repeat;
+          background-position: center;">
+      <div id="AR3" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">User Stories</h1>
+          </div>
+          <div class="modalbody-container">
+            <br>
+            <div class="alignBeginningTxt">
+              <i>De student heeft een applicatie gerealiseerd met een module pattern.
+                Externe libraries zijn gebruikt om de applicatie te ontwerpen.
+                De applicatie is tot stand gekomen via user stories en een schets van de architectuur.
+              </i>
+              <br><br>
+              <p>Ik probeer dit leerdoel aan te tonen door te laten zien hoe ik user stories geimplementeerd heb in de
+                SolidSight website.</p>
+              <br>
+            </div>
+            <hr>
+
+            <br><br>
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+
+                <h2>Mijn bijdrage</h2>
+                <p>Binnen het project heb ik een aantal user stories uitgewerkt en sommige user stories heb ik verwerkt
+                  in de website.
+                  Aangezien er nog maar weinig tijd over was de website te realiseren, heb ik voorgesteld aan de groep
+                  de MoSCoW methode te gebruiken
+                  om de user stories prioriteiten te geven.
+                </p>
+                <img src="/assets/images/moscow.png" alt="">
+                <br>
+                <p>Hieronder staan de user stories waaraan ik heb bijgedragen.</p>
+                <br>
+                <h3>POC's</h3>
+                <br>
+                <ul></ul>
+                <li>Login & profile viewer met Solid; ik heb een POC gemaakt waarmee gebruikers kunnen inloggen met
+                  Solid en hun Solid Pod gegevens kunnen bekijken (bijv. kijken met wie ze bevriend zijn op Solid)
+                  Dit hoort bij de user story 'Als gebruiker wil ik mijn vrienden kunnen zien zodat ik weet met wie ik
+                  een aanbieding kan delen'.
+                  <a class="https://git.fhict.nl/I404350/sm4-pocs/-/tree/solidpod-login" target="_blank">Bekijk POC
+                    hier</a></li>
+                <br><br>
+
+
+                <h3>Geïmplementeerd in website</h3>
+                <ul></ul>
+                <li>Ik heb de home pagina van SolidSight gerealiseerd. Hier hoorden de user stories 'als
+                  gebruiker wil ik trending aanbiedingen zien staan zodat ik snel op de hoogte ben van trends' en
+                  'als gebruiker wil ik relevante aanbiedingen gehighlight zien bovenaan de pagina zodat ik snel
+                  aanbiedingen kan vinden die bij mij passen.' bij.
+                  <img src="/assets/images/home.png" alt="">
+                  <br><br>
+                  Ik heb dit bereikt door een grid aan te maken dat dient als trending sectie voor de gebruiker en door
+                  een grid aan te maken dat een opvallende kleur en grotere afbeeldingen had aan te maken.
+                </li>
+                <br><br>
+                <li>Ik heb de categorieën pagina van SolidSight gerealiseerd. Hier hoorden de user stories
+                  'als gebruiker wil ik een zoekbalk zodat ik de gewenste categorieën/producten kan vinden'
+                  en 'als gebruiker wil ik categorieën kunnen bekijken zodat ik sneller een product kan vinden.' bij.
+                  <img src="/assets/images/categorypage.png" alt="">
+                  <br><br>
+                  Ik heb dit bereikt door de zoekbalk een functie te geven waarmee de categorieën worden gefilterd en
+                  door twee
+                  grids te maken voor populaire categorieën en alle categorieën (op alfabetische volgorde).
+                </li>
+                <br>
+              </div>
+            </div>
+            <hr>
+            <br>
+            <div class="alignBeginningTxt">
+              <h2>Reflectie</h2>
+              <p>Ik heb dit semester gemerkt dat het erg nuttig is om eerst user stories (en tasks) te maken zodat je
+                een beter overzicht hebt wat er gerealiseerd moet worden
+                en je kunt ook een stuk makkelijker taken verdelen binnen een groepsproject. In voorgaande semesters was
+                het vaak een rommel als er samengewerkt werd
+                aan een applicatie. Dit ervaarde ik dit semester niet.
+                <p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+      <a data-toggle="modal" data-target="#AR3">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">User Stories<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+
+
+
+  </div>
+  <h2 class="leerHeaders">Beheerbaarheid</h2>
+  <div class="row grid-holder">
+    <div id="overview-grid" class="overview-grid" style="background-image: url('https://hackernoon.com/hn-images/1*wOJzZIRawP0SmlPDu32mxw.jpeg'); background-repeat: no-repeat;
+            background-position: center;">
+      <div id="BB1" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">Beheerbaarheid</h1>
+          </div>
+          <div class="modalbody-container">
+            <br>
+            <div class="alignBeginningTxt">
+              <i>De student gebruikt Git gedurende het hele traject. De code en Git-project is duidelijk beschreven
+                volgens gangbare richtlijnen in de praktijk.
+              </i>
+              <br><br>
+              <p>Ik probeer dit leerdoel aan te tonen door POC's te maken die beheerbaar en overdraagbaar zijn.</p>
+              <br>
+            </div>
+            <hr>
+
+            <br><br>
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+
+                <h2>Git regels</h2>
+                <br>
+                <h4>POC's</h4>
+                <ul style="list-style-type: circle; text-align: left;
+                  list-style-position: outside;">
+                  <li> Er wordt voor elk POC één aparte branch aangemaakt in de repo zodat de repo ‘beheerbaar’ is.
+                  </li>
+                  <li> Er wordt voor elk POC onderzoek gedaan naar de technologie zodat de POC op de meest efficiënte en
+                    relevante manier wordt uitgevoerd.
+                  </li>
+                  <li>Er wordt voor elk POC één README.md aangemaakt zodat de repo ‘overdraagbaar’ is.
+                  </li>
+                </ul>
+                <br><br>
+                <h4>Website development</h4>
+                <ul style="list-style-type: circle; text-align: left;
+                  list-style-position: outside;">
+                  <li> Er wordt voor elke webpagina één aparte branch aangemaakt in de repo zodat de repo ‘beheerbaar’
+                    is.
+                  </li>
+                  <li> Er wordt gebruikgemaakt van de GitHub issues functie om taken te verdelen en prioriteiten te
+                    stellen.
+                    Hierdoor kan er beter samengewerkt worden aan het realiseren van de website.
+                  </li>
+                  <li>Er wordt een README gemaakt om het project en de ontwikkelde modules uit te leggen.
+                  </li>
+                </ul>
+                <br><br>
+                <h4>README</h4>
+                <p>Elke README bevat het volgende:</p>
+                <br>
+                <ul style="list-style-type: circle; text-align: left;
+                  list-style-position: outside;">
+                  <li> Een beschrijving; om uit te leggen wat de gebruiker zal leren uit de POC.
+
+                  </li>
+                  <li> Uitleg waarom de POC nuttig is voor het project.
+
+                  </li>
+                  <li>Extra essentiële informatie over het onderwerp om de gebruiker van genoeg kennis te voorzien.
+
+                  </li>
+
+                  <li> Een stappenplan, om de gebruiker instructies te geven.
+
+
+                  </li>
+                  <li>Vervolgstappen, om uit te leggen wat de volgende stap is die genomen moet worden om de
+                    mogelijkheden verder te verkennen.
+                  </li>
+                  <li>Bronnen, om de gebruiker te verwijzen naar andere informatiebronnen over het onderwerp.
+                  </li>
+                </ul>
+                <br><br><br>
+                <h2>Mijn bijdrage</h2>
+
+                <br>
+                <h4>Organisatie</h4>
+                <p>Ik heb aangeraden POC's en pagina's/features in aparte branches te ontwikkelen zodat er overzicht
+                  blijft en er minder
+                  kans is op conflicten. De branches kunnen dan later gemerged worden om de website in elkaar te zetten.
+                  <br><br>
+                  Verder heb ik advies gegeven voor elk POC een goed gestructureerde POC aan te maken. Nadat mijn README
+                  was goedgekeurd
+                  door een docent, heb ik mijn README met mijn projectleden gedeeld als voorbeeld om ze op de juiste weg
+                  te helpen.
+                  <br><br>
+                  Als laatste heb ik bijgedragen door GitHub issues aan te maken om taken te verdelen en prioriteiten te
+                  geven aan bepaalde
+                  features. Klik <a class="linkColor"
+                    href="https://github.com/RickvWijk1/SolidSight/issues/created_by/RickvWijk1"
+                    target="_blank">hier</a> om mijn GitHub issues te bekijken.
+                </p>
+                <br><br>
+                <h4>POC's</h4>
+                <p>Mijn bijdrage in de vorm van POC's.</p>
+                <ul style="list-style-type: circle;"></ul>
+                <li> <a class="linkColor"
+                    href="https://git.fhict.nl/I404350/sm4-pocs/-/tree/CreatingExtension/CreateExtension"
+                    target="_blank">Building a Google Chrome extension</a></li>
+                <li> <a class="linkColor" href="https://git.fhict.nl/I404350/sm4-pocs/-/tree/solidpod-login"
+                    target="_blank">Writing a Solid login/profile viewer app</a></li>
+                <br><br>
+
+                <h4>Website development</h4>
+                <p>Mijn bijdrage in de vorm van web development.</p>
+                <ul style="list-style-type: circle;"></ul>
+                <li> <a class="linkColor" href="https://git.fhict.nl/I404350/solidsight/-/tree/Categorie%C3%ABn_page"
+                    target="_blank">Categories page</a>
+                </li>
+                <li>
+                  <a class="linkColor" href="https://git.fhict.nl/I404350/solidsight/-/tree/Home_page"
+                    target="_blank">Source code categories page</a>
+
+                </li>
+
+                <br><br>
+
+              </div>
+            </div>
+            <hr>
+            <br>
+            <div class="alignBeginningTxt">
+              <h2>Reflectie</h2>
+              <p>Dit is de eerste keer dat ik met meer dan 1 persoon een project realiseer.
+                Ik heb geleerd dat het organiseren van een repo veel tijd vereist. Mede door het gebruik maken van
+                GitHub issues, is het
+                gelukt de repo georganiseerd te houden.
+                Ik heb dit semester ook geleerd hoe ik
+                een goed gestructureerde readme en repo kan samenstellen.
+                <p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+      <a data-toggle="modal" data-target="#BB1">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Beheerbaarheid<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  <h2 class="leerHeaders">Ontwikkelomgeving</h2>
+  <div class="row grid-holder">
+    <div id="overview-grid" class="overview-grid" style="background-image: url('https://www.elegantthemes.com/blog/wp-content/uploads/2017/02/wordpress-development-environment-featured.jpg'); background-repeat: no-repeat;
+          background-position: center;">
+      <div id="OG1" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">Ontwikkelomgeving</h1>
+          </div>
+          <div class="modalbody-container">
+            <br><br>
+            <div class="alignBeginningTxt">
+              <i>De student heeft een onderbouwde (front-end) ontwikkelomgeving samengesteld en laat zien op de hoogte
+                te zijn van de in het werkveld gangbare tools.
+              </i>
+              <br><br>
+              <p>Ik probeer dit leerdoel aan te tonen door een overzicht te geven van de tools die ik gebruik bij het
+                ontwikkelen van webapplicaties.</p>
+              <br>
+            </div>
+            <hr>
+
+            <br><br>
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2>Development/programming tools</h2>
+                <br>
+                <h3>Code editor</h3>
+                <p>Visual Studio Code; ik heb een tijd Brackets geprobeerd, maar vond VScode sneller, betere plugins,
+                  extensies en support hebben.
+                  Daarbovenop vind ik de UI van VScode aangenamer. Extensies die ik gebruik zijn Live Server, SASS
+                  compiler, Beautify en SFTP. Live server gebruik ik om snel te kunnen zien hoe mijn website eruit ziet
+                  als ik
+                  iets verander. SASS gebruik ik voor gecompliceerde CSS animaties.
+                  Beautify gebruik ik voor het netter maken van mijn code (met name HTML). SFTP gebruik ik om meteen al
+                  mijn veranderingen in de website code
+                  onmiddelijk te uploaden naar mijn live website. Het nadeel is dat afbeeldingen niet mogelijk zijn dus
+                  gebruik ik hier FileZilla voor.</p>
+                <br><br>
+                <h3>Version control</h3>
+                <p>GitHub; ik gebruik GitHub als version control systeem, omdat GitHub meer ‘open source’ gericht is.
+                  Zo kan ik mijn POC’s makkelijker delen. Nog een reden voor het werken met GitHub is dat ik
+                  met GitLab problemen heb met de zichtbaarheid van repo's. GitHub is voor mij dus ook
+                  gebruiksvriendelijker.
+                </p>
+                <br>
+                <p>GitKraken; ik gebruik GitKraken als Git client omdat het mijn workflow verbetert. GitKraken heeft een
+                  goede UI en is goed te gebruiken in groepsprojecten.</p>
+                <br><br>
+                <h3>Online tools</h3>
+                <p>JSON formatter extensions; hiermee kan ik snel een minified of uncompressed versie krijgen van online
+                  JSON bestanden (van api’s bijv.)</p>
+                <br>
+                <p>VisBug extension; hiermee kan ik net als de Chrome Devtools elementen aanpassen. Ik gebruik VisBug
+                  voor het verplaatsen van elementen en
+                  veranderen van kleuren, tekst, etc. om snel mijn webapplicaties visueel te verbeteren. Met de Chrome
+                  Devtools test ik over het
+                  algemeen meer op de functionaliteit van elementen. Ik gebruik deze tools niet alleen om mijn eigen
+                  webapplicaties te maken,
+                  maar ook om te leren van andere websites hun source code.</p>
+                <br>
+                <p>CodePen; als ik wil spelen/experimenteren met wat code gebruik ik vaak CodePen. CodePen is snel,
+                  heeft veel support voor frameworks, libraries, SASS en SCSS zodat ik nagenoeg alles kan uittesten.</p>
+                <br><br>
+
+
+                <h2>Design tools</h2>
+                <h3>Local tools</h3>
+                Ik kies voor de volgende Adobe programma's, omdat deze programma's goed met elkaar samen werken en dus
+                mijn workflow verbeteren.
+                <br>
+                <p>Adobe Photoshop; om afbeeldingen te bewerken voor de webapplicaties.</p>
+                <p>Adobe Illustrator; om vector design te maken voor de webapplicaties.</p>
+                <p>Adobe XD; om ontwerpen te maken voor de webapplicaties.</p>
+                <br><br>
+                <h3>Online tools</h3>
+                <p>CodePen; ik gebruik CodePen niet alleen voor het testen van Javascript functionaliteit, maar ook voor
+                  animaties en vectors. Dit helpt me een interactief design te maken.</p>
+                <br>
+                <p>Lorem Picsum; als ik aan het experimenteren ben of een placeholder nodig heb, kan ik snel een
+                  afbeelding url krijgen.</p>
+                <br>
+                <p>Figma; Ik gebruik Figma als ik met anderen moet samenwerken aan ontwerpen voor apps.
+                  Adobe XD is geen live editor en Figma wel.</p>
+              </div>
+            </div>
+            <hr>
+            <br>
+            <div class="alignBeginningTxt">
+              <h2>Reflectie</h2>
+              <p>Ik vind dat bovenstaande tools mij enorm geholpen hebben mijn productiviteit en dus efficiëntie te
+                verhogen.
+                Ik denk echter wel dat dit nog kan verbeteren door meer tools te gebruiken. Een tool die ik nog te
+                weinig gebruik
+                naar mijn gevoel zijn de Chrome DevTools. Ik gebruik deze nu vooral voor HTML, CSS en mijn Javascript te
+                debuggen.
+                Ik maak tijdens het debuggen van Javascript nog niet vaak gebruik van event listeners en breakpoints. Ik
+                denk dat als
+                ik dit leer te gebruiken mijn productiviteit en efficiëntie nog hoger kan worden. Mijn doelstelling is
+                daarom ook volgend
+                semester dit leren te gebruiken.
+                <p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+      <a data-toggle="modal" data-target="#OG1">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Ontwikkelomgeving<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+
+
+
+
+  </div>
+
+
+
+</body>
+
+</html>

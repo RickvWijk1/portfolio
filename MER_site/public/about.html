@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en" id="top">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <link rel="stylesheet" href="SVG_sprite.svg">
+
+    <title>MER Project</title>
+</head>
+
+<body class="min-h-screen w-full p-0 font-roboto text-base">
+    <nav class="flex inset-0 w-full h-16 bg-black fixed z-50">
+        <contNavPadding class="flex justify-center self-center w-full px-6 md:px-12 text-white relative">
+            <contNavItems class="justify-between flex self-center w-full max-w-screen-lg text-white relative">
+                <a href="index.html" class="flex self-center w-28 z-10">
+                    <logo class="font-bold tracking-wider">Music Enabled Running</logo>
+                </a>
+                <ul class="absolute contMenu hidden md:flex space-x-6 w-full justify-end pr-10">
+                    <li class="text-center w-1/6">
+                        <a href="#top" class="">About</a>
+                        <span>🞃</span>
+                        <ul class="pt-4">
+                            <li><a href="about.html">Vision</a></li>
+                            <li><a href="about.html#mission">Mission</a></li>
+                            <li><a href="about.html#motivation">Motivation</a></li>
+                            <li><a href="about.html#team">Team</a></li>
+                            <li><a href="about.html#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="text-center w-1/6">
+                        <a href="index.html#updates" class="">Updates</a>
+                        <span>🞃</span>
+                        <ul class="pt-4">
+                            <li><a href="index.html#updates">Latest Updates</a></li>
+                            <li><a href="index.html#newsletter">Newsletter</a></li>
+                            <li><a href="index.html#timeline">Timeline</a></li>
+                        </ul>
+                    </li>
+                    <li class="text-center w-1/6">
+                        <a href="research.html" class="">Research</a>
+                        <span>🞃</span>
+                        <ul class="pt-4">
+                            <li><a href="research.html#our-research">Our Research</a></li>
+                            <li><a href="research.html#ext-research">External Research</a></li>
+                            <li><a href="research.html#fut-research">Future Research</a></li>
+                            <li><a href="research.html#res-access">Get Research Access</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <svg id="toggle-bar" role="img"
+                    class="flex justify-self-end self-center fill-current w-6 h-4 cursor-pointer">
+                    <use xlink:href="SVG_sprite.svg#menuSVG" href="SVG_sprite.svg#menuSVG">
+                    </use>
+                </svg>
+            </contNavItems>
+        </contNavPadding>
+        <navMobile class="hidden flex-col fixed inset-0 z-50 w-full bg-black fill-current text-white gap-24">
+            <navMobileContFlex class="flex flex-col h-16">
+                <navMobileCont class="flex flex-col justify-center relative h-screen pl-6 pr-6 bg-black">
+                    <navMobileHeader class="flex">
+                        <logo class="font-bold tracking-wider"><a href="index.html">Music Enabled Running</a></logo>
+                        <navCloseCont class="flex flex-1 w-full justify-end">
+                            <svg id="toggle-bar" role="img"
+                                class="flex w-6 h-6 self-center justify-center cursor-pointer ">
+                                <use xlink:href="SVG_sprite.svg#closeMenuSVG" href="SVG_sprite.svg#closeMenuSVG">
+                                </use>
+                            </svg>
+                        </navCloseCont>
+                    </navMobileHeader>
+                </navMobileCont>
+            </navMobileContFlex>
+            <div class="pl-6 pr-6 h-full">
+                <ul class="flex flex-col gap-8 font-light text-2xl">
+                    <li><a id="toggle-bar" href="#">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a id="toggle-bar" href="#updates">UPDATES</a></li>
+                    <li><a href="research.html">RESEARCH</a></li>
+                    <li><a href="about.html#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </navMobile>
+    </nav>
+    <sectionHero id="vision" class="flex flex-col text-white text-center mt-16 relative">
+        <heroBG class="flex justify-center bg-hero-about bg-center bg-no-repeat bg-cover h-screen-40 relative">
+            <overlay class="bg-black opacity-50 w-full h-full absolute inset-0"></overlay>
+            <contDescript class="flex flex-col space-y-2 absolute self-center pt-12 pl-6 pb-12 pr-6 sm:max-w-md">
+                <h3 class="font-medium lg:text-xl">Vision</h3>
+                <p class="text-lg lg:text-2xl">“Wij zien veel potentie in de
+                    complexe interactie tussen de muziek en
+                    wat dat doet met onze hersenen en
+                    beweging.”</p>
+            </contDescript>
+        </heroBG>
+    </sectionHero>
+    <sectionMission id="mission"
+        class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12">
+        <contMain class="flex flex-col w-full self-center max-w-screen-lg">
+            <contMission
+                class="flex flex-col md:flex-row md:justify-between items-start space-y-2 md:space-y-0 md:space-x-10">
+                <contDescript class="md:max-w-sm lg:max-w-md">
+                    <h1 class="tracking-wider text-3xl">Mission</h1>
+                    <p>Onze missie is om d.m.v. onderzoek te ontdekken hoe
+                        we realtime bewegingen meten/tracken, audio
+                        feedback, muziek en AI kunnen inzetten en dit te
+                        vertalen naar een innovatieve applicatie dat mobiel
+                        toegankelijk is.</p>
+                </contDescript>
+                <imgCont class="self-center md:max-w-xs lg:max-w-sm"><img src="./assets/images/jpg/note_brain-music.jpg"
+                        alt="">
+                </imgCont>
+            </contMission>
+        </contMain>
+    </sectionMission>
+    <sectionMotivation id="motivation"
+        class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12">
+        <contMain class="flex flex-col w-full self-center max-w-screen-lg">
+            <contMotivation
+                class="flex flex-col md:flex-row md:justify-between items-start space-y-2 md:space-y-0 md:space-x-10">
+                <contDescription class="md:max-w-sm lg:max-w-md">
+                    <h1 class="tracking-wider text-3xl">Motivation</h1>
+                    <p>Onze missie is om d.m.v. onderzoek te ontdekken hoe
+                        we realtime bewegingen meten/tracken, audio
+                        feedback, muziek en AI kunnen inzetten en dit te
+                        vertalen naar een innovatieve applicatie dat mobiel
+                        toegankelijk is.</p>
+                </contDescription>
+                <imgCont class="self-center md:max-w-xs lg:max-w-sm"><img src="./assets/images/jpg/note_brain-music.jpg"
+                        alt="">
+                </imgCont>
+            </contMotivation>
+        </contMain>
+    </sectionMotivation>
+    <sectionTeam id="team"
+        class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12">
+        <contMain class="flex flex-col w-full self-center max-w-screen-lg">
+            <contTeam class="flex flex-col items-start space-y-4">
+                <contDescription>
+                    <h1 class="tracking-wider text-3xl">Team</h1>
+                </contDescription>
+                <contTeamGrid class="grid grid-cols-2 md:grid-cols-3 w-full gap-4 md:gap-8 lg:gap-12 h-screen-70">
+                    <member
+                        class="flex justify-center h-auto w-full bg-team-rick bg-center bg-no-repeat bg-cover rounded relative">
+                        <h3
+                            class="font-medium flex absolute bottom-0 left-0 pt-2 pr-2 pb-2 pl-2 w-full bg-black bg-opacity-75 text-white justify-center text-center">
+                            Rick van Wijk</h3>
+                    </member>
+                    <member
+                        class="flex justify-center h-auto w-full bg-team-rick bg-center bg-no-repeat bg-cover rounded relative">
+                        <h3
+                            class="font-medium flex absolute bottom-0 left-0 pt-2 pr-2 pb-2 pl-2 w-full bg-black bg-opacity-75 text-white justify-center text-center">
+                            Huuuuuuuuuuuge Placeholder</h3>
+                    </member>
+                    <member
+                        class="flex justify-center h-auto w-full bg-team-rick bg-center bg-no-repeat bg-cover rounded relative">
+                        <h3
+                            class="font-medium flex absolute bottom-0 left-0 pt-2 pr-2 pb-2 pl-2 w-full bg-black bg-opacity-75 text-white justify-center text-center">
+                            Huuuuuuuuuuuge Placeholder</h3>
+                    </member>
+                    <member
+                        class="flex justify-center h-auto w-full bg-team-rick bg-center bg-no-repeat bg-cover rounded relative">
+                        <h3
+                            class="font-medium flex absolute bottom-0 left-0 pt-2 pr-2 pb-2 pl-2 w-full bg-black bg-opacity-75 text-white justify-center text-center">
+                            Huuuuuuuuuuuge Placeholder</h3>
+                    </member>
+                </contTeamGrid>
+                <contContact class="flex flex-col space-y-2" id="contact">
+                    <h2 class=" text-lg font-medium tracking-wide">Contact</h2>
+                    <contText>
+                        <p class="text-sm">Contact us by email</p>
+                        <p class="text-sm underline text-bg-blue-500"><a
+                                href="mailto:example@mail.com">example@mail.com</a>
+                        </p>
+                    </contText>
+                </contContact>
+            </contTeam>
+        </contMain>
+    </sectionTeam>
+
+    <!-- <sectionContact class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6 bg-bg-blue-DEFAULT text-white">
+        <contContact class="flex flex-col items-center text-center space-y-6">
+            <contDescript class="space-y-2">
+                <h1 class="font-medium text-2xl">Contact</h1>
+                <p class="text-sm">Contact us by email</p>
+                <p class="text-sm underline text-orange-action-300"><a
+                        href="mailto:example@mail.com">example@mail.com</a>
+                </p>
+            </contDescript>
+
+        </contContact>
+    </sectionContact> -->
+    <sectionFooter
+        class="flex justify-center pt-12 pl-6 pb-12 pr-6 md:pt-24 md:pl-12 md:pb-24 md:pr-12 bg-bg-black-DEFAULT text-white">
+        <contItems
+            class="flex justify-center  md:justify-start w-full max-w-screen-lg text-center md:text-left gap-4 md:gap-12 lg:gap-20">
+            <a class="hidden md:flex" href="#top">
+                <logo class=" font-bold tracking-wider text-4xl">MER</logo>
+            </a>
+            <footerCols class="flex justify-self-end  sm:transform sm:translate-y-3 gap-4 md:gap-12 lg:gap-32">
+                <col1 class="flex flex-col space-y-4 self-center md:self-start">
+                    <a href="#top">
+                        <logo class="font-bold tracking-wider">Music Enabled Running</logo>
+                    </a>
+                    <ul class="space-y-2 grid">
+                        <a href="about.html">
+                            <li>About</li>
+                        </a>
+                        <a href="#updates">
+                            <li>Updates</li>
+                        </a>
+                        <a href="research.html">
+                            <li>Research</li>
+                        </a>
+                        <a href="about.html#contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </col1>
+                <col2 class=" hidden md:flex md:flex-col space-y-4">
+                    <a href="#top">
+                        <logo class="font-bold tracking-wider">Nano4Sports</logo>
+                    </a>
+                    <ul class="space-y-2 grid">
+                        <a href="about.html">
+                            <li>Sports & Technology</li>
+                        </a>
+                        <a href="#updates">
+                            <li>Lectoraat IxD</li>
+                        </a>
+                    </ul>
+                </col2>
+                <col3 class="hidden md:flex md:flex-col space-y-4">
+                    <a href="#top">
+                        <logo class="font-bold tracking-wider">Lectoraat IxD</logo>
+                    </a>
+                    <ul class="space-y-2 grid">
+                        <a href="about.html">
+                            <li>About</li>
+                        </a>
+                        <a href="#updates">
+                            <li>Research</li>
+                        </a>
+                        <a href="research.html">
+                            <li>Research</li>
+                        </a>
+                        <a href="about.html#contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </col3>
+            </footerCols>
+        </contItems>
+    </sectionFooter>
+
+    <!-- Scripts -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
+
+<!-- .item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+} -->

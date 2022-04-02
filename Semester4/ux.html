@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel='stylesheet' href='/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='/css/style.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/javascript.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div id="logo">
+      <button id="modal-btn-nav" class="buttonModal">ULES</button>
+      <div id="imageID1">
+        <a href="index.html">
+          <img id="normalLogo" src="/assets/icons/Rvw_Logo_Simple.png">
+          <img id="whiteLogo" src="/assets/icons/Rvw_Logo_Simple_White.png">
+        </a>
+      </div>
+    </div>
+    <div class="hamIcon" onclick="toggleNav()">
+      <h1>&#9776;</h1>
+    </div>
+    <div id="my-modal-nav" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Lorem</h2>
+          <i id="closeNav" class="fas fa-times"></i>
+        </div>
+        <div class="modal-body">
+          <img src="/assets/images/ColourPalette-1.png" width="100%" height="auto" style="border:2px solid #fff">
+          <p>Lorem</p>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+    <ul class="mainMenu">
+      <li><a href="#About">About<span class="tooltipTextShort">Who's this guy?</span></a></li>
+      <li><a href="sco.html">SCO<span class="tooltipTextLong">Strategy & Concepting</span></a></li>
+      <li><a class="active" href="ux.html">UX<span class="tooltipTextLong" style="margin-left: -75%;">User
+            Experience</span></a></li>
+      <li><a href="dev.html">DEV<span class="tooltipTextShort"
+            style="margin-left: -75%; padding: 9% 0.6%;">Development</span></a></li>
+      <li><a href="ptm.html">PTM<span class="tooltipTextLong">Project Methodology</span></a></li>
+      <li><a href="po.html">PO<span class="tooltipTextLong">Professional Development</span></a></li>
+      <li><a href="sm.html">SM<span class="tooltipTextLong" style="margin-left: -70%;">Smart Mobile</span></a></li>
+      <li><a href="#Contact">Contact<span class="tooltipTextShort" style="margin-left: -70%; padding: 5.4% 0%;">Call me
+            maybe?</span></a></li>
+    </ul>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </nav>
+  <section id="section01" class="background1" style="background-color: #325917; background-image: none;">
+    <h1>UX Assignments</h1>
+    <a href="#section02"><span></span>Scroll</a>
+    </section>
+
+
+    <section id="section02"><h2 class="leerHeaders">Gebruikersonderzoeken</h2></section>
+  <div class="row grid-holder">
+
+    <div id="overview-grid" class="overview-grid" style="background-image: url('https://netaq.ae/blog/wp-content/uploads/2017/12/UIUX-2-03.jpg'); background-repeat: no-repeat;
+          background-position: center;">
+      <div id="UR1" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">Enquête</h1>
+          </div>
+          <div class="modalbody-container">
+            <div class="alignBeginningTxt">
+              <br>
+              <i>De student heeft bij het ontwikkelen van het mediaproduct methodisch gebruikersonderzoek uitgevoerd en daarnaast ook via literatuuronderzoek inzichten in de doelgroep verkregen, die toegepast zijn in het mediaproduct.</i>
+              <br><br>
+              <p>Om het leerdoel 'Gebruikersonderzoeken' aan te tonen, heb ik een online enquête gehouden om inzichten te verzamelen
+                hoe mensen denken over hun internet privacy.</p>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                
+                <embed src="pdf/Enquête.pdf" width="100%" height=450px>
+                  
+                  Bekijk het volledige onderzoek <a href="pdf\Vooronderzoek_Doelgroep_Proftaak_Greenhouse.pdf" target="_blank">hier</a>.
+              </div>
+            </div>
+            <hr>
+            <br>
+            <div class="alignBeginningTxt">
+              <h2>Reflectie</h2>
+              <p>Ik heb geleerd dat een enquête veel informatie/inzichten kan opleveren, maar dat deze informatie niet 100% betrouwbaar zijn.
+                Wat ik de volgende keer anders wil doen, is om de respondenten een aantal demografische gegevens in te laten vullen zodat er
+                meteen ook inzichten in de doelgroep verkregen kunnen worden.
+                <p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+      <a data-toggle="modal" data-target="#UR1">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Enquête<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+    <div id="overview-grid" class="overview-grid" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQk9MoIAFwynBEDyvb34fqJFoPjp6Ja9Yho_R-AduRCKxj19YWq&usqp=CAU'); background-repeat: no-repeat;
+          background-position: center;">
+      <div id="UR2" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">Interview</h1>
+          </div>
+          <div class="modalbody-container">
+            <div class="alignBeginningTxt">
+              <br>
+              <i>De student heeft bij het ontwikkelen van het mediaproduct methodisch gebruikersonderzoek uitgevoerd en daarnaast ook via literatuuronderzoek inzichten in de doelgroep verkregen, die toegepast zijn in het mediaproduct.</i>
+              <br><br>
+              <p>Om het leerdoel 'Gebruikersonderzoeken' aan te tonen, heb ik een interview gehouden om inzichten te vergaren hoe
+                mensen denken over privacy en op welke doelgroep er gericht gaat worden.</p>
+            </div>
+            <br>
+            <hr>
+            <br>
+            
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <embed src="pdf/Interviews.pdf" width="100%" height=450px>
+                  Bekijk het volledige onderzoek <a href="pdf\Vooronderzoek_Doelgroep_Proftaak_Greenhouse.pdf" target="_blank">hier</a>.
+              </div>
+            </div>
+            <hr>
+            <br>
+            <div class="alignBeginningTxt">
+              <h2>Reflectie</h2>
+              <p>Ik heb geleerd dat interviews betrouwbare, waardevolle informatie/inzichten kunnen opleveren. Achteraf ben ik
+                niet helemaal tevreden met het interview dat ik gehouden heb. Mijn laatste vragen waren niet gericht op internet privacy
+                 terwijl het idee van het
+                interview juist was om te praten over internet privacy. De volgende keer dat ik interview vragen opstel wil ik controleren
+                of al mijn vragen ervoor zorgen dat ik mijn doel bereik.
+                
+                
+                <p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+      <a data-toggle="modal" data-target="#UR2">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Interview<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+    
+    
+    <div id="overview-grid" class="overview-grid" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQg290rkYNt0gyKz6E0xkUQOSbUh62J6tTiqJdi_hVesyBQ0DWG&usqp=CAU'); background-repeat: no-repeat;
+          background-position: center;">
+      <div id="UR4" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">Persona</h1>
+          </div>
+          <div class="modalbody-container">
+            <div class="alignBeginningTxt">
+              <br>
+              <i>De student heeft bij het ontwikkelen van het mediaproduct methodisch gebruikersonderzoek uitgevoerd en daarnaast ook via literatuuronderzoek inzichten in de doelgroep verkregen, die toegepast zijn in het mediaproduct.</i>
+              <br><br>
+              <p>Om het leerdoel 'Gebruikersonderzoeken' aan te tonen, heb ik persona's gecreëerd op basis van de enquête, interviews en het literatuuronderzoek.</p>
+            </div>
+            <br>
+            <hr>
+            <br>
+            
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <figure>
+                  <img src="/assets/images/GerPersona.png" alt="">
+                  <figcaption>Persona 1</figcaption>
+                </figure>
+                <br>
+                <figure>
+                  <img src="/assets/images/Persona_Anita.png" alt="">
+                  <figcaption>Persona 2</figcaption>
+                </figure>
+              </div>
+            </div>
+            <hr>
+            <br>
+            <div class="alignBeginningTxt">
+              <h2>Reflectie</h2>
+              <p>Ik vond het lastig een doelgroep te schetsen aangezien Greenhouse Group opdracht heeft gegeven om een 
+                product te ontwikkelen dat pas in de
+                toekomst relevant zal zijn. In 20 jaar kan de doelgroep anders zijn dan de doelgroep die uit het onderzoek is gekomen.
+                Ik adviseer mezelf daarom de volgende keer tijd te nemen om uitgebreid onderzoek te doen naar de doelgroep.
+                <p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+      <a data-toggle="modal" data-target="#UR4">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Persona<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <h2 class="leerHeaders">Prototypen voorleggen</h2>
+
+  <div class="row">
+
+    <div id="overview-grid" class="overview-grid"
+    style="background-image: url('https://www.designveloper.com/wp-content/uploads/2019/12/1_LixFIhv9HgDFEuCEQTXwJA.jpeg')">
+    <div id="PPing1" class="modal fade">
+      <div class="modal-dialog modal-lg"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="closeModal" data-dismiss="modal">&times;</a>
+          <h1 class="modal-title">Prototype #1</h1>
+        </div>
+        <div class="modalbody-container">
+          <div class="alignBeginningTxt">
+            <br>
+            <br>
+            <i>In het ontwikkelproces heeft de student diverse prototypen gemaakt die methodisch getest zijn met gebruikers en inzichten opleveren voor het eindproduct. Dit leidt tot minimaal twee iteraties op het prototype.</i>
+              <br><br>
+            <p>Om het leerdoel 'Prototypen voorleggen' aan te tonen, heb ik een prototype gemaakt van mijn eerste concept. Het prototype is een ontwerp voor een webapp waarop men
+              aanbiedingen op een assertieve manier kan bekijken.</p>
+          </div>
+          <br> 
+          <iframe width="1100" height="618.75" style="border: 1px solid #fff; overflow-y: auto;" src="https://xd.adobe.com/embed/30b69fbc-769d-4860-5616-11a3006925d9-4687/" frameborder="0" allowfullscreen></iframe>
+          <br><br>
+          <hr>
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+           <br><br>
+           <h2>Aanleiding</h2>
+              <p>Nadat er een concept was bedacht, was het noodzakelijk het concept te visualiseren in de vorm van een prototype. Aan de hand van een prototype kan namelijk duidelijk gemaakt worden aan de opdrachtgever wat het concept inhoudt.</p>
+            <br><br>
+            <h2>Iteraties</h2>
+            <p>Nadat ik de prototypes van mijn andere groepsleden had bekeken, heb ik mijn
+              prototype verbeterd door de sterke punten van de andere prototypes te verwerken.
+            </p>
+            <br>
+            <p>Op de pagina waar de gebruiker advertentie categorieën kan selecteren, heb ik een
+            slider toegevoegd aan iedere advertentie categorie zodat de gebruiker meer relevantie kan geven aan een categorie dan
+            een andere categorie.</p>
+            <img src="/assets/images/pp1/Ad picker – 3.jpg" alt="">
+            <br><br>
+            <p>Verder heb ik de instellingen verbeterd door de gebruiker zijn/haar 
+            notificaties te laten beheren en extra instellingen toe te voegen.</p>
+            <img src="/assets/images/pp1/General settings – 1.jpg" alt="">
+            <img src="/assets/images/pp1/General settings – 2.jpg" alt="">
+            <br><br>
+          
+          </div>
+          </div>
+          <hr>
+            <br>
+            <div class="alignBeginningTxt">
+              <h2>Reflectie</h2>
+              <p>Ik merkte tijdens het ontwerpen dat mijn prototype rommelig werd. Ik veranderde elementen binnen het prototype vaak van kleuren, alignment, etc. Hierdoor was ik veel tijd kwijt. De volgende keer dat ik een prototype maak wil ik daarom richtlijnen aanhouden en goed nadenken over wat voor assets ik ga gebruiken. Zo hoop ik mijn prototype efficiënt te maken en georganiseerd over te laten komen.
+                <p>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btnModalClose" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+    <a data-toggle="modal" data-target="#PPing1">
+      <div id="hover-box" class="hover-box">
+        <div class="ghostbutton">Prototype #1<span class="fa fa-external-link-alt"></span></div>
+      </div>
+    </a>
+  </div>
+
+    <div id="overview-grid" class="overview-grid"
+    style="background-image: url('data:image/jpeg;base64,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'); background-repeat: no-repeat;
+    background-position: center;">
+      <div id="PPing2" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">Prototype #2</h1>
+          </div>
+          <div class="modalbody-container">
+            <div class="alignBeginningTxt">
+              <br><br>
+              <i>In het ontwikkelproces heeft de student diverse prototypen gemaakt die methodisch getest zijn met gebruikers en inzichten opleveren voor het eindproduct. Dit leidt tot minimaal twee iteraties op het prototype.</i>
+              <br><br>
+              <p>Om het leerdoel 'Prototypen voorleggen' aan te tonen, heb ik een prototype gemaakt van
+                het refined concept. Het prototype is een ontwerp voor een webapp waarop men video's in de vorm van reviews, tutorials, etc. kan kijken.</p>
+            </div>
+            <br> 
+            <iframe width="1100" height="618.75" style="border: 1px solid #fff; overflow-y: auto;" src="https://xd.adobe.com/embed/a685d2d8-5dcf-46e9-4ac0-01eee25e6665-d0b4/" frameborder="0" allowfullscreen></iframe>
+          <br><br>
+
+            <hr>
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <br>
+                <h2>Aanleiding</h2>
+              <p>Nadat het concept aangepast werd, was het noodzakelijk het concept opnieuw te visualiseren 
+                om de opdrachtgever te voorzien van een goed beeld.</p>
+            <br><br>
+                <h2>Iteraties</h2>
+                    <p>
+                      Ik heb wijzigingen aangebracht aan het prototype nadat ik feedback van docenten en medestudenten
+                      had gekregen.
+
+                      De eerste feedback die ik kreeg, was dat het contrast tussen de witte tekst op de zwarte
+                      achtergrond te hoog was.
+                      Daarom heb ik een minder donkere kleur gebruikt op verschillende plekken.
+                      <br>
+                      <img src="/assets/images/ModalInfo – 1.jpg" alt="">
+                      <br><br>
+                      De tweede opmerking die ik kreeg was dat de rode kleur teveel doet denken aan Netflix en YouTube.
+                      Ik besloot daarom voor een andere hoofdkleur te gaan. Dit vond ik echter wel lastig te bepalen
+                      aangezien
+                      ik het 'bioscoop' gevoel wilde bewaren. Uiteindelijk ben ik met een blauwe kleur gegaan, omdat dit
+                      een
+                      goed contrast geeft en de kleur veel wordt gebruikt in de thumbnails van <a
+                        href="https://www.google.com/search?q=movie&tbm=isch&tbs=ic%3Aspecific%2Cisc%3Ateal&hl=en-GB&ved=0CAcQ2J8EahcKEwjQq8fO8d3pAhUAAAAAHQAAAAAQAg&biw=1222&bih=1206"
+                        target="_blank">films</a>.
+                    </p>
+                    <img src="/assets/images/Tutorials – 1.jpg" alt="">
+                    <br><br>
+                    Als derde opmerking werd er in twijfel getrokken of de gebruikers het 'categorieën' menu wel konden
+                    vinden.
+                    Om ervoor te zorgen dat het duidelijk is waar de gebruiker kan filteren op een bepaalde categorie,
+                    heb ik een
+                    dropdown geplaatst.
+                    <img src="/assets/images/Review – 1.jpg" alt="">
+                    <br><br>
+                    Het laatste stuk feedback dat ik kreeg was dat de productinformatie moeilijk te vinden is als de
+                    gebruiker
+                    de video in fullscreen heeft staan. Door het toevoegen van een 'chevron-down' en 'info' icon geef ik
+                    de gebruiker
+                    meer tools deze informatie te vinden.
+                    <img src="/assets/images/VideoPlayer – 1.jpg" alt="">
+                    <br><br>
+              </div>
+            </div>
+            <hr>
+          <br>
+          <div class="alignBeginningTxt">
+            <h2>Reflectie</h2>
+            <p>Door het maken van deze opdracht heb ik geleerd dat het toepassen van UI richtlijnen
+              zorgt voor een consistent prototype en een goede onderbouwing van je designkeuzes.
+              <p>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+      <a data-toggle="modal" data-target="#PPing2">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Prototype #2<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+
+    <div id="overview-grid" class="overview-grid"
+      style="background-image: url('https://miro.medium.com/max/2000/1*RXiFu9zxlWuWAogWH7ZoZg@2x.jpeg')">
+      <div id="PPing3" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">Prototype #3</h1>
+          </div>
+          <div class="modalbody-container">
+            <br>
+            <div class="alignBeginningTxt">
+              <br><br>
+              <i>In het ontwikkelproces heeft de student diverse prototypen gemaakt die methodisch getest zijn met gebruikers en inzichten opleveren voor het eindproduct. Dit leidt tot minimaal twee iteraties op het prototype.</i>
+              <br><br>
+              <p>Om het leerdoel 'Interface onderbouwing' aan te tonen, heb ik een prototype gemaakt dat
+                volgens minimalistic UI design guidelines is samengesteld. Het prototype is een ontwerp voor een webapp waarop men
+                video's in de vorm van reviews, tutorials, etc. kan kijken.</p>
+            </div>
+            <br> 
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1100" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FxMf7D9buN95p4btAX26Gn8%2FMinimalistic-Design%3Fnode-id%3D0%253A1&chrome=DOCUMENTATION" allowfullscreen></iframe>
+          <br><br>
+
+            <hr>
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <br>
+                <h2>Aanleiding</h2>
+              <p>Het tweede prototype had teveel overbodige elementen en gebruikers hadden moeite met
+                het vinden van informatie. Een efficiënter prototype moet dus ontwikkeld worden.
+              </p>
+            <br><br>
+                <h2>Iteraties</h2>
+                    <p>
+                      Ik heb in de set-up pagina's de zijkanten opgevuld met minimalistische elementen zodat de aandacht van de gebruiker naar het midden wordt geleid.
+                      Mijn medestudenten gaven namelijk als feedback dat de set-up pagina's te veel wit ruimte hadden aan de zijkanten.
+                      <img src="/assets/images/FirstTimeLoggedInSecond.jpg" alt="">
+                      <img src="/assets/images/FirstTimeLoggedIn.jpg" alt="">
+                      <img src="/assets/images/FirstTimeLoggedInThird.jpg" alt="">
+                      <img src="/assets/images/FirstTimeLoggedIn-1.jpg" alt="">
+                      <br><br>
+                      Ik heb in de video informatie pagina een optie toegevoegd om de gebruiker naar de 
+                      volgende video te laten navigeren in de vorm van een stuk tekst en 'chevron' icon. 
+                      <br>
+                      <img src="/assets/images/Video - information page (6).jpg" alt="">
+                      <img src="/assets/images/Video - information page.jpg" alt="">
+                      <br><br>
+                      Als laatste heb ik in de set-up pagina en video informatie pagina 'fav' 
+                      icons geplaatst zodat de gebruiker kan zien of ze een categorie wel of niet hebben 
+                      toegevoegd aan hun interesse lijst.
+                      <br>
+                      <img style="" src="/assets/images/Group 114.jpg" alt="">
+                    <br><br>
+              </div>
+            </div>
+            <hr>
+            <br>
+            <div class="alignBeginningTxt">
+              <h2>Reflectie</h2>
+              <p>Door het maken van deze opdracht heb ik geleerd hoe ik een minimalistische stijl kan toepassen op mijn designs. Ik merkte dat ik vaak onbewust overbodige elementen in mijn ontwerpen stopte. Ik denk dat ik door het aanhouden van minimalistic design richtlijnen veel minder overbodige elementen heb gebruikt waardoor ik informatie op een effectievere manier kan overbrengen aan de gebruiker. Wat de volgende keer beter kan is het doen van onderzoek naar kleuren. Ik heb vaak nog het gevoel dat ik niet de juiste kleuren(combinaties) gebruik.
+                <p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+      <a data-toggle="modal" data-target="#PPing4">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Prototype #3<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+    <div id="overview-grid" class="overview-grid"
+      style="background-image: url('https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b442d9ca51a7f5b711e6d60_home_mast.png')">
+      <div id="PPing4" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">Usability Testing</h1>
+          </div>
+          <div class="modalbody-container">
+            <br>
+            <div class="alignBeginningTxt">
+              <br><br>
+              <i>In het ontwikkelproces heeft de student diverse prototypen gemaakt die methodisch getest zijn met gebruikers en inzichten opleveren voor het eindproduct. Dit leidt tot minimaal twee iteraties op het prototype.</i>
+              <br><br>
+              <p>Om het leerdoel 'Prototypen voorleggen' aan te tonen, heb ik een onderzoek opgezet waarin ik test of gebruikers de productinformatie kunnen vinden in het prototype.</p>
+            </div>
+            <br> 
+            <br><br>
+            
+            <hr>
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <br>
+                <h2>Aanleiding</h2> 
+                <p>Nadat er een definitief prototype ontstond voor het SolidSight concept, moest het prototype getest worden op allerlei aspecten zoals
+                  gebruikerservaring en bruikbaarheid.
+                </p>
+                <br><br>
+                <h2>Onderzoeksvraag</h2> 
+                <p>Kunnen de gebruikers de productinformatie vinden?
+                </p>
+                <br><br>
+              <figcaption>
+                <embed src="pdf/Usability_Testing.pdf" width="100%" height=450px>
+                  Klik <a href="pdf/PeerFeedPulse.pdf" target="_blank">hier</a> om het pdf in een nieuwe tab te bekijken.
+                </figcaption>
+<br><br>
+                Nadat ik de resultaten geanalyseerd had en een conclusie had getrokken, heb ik het prototype verbeterd.
+                <figcaption>
+                  <img src="/assets/images/ProductpageBefore.jpg" alt="">
+                    Before
+                  </figcaption>
+                <figcaption>
+                  <img src="/assets/images/Productpage.jpg" alt="">
+                    After
+                  </figcaption>
+                  <br>
+                  <p>Ik heb de beschrijving vervangen met een lijst van specificaties. Ik heb erop gelet genoeg witruimte tussen de tekst
+                    te laten aangezien uit het onderzoek bleek dat de gebruiker het moeilijker vindt informatie te vinden
+                    wanneer tekst te dicht op elkaar staat. Verder heb ik de tekst alleen in het Nederlands gezet i.p.v. Nederlands en Engels door elkaar te gebruiken.
+                    Uit het onderzoek was niet gebleken dat het invloed heeft op de gebruiker's snelheid om informatie te vinden, maar volgens
+                    de Nielsen Norman Group (zie de opdracht UI Design Heuristics voor meer informatie) is consistentie in een design vrijwel altijd beter.
+                  </p>
+              </div>
+            </div>
+            <hr>
+            <br>
+            <div class="alignBeginningTxt">
+              <h2>Reflectie</h2>
+              <p>In deze opdracht moest ik testpersonen vinden
+                die onderdeel uit maken van de doelgroep.
+                Ik vond het (zoals in de opdracht 'Persona' werd aangegeven) lastig te definiëren wie tot de doelgroep behoort.
+                Ik heb de zelfgemaakte persona's als richtlijnen gebruikt om te zoeken naar geschikte testpersonen. Ik heb eerst nagedacht
+                of ik in mijn kring van kennissen/familie/vrienden (met de uitzondering van studenten en docenten die betrokken zijn in het project uiteraard) personen ken die matchen met de persona's. Ik bleek veel mensen te
+                kennen die matchen met het eerste persona, maar heel weinig mensen die matchen met het tweede persona. Uiteindelijk ben ik met de beste
+                en meest toegankelijke opties gegaan.
+                <p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+      <a data-toggle="modal" data-target="#PPing4">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Usability Testing<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  <h2 class="leerHeaders">Interface onderbouwing</h2>
+  <div class="row">
+
+    <div id="overview-grid" class="overview-grid" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Reactable_Multitouch.jpg'); background-repeat: no-repeat;
+          background-position: center;">
+      <div id="UXface1" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">UI Design Heuristics</h1>
+          </div>
+          <div class="modalbody-container">
+            <div class="alignBeginningTxt">
+              <br><br>
+              <i>De student heeft de interface van het mediaproduct getoetst aan een door hem gekozen set design guidelines en op basis daarvan het interface ontwerp verbeterd.</i>
+              <br><br>
+              <p>Om het leerdoel 'Interface onderbouwing' aan te tonen, heb ik een prototype gemaakt dat
+                volgens erkende UI guidelines is samengesteld. Het prototype is een ontwerp voor een webapp waarop men
+              video's in de vorm van reviews, tutorials, etc. kan kijken.</p>
+            </div>
+            <br> <iframe width="1100" height="618.75" style="border: 1px solid #fff; overflow-y: auto;"
+              src="https://xd.adobe.com/embed/a685d2d8-5dcf-46e9-4ac0-01eee25e6665-d0b4/" frameborder="0"
+              allowfullscreen></iframe>
+
+            <br><br>
+            <hr>
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2>Aanleiding</h2>
+                <p>Voordat ik deze opdracht maakte, baseerde ik mijn interfaces op mijn eigen bevindingen. Dit is uiteraard niet acceptabel
+                  voor de opdrachtgever. Ik moet onderzoek doen naar interface guidelines om mijn design te kunnen beargumenteren.
+                </p>
+                <br><br>
+                <h2>Research</h2>
+                <p>Allereerst heb ik gekeken naar de Human Interface Guidelines van Apple. Deze bleken echter gericht te
+                  zijn op ‘native’ applicaties
+                  en waren dus lastiger te volgen voor web applicaties. Vervolgens kwam ik uit bij de Nielsen Norman
+                  Group.
+                  Deze interface guidelines zijn wel geschikt voor het web en worden vaak ook uitgelegd door middel van
+                  een web applicatie.
+                  Daarom heb ik besloten het prototype te baseren op de Interface Guidelines van Nielsen Norman Group.
+                  <p>
+                    <br><br>
+                    <h4>Box vs. Navigation</h4>
+                    <p>
+                      NN Group beweert dat een ‘search box’ alleen nodig is als gebruikers verwachten dat een site heel
+                      veel
+                      informatie bevat. Voorbeelden hiervan zijn Youtube, Google en Amazon. Een navigatiepaneel is juist
+                      erg handig om de gebruiker snel
+                      de content layout van een website te laten zien. De gebruiker hoeft in tegenstelling tot een
+                      ‘search box’ minder na te denken over
+                      zijn/haar acties. Ik kies er daarom voor om beide te verwerken in het prototype. De webapp zal,
+                      net als Youtube, eindeloos veel content
+                      bevatten en dus komt een ‘search box’ van pas. Als een gebruiker snel uit de video pagina wilt
+                      gaan of een categorie uit wilt kiezen,
+                      kan de gebruiker dat via het navigatiepaneel doen.
+                    </p>
+                    <br><br>
+                    <h4>Listbox vs Dropdown</h4>
+                    <p>
+                      NN Group raadt aan dropdowns te gebruiken als er een beperkte hoeveelheid ruimte is. Een te groot
+                      aantal listboxes
+                      maakt de interface al snel onoverzichtelijk en wordt dus afgeraden te gebruiken bij gelimiteerde
+                      ruimte.
+                      In de sidebar navigatie van het prototype komen veel categorieën te staan. Daarom heb ik ervoor
+                      gekozen dropdowns toe te voegen.
+                    </p>
+                    <br><br>
+                    <h4>Heuristic #1: Visibility of system status</h4>
+                    <p>
+                      Volgens NN Group is het belangrijk dat elementen hun toestand/status communiceren. Zo laat je
+                      telefoon bijvoorbeeld
+                      zien hoeveel procent batterij er nog over is. In het prototype is deze
+                      heuristic verwerkt. Als een gebruiker een video nog niet af heeft gekeken, zal dit worden getoond
+                      door de video onder
+                      het kopje ‘continue watching’ te zetten en een progressie balk toe te voegen waaraan de gebruiker
+                      kan zien tot hoe
+                      ver ze hebben gekeken.
+                    </p>
+                    <br><br>
+                    <h4>Heuristic #2: Match Between the System and the Real World</h4>
+                    <p>
+                      Om de gebruiker de content te laten begrijpen, heb ik de tweede heuristic van NN Group verwerkt in
+                      het prototype.
+                      Het prototype bevat nergens onnodig moeilijk taalgebruik en heeft een ‘bioscoop’ kleurenthema.
+                      Hierdoor zal de gebruiker
+                      de content begrijpen en dus een aangenamer gevoel hebben bij de interface.
+                    </p>
+                    <br><br>
+                    <h4>Heuristic #3: User control and freedom</h4>
+                    <p>
+                      Gebruikers klikken regelmatig de verkeerde elementen aan. Gebruikers willen dan de mogelijkheid
+                      hebben terug te gaan.
+                      In het prototype heb ik daarom verschillende knoppen toegevoegd waarmee gebruikers terug kunnen
+                      gaan naar vorige pagina’s en statussen.
+                    </p>
+                    <br><br>
+                    <h4>Heuristic #4: Consistency and Standards</h4>
+                    <p>
+                      Een ander belangrijk onderdeel van een goede usability volgens NN Group is consistentie en normen.
+                      Kleurengebruik, maar ook vormen en layouts, kunnen het best op dezelfde manier worden gebruikt.
+                      Als dit niet gebeurt moet de gebruiker meer nadenken wat natuurlijk niet de bedoeling is.
+                      In het prototype heb ik daarom grid layouts gebruikt en de stijl hiervan hetzelde gehouden net als
+                      de tekst alignment.
+                      Verder heb ik veel elementen zoals icons, kleuren, hover states, etc. hergebruikt om de
+                      consistentie van het prototype te behouden.
+                    </p>
+                    <br><br>
+                    <h4>Heuristic #6: Memory Recognition and Recall in User Interfaces</h4>
+                    <p>
+                      Heuristic nummer 6 van NN Group is het herkennen van bepaalde gebeurtenissen of stukken
+                      informatie.
+                      Een goed interface zorgt voor ‘Recognition’ bij de gebruiker. Bijvoorbeeld, bij het zien van een
+                      hamburger
+                      icon weten veel gebruikers dat dit het menu is. Dit weten de meeste gebruikers doordat zij dit al
+                      een keer
+                      eerder hebben gezien. In het prototype heb ik geen hamburger icon gebruikt, omdat ik de gebruikers
+                      het
+                      ‘bioscoop’ gevoel wil meegeven. Uiteraard moet de gebruiker ergens op de pagina kunnen navigeren
+                      naar
+                      een andere pagina/sectie. Daarom heb ik besloten een ‘sidebar’ navigatie te gebruiken die opent
+                      als de
+                      gebuikers over de linkerkant van de pagina ‘hovert’. Om de gebruiker te laten weten dat dit menu
+                      bestaat
+                      en dat het een menu is, heb ik een icon aan de linkerzijde geplaatst dat lijkt op een hamburger
+                      icon.
+                    </p>
+                    <br><br>
+                    <h4>Heuristic #8: Aesthetic and minimalist design</h4>
+                    <p>
+                      Heuristic nummer 8 van NN Group is vrij simpel. NN Group adviseert alleen nodige informatie te
+                      weergeven.
+                      In het prototype heb ik me hieraan geprobeerd te houden door ruimte te houden tussen elementen,
+                      overbodige
+                      informatie weg te laten en geen kleuren te gebruiken die schreeuwen om aandacht.
+                    </p>
+                    <br><br>
+                    
+
+                    <h3>Bronnen</h3>
+                    <ul style="list-style-type: circle;"></ul>
+                    <li> <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">Ten
+                        Usability Heuristics</a></li>
+                    <li> <a href="https://www.nngroup.com/videos/search-box-vs-navigation/" target="_blank">Search-box
+                        vs Navigation</a></li>
+                    <li> <a href="https://www.nngroup.com/articles/listbox-dropdown/" target="_blank">Listbox vs
+                        Dropdown</a></li>
+                    <br>
+
+              </div>
+            </div>
+            <hr>
+            <br>
+            <div class="alignBeginningTxt">
+              <h2>Reflectie</h2>
+              <p>Door het maken van deze opdracht heb ik geleerd waar een goed User Interface aan moet voldoen.
+                Ik vond het soms lastig bepaalde heuristics toe te passen op het prototype, omdat een verandering in het
+                design
+                soms botste met een andere heuristic. Ik had vooral moeite om het prototype minimalistisch te maken.
+                Het uiteindelijke prototype vind ik te druk ogen.
+                De volgende keer dat ik weer een prototype maak, wil ik daarom
+                eerst goed nadenken over de heuristics die in de interface verwerkt moeten worden en meer onderzoek doen
+                naar
+                minimalistisch design.
+                <p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+      <a data-toggle="modal" data-target="#UXface1">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">UI Design Heuristics<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+    <div id="overview-grid" class="overview-grid"
+    style="background-image: url('https://www.canva.com/learn/wp-content/uploads/2015/02/Minimalist-design-25-beautiful-examples-and-practical-tips.jpg'); background-repeat: no-repeat;
+    background-position: center;">
+      <div id="UXface2" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">Minimalistic Design</h1>
+          </div>
+
+          <div class="modalbody-container">
+            <br>
+            <div class="alignBeginningTxt">
+              <br><br>
+              <i>De student heeft de interface van het mediaproduct getoetst aan een door hem gekozen set design guidelines en op basis daarvan het interface ontwerp verbeterd.</i>
+              <br><br>
+              <p>Om het leerdoel 'Interface onderbouwing' aan te tonen, heb ik een prototype gemaakt dat
+                volgens minimalistic UI design guidelines is samengesteld. Het prototype is een ontwerp voor een webapp waarop men
+                video's in de vorm van reviews, tutorials, etc. kan kijken.</p>
+            </div>
+            <br> 
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1100" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FxMf7D9buN95p4btAX26Gn8%2FMinimalistic-Design%3Fnode-id%3D0%253A1&chrome=DOCUMENTATION" allowfullscreen></iframe>
+          <br><br>
+
+            <hr>
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2>Aanleiding</h2>
+                <p>In het begin van het semester heb ik feedback gekregen dat mijn prototypes qua design vaak te veel onnodige elementen bevatten
+                  waardoor de gebruiker onnodig veel informatie te verwerken krijgt. Mij werd aangeraden me te verdiepen in minimalistisch design.
+
+                </p>
+                <br><br>
+                <h2>Research</h2>
+                <p>Ik begon aan deze opdracht door het bestuderen van minimalistic design guidelines en het zoeken naar voorbeelden van minimalistic web design.
+                  Een belangrijke bron voor mij was een artikel over minimalistic design geschreven door de <a href="https://www.nngroup.com/articles/characteristics-minimalism/" target="_blank">
+                    Nielsen Norman Group</a>.
+                   Hierin staan veel voorkomende karakteristieken van minimalistic design. Een aantal
+                  karakteristieken heb ik verwerkt in mijn designs.                  
+                  <p>
+                    <br><br>
+                    <h3>'Getting Started' pages</h3>
+                    <p>
+                      Gebruikers die voor het eerst inloggen krijgen informatie te zien over wat SolidSight is en wat het voor de gebruiker oplevert om SolidSight te gebruiken.
+                      
+                      De karakteristieken van minimalistic design die ik heb toegepast op deze pagina's zijn:
+                      <br><br>
+                     <b> Flat Patterns and Textures</b>; volgens de NN Group gebruikt 96% van de websites uit hun onderzoek ‘flat patterns and textures’. Ik heb me hieraan gehouden door
+                      geen gradients, shadows en andere effecten te gebruiken.
+                      <br><br>
+                     <b> Limited or Monochromatic Color Palette</b>; volgens de NN Group zorgt een gelimiteerd aantal verschillende kleuren voor minder informatie die de gebruiker hoeft te verwerken. 
+                      Ik heb slechts 3 verschillende kleuren gebruikt. 2 tinten grijs, zwart en een pastelkleurig paars.
+                      <br><br>
+                      <b>Restricted Features and Elements</b>; NN Group raadt aan de volgende items te verwijderen als het de kern boodschap en functionaliteit van je website niet ondersteund:
+                      <br>
+                      <ul style="list-style-type: circle;"></ul>
+                     <li>Menu items; niet aanwezig</li>
+                      
+                     <li>Links; niet aanwezig</li>
+                      <br>
+                      <li>Images; de functie hiervan is om de gebruiker duidelijk te maken uit welke categorieën hij/zij kan kiezen</li>
+                      <br>
+                      <li>Graphics; de functie hiervan is het opvullen van de zijkanten zodat de gebruikers aandacht naar de tekst in het midden getrokken wordt</li>
+                      <br>
+                      <li>Lines; de functie hiervan is om een container te maken zodat de gebruiker weet dat hij/zij binnen de container de categorie kan selecteren</li>
+                      <br>
+                      <li>Captions; niet aanwezig</li>
+                      <br>
+                      <li>Textures; niet aanwezig</li>
+                      <br>
+                      <li>Colors; slechts drie kleuren (zie ‘Limited or monochromatic color palette’)</li>
+                      <br>
+                      <li>Fonts; slechts één font wordt gebruikt (open sans)</li>
+                      <br>
+                      <li>Icons; wordt gebruikt om de gebruiker informatie door te geven zonder dat de gebruiker lang hoeft na te denken</li>
+                    </p>
+                    
+                    <img src="/assets/images/FirstTimeLoggedIn.jpg" alt="First time logged in (1)">
+                    <br><br>
+                    <img src="/assets/images/FirstTimeLoggedIn-1.jpg" alt="First time logged in (2)">
+
+                    <br><br><br>
+                    <h3>‘Video information’ page
+                    </h3>
+                    <p>
+                      Gebruikers kunnen voordat ze de video bekijken alle informatie op deze pagina vinden.                      
+                      De karakteristieken van minimalistic design die ik heb toegepast op deze pagina's zijn:
+                      <br><br>
+                     <b> Flat Patterns and Textures</b>; Ik heb geen gradients, shadows en andere effecten gebruikt.
+                      <br><br>
+                     <b> Limited or Monochromatic Color Palette</b>; volgens de NN Group zorgt een gelimiteerd aantal verschillende kleuren voor minder informatie die de gebruiker hoeft te verwerken. 
+                      Ik heb slechts 3 verschillende kleuren gebruikt. 2 tinten grijs, zwart en een pastelkleurig paars.
+                      <br><br>
+                      <b>Restricted Features and Elements</b>; NN Group raadt aan de volgende items te verwijderen als het de kern boodschap en functionaliteit van je website niet ondersteund:
+                      <br>
+                      <ul style="list-style-type: circle;"></ul>
+                     <li>Menu items; alleen items die noodzakelijk zijn voor het interface zijn verwerkt
+                    </li>                      
+                     <li>Links; ik heb gebruikgemaakt van links, maar wel op een nette manier. Ik heb er voor gekozen om geen button (met padding) van de link te maken, want dat neemt
+                      veel ruimte in
+                      </li>
+                      <br>
+                      <li>Images; aanwezig, de functie hiervan is om de gebruiker te laten zien wat er gereviewed wordt en om kennis te maken met de maker van de video
+                      </li>
+                      <br>
+                      <li>Graphics; niet aanwezig</li>
+                      <br>
+                      <li>Lines; de functie hiervan is om te laten zien welke informatie tab geopend is                      </li>
+                      <br>
+                      <li>Captions; niet aanwezig</li>
+                      <br>
+                      <li>Textures; niet aanwezig</li>
+                      <br>
+                      <li>Colors; paars en grijs worden gebruikt voor icons als de achtergrond wit is en wit wordt gebruikt voor icons als de achtergrond paars is. Voor de tekst wordt zwart gebruikt
+                      </li>
+                      <br>
+                      <li>Fonts; slechts één font wordt gebruikt
+                      </li>
+                      <br>
+                      <li>Icons; wordt gebruikt om de gebruiker informatie door te geven zonder dat de gebruiker lang hoeft na te denken</li>
+                    </p>
+                    
+                    
+                    <img src="/assets/images/Video - information page.jpg" alt="Video informatie">
+                    <br><br><br>
+
+                    <h3>Bronnen</h3>
+                    <ul style="list-style-type: circle;"></ul>
+                    <li> <a href="https://www.nngroup.com/articles/characteristics-minimalism/" target="_blank">The Characteristics of Minimalism in Web Design</a></li>
+                    
+                    <br><br>
+
+              </div>
+            </div>
+            <hr>
+            <br>
+            <div class="alignBeginningTxt">
+              <h2>Reflectie</h2>
+              <p>Door het maken van deze opdracht heb ik geleerd hoe ik een minimalistische stijl kan toepassen op mijn designs.
+                Ik merkte dat ik vaak onbewust overbodige elementen in mijn ontwerpen stopte. Ik denk dat ik door het aanhouden van
+                minimalistic design richtlijnen veel minder overbodige elementen heb gebruikt waardoor ik informatie op een effectievere
+                manier kan overbrengen aan de gebruiker.
+                Wat de volgende keer beter kan is het doen van onderzoek naar kleuren. Ik heb vaak nog het gevoel dat ik niet de juiste kleuren(combinaties)
+                gebruik.
+                <p>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+      <a data-toggle="modal" data-target="#UXface2">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Minimalistic Design<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>

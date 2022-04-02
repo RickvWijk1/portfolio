@@ -1,0 +1,1343 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="en" id="top">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Open Graph -->
+    <meta property='og:title' content='Title of the article' />
+    <meta property='og:image'
+        content='http://i404350.hera.fhict.nl/MER_site/public/assets/images/jpg/og/ogResearch.jpg'>
+    <meta property=' og:description'
+        content='Description that will show in the preview  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero minus adipisci tempore, aperiam voluptatem porro? Blanditiis quisquam optio sit vitae assumenda, fuga explicabo tempore corporis ex possimus nisi deleniti enim dicta provident suscipit sint iure autem molestias voluptate laborum placeat velit in laudantium sapiente! Repellat reiciendis facilis voluptatem aliquid error earum quidem perferendis voluptatibus, quisquam eum, itaque iusto. Consequatur incidunt nisi fugiat nulla libero officia odio provident labore omnis atque perspiciatis veniam, eos cupiditate temporibus, sunt reiciendis non commodi impedit eum! Neque quas ipsa odio voluptatibus maiores et tempore.' />
+    <meta property='og:url' content='http://i404350.hera.fhict.nl/MER_site/public/index.html' />
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <link rel="stylesheet" href="SVG_sprite.svg">
+
+    <title>MER Project</title>
+</head>
+
+<body class="min-h-screen w-full p-0 font-roboto text-base">
+    <nav class="flex inset-0 w-full h-16 bg-black fixed z-50">
+        <contNavPadding class="flex justify-center self-center w-full px-6 md:px-12 text-white relative">
+            <contNavItems class="justify-between flex self-center w-full max-w-screen-lg text-white relative">
+                <a href="index.html" class="flex self-center w-28 z-10">
+                    <logo class="font-bold tracking-wider">Music Enabled Running</logo>
+                </a>
+                <ul class="absolute contMenu hidden md:flex space-x-6 w-full justify-end pr-10">
+                    <li class="text-center w-1/6">
+                        <a href="about.html" class="">About</a>
+                        <span>🞃</span>
+                        <ul class="pt-4">
+                            <li><a href="about.html#vision">Vision</a></li>
+                            <li><a href="about.html#mission">Mission</a></li>
+                            <li><a href="about.html#motivation">Motivation</a></li>
+                            <li><a href="about.html#team">Team</a></li>
+                            <li><a href="about.html#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="text-center w-1/6">
+                        <a href="index.html#updates" class="">Updates</a>
+                        <span>🞃</span>
+                        <ul class="pt-4">
+                            <li><a href="index.html#updates">Latest Updates</a></li>
+                            <li><a href="index.html#newsletter">Newsletter</a></li>
+                            <li><a href="index.html#timeline">Timeline</a></li>
+                        </ul>
+                    </li>
+                    <li class="text-center w-1/6">
+                        <a href="#top" class="">Research</a>
+                        <span>🞃</span>
+                        <ul class="pt-4">
+                            <li><a href="#our-research">Our Research</a></li>
+                            <li><a href="#ext-research">External Research</a></li>
+                            <li><a href="#fut-research">Future Research</a></li>
+                            <li><a href="#res-access">Get Research Access</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <svg id="toggle-bar" role="img"
+                    class="flex justify-self-end self-center fill-current w-6 h-4 cursor-pointer">
+                    <use xlink:href="SVG_sprite.svg#menuSVG" href="SVG_sprite.svg#menuSVG">
+                    </use>
+                </svg>
+            </contNavItems>
+        </contNavPadding>
+        <navMobile class="hidden flex-col fixed inset-0 z-50 w-full bg-black fill-current text-white gap-24">
+            <navMobileContFlex class="flex flex-col h-16">
+                <navMobileCont class="flex flex-col justify-center relative h-screen pl-6 pr-6 bg-black">
+                    <navMobileHeader class="flex">
+                        <logo class="font-bold tracking-wider"><a href="index.html">Music Enabled Running</a></logo>
+                        <navCloseCont class="flex flex-1 w-full justify-end">
+                            <svg id="toggle-bar" role="img"
+                                class="flex w-6 h-6 self-center justify-center cursor-pointer ">
+                                <use xlink:href="SVG_sprite.svg#closeMenuSVG" href="SVG_sprite.svg#closeMenuSVG">
+                                </use>
+                            </svg>
+                        </navCloseCont>
+                    </navMobileHeader>
+                </navMobileCont>
+            </navMobileContFlex>
+            <div class="pl-6 pr-6 h-full">
+                <ul class="flex flex-col gap-8 font-light text-2xl">
+                    <li><a id="toggle-bar" href="#">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a id="toggle-bar" href="#updates">UPDATES</a></li>
+                    <li><a href="research.html">RESEARCH</a></li>
+                    <li><a href="about.html#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </navMobile>
+    </nav>
+    <sectionProjectResearch id="our-research"
+        class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12 mt-16 bg-research-white-DEFAULT">
+        <contProjectResearch class="flex flex-col  w-full self-center max-w-screen-lg items-start space-y-2">
+            <h1 class="font-medium text-2xl">MER Project Research</h1>
+            <gridProgr class="flex flex-col justify-between w-full space-y-4">
+                <gridItem id="research-visitors"
+                    class="flex flex-col justify-between sm:w-1/2 lg:w-1/3 space-y-2 text-left border-solid border-2 border-opacity-50 border-line-grey-DEFAULT  bg-white rounded">
+                    <contDescript class="flex flex-col pt-4 pl-4 pb-4 pr-4 space-y-2">
+                        <h2 class="font-medium text-lg">Visitors</h2>
+                        <p id="p-visitors" class="">I'm interested in what has
+                            been researched, because I
+                            want to know what progress
+                            has been made.</p>
+                    </contDescript>
+                    <contFooter
+                        class="flex justify-between content-center pt-4 pl-4 pb-4 pr-4 bg-orange-action-DEFAULT text-white">
+                        <svg id="chevronVisitors" role="img"
+                            class="flex justify-self-end self-center fill-current w-4 h-6 transform rotate-180 cursor-pointer">
+                            <use xlink:href="SVG_sprite.svg#chevronSVG" href="SVG_sprite.svg#chevronSVG">
+                            </use>
+                        </svg>
+                        <h2 class="flex self-center font-medium text-lg">Promotional Output</h2>
+                        <img class="w-10 h-10" src="./assets/icons/shopboard.png" alt="">
+                    </contFooter>
+                    </contAll>
+                </gridItem>
+
+                <gridVisitors id="visitor-items" class="hidden grid-cols-1 gap-4 md:grid-cols-2 md:gap-4">
+                    <a href="#firstItemV"
+                        class="relative bg-white border-2 border-opacity-50 border-line-grey-DEFAULT rounded shadow-md hover:opacity-75 cursor-pointer">
+                        <gridItem class="modal-popup" data-modal="firstItemV">
+                            <contHeader
+                                class="flex flex-col space-y-2 pt-4 pl-4 pb-4 pr-4 border-b-2 border-opacity-50 border-line-grey-DEFAULT">
+                                <h3 class="font-bold">Creating live music through movement</h3>
+                                <contInfo class="flex flex-row justify-between">
+                                    <contDate class="flex space-x-2">
+                                        <svg role="img" class="flex w-6 h-6 fill-current text-orange-action-DEFAULT">
+                                            <use xlink:href="SVG_sprite.svg#clockSVG" href="SVG_sprite.svg#clockSVG">
+                                            </use>
+                                        </svg>
+                                        <p class="">Aug 20, 2020</p>
+                                    </contDate>
+                                    <contCollab class="flex justify-self-end space-x-2">
+                                        <svg role="img" class="flex w-6 h-5 stroke-current text-orange-action-DEFAULT">
+                                            <use xlink:href="SVG_sprite.svg#collabSVG" href="SVG_sprite.svg#collabSVG">
+                                            </use>
+                                        </svg>
+                                        <p class="">1 collaborators</p>
+                                    </contCollab>
+                                </contInfo>
+                            </contHeader>
+                            <contImg class=""><img src="./assets/images/jpg/research_placeholder.jpg" alt=""></contImg>
+                            <contFooter class="flex flex-col pt-4 pl-4 pb-4 pr-4">
+                                <contDescript class="flex flex-col justify-between space-y-8">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic obcaecati dicta
+                                        ipsam
+                                        fuga nam quo officia sed natus doloremque officiis!</p>
+                                    <contReadMore class="flex">
+                                        <span class="flex border-b-4 border-orange-action-DEFAULT font-medium">READ
+                                            MORE
+                                        </span>
+                                    </contReadMore>
+                                </contDescript>
+                            </contFooter>
+                        </gridItem>
+                    </a>
+
+                    <sectionModal id="firstItemV"
+                        class="modal hidden overflow-auto flex-col justify-start fixed inset-0 z-50 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12 bg-black bg-opacity-50">
+                        <modalContent
+                            class="flex flex-col self-center w-full max-w-screen-lg items-start text-black rounded shadow-md">
+                            <modalHeader
+                                class="flex flex-col w-full px-6 py-5 md:px-12 md:py-10 space-y-4 text-white bg-bg-black-DEFAULT">
+                                <modalHeaderTop class="flex w-full">
+                                    <h1 class="text-lg sm:text-xl font-semibold">Creating live music through movement
+                                    </h1>
+                                    <navCloseCont class="flex flex-1 w-full justify-end">
+                                        <svg id="modal-close" role="img"
+                                            class="flex w-6 h-6 self-start sm:self-center justify-center fill-current cursor-pointer ">
+                                            <use xlink:href="SVG_sprite.svg#closeMenuSVG"
+                                                href="SVG_sprite.svg#closeMenuSVG">
+                                            </use>
+                                        </svg>
+                                    </navCloseCont>
+                                </modalHeaderTop>
+                                <modalHeaderBottom class="">
+                                    <contInfo
+                                        class="grid grid-cols-2 gap-4 sm:flex sm:justify-start sm:gap-6 md:gap-10">
+                                        <contDate class="flex flex-col gap-1">
+                                            <contDateFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">Upload Date</p>
+                                                <svg role="img"
+                                                    class="flex w-5 h-5 fill-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#clockSVG"
+                                                        href="SVG_sprite.svg#clockSVG">
+                                                    </use>
+                                                </svg>
+                                            </contDateFront>
+                                            <p class="text-sm sm:text-base font-thin">Aug 20, 2020</p>
+                                        </contDate>
+                                        <contCollab class="flex flex-col gap-1">
+                                            <contCollabFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">1 Collaborators</p>
+                                                <svg role="img"
+                                                    class="flex w-6 h-5 stroke-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#collabSVG"
+                                                        href="SVG_sprite.svg#collabSVG">
+                                                    </use>
+                                                </svg>
+                                            </contCollabFront>
+                                            <p class="text-sm sm:text-base font-thin">Bernd-Jan Witkamp</p>
+                                        </contCollab>
+                                        <contExtern class="flex flex-col gap-1">
+                                            <contExternFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">External Resources</p>
+                                                <svg role="img"
+                                                    class="flex w-5 h-5 relative fill-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#externalSVG"
+                                                        href="SVG_sprite.svg#externalSVG">
+                                                    </use>
+                                                </svg>
+                                            </contExternFront>
+                                            <a target="_blank" href="https://drive.google.com/">
+                                                <p class="text-sm sm:text-base font-thin underline">
+                                                    https://drive.google.com/</p>
+                                            </a>
+                                            <a target="_blank" href="https://figshare.com/">
+                                                <p class="text-sm sm:text-base font-thin underline">
+                                                    https://figshare.com/</p>
+                                            </a>
+                                        </contExtern>
+                                    </contInfo>
+                                </modalHeaderBottom>
+                            </modalHeader>
+                            <modalBody
+                                class="w-full bg-r px-6 py-5 md:px-12 md:py-10 lg:bg-running bg-contain bg-bottom bg-no-repeat bg-research-white-DEFAULT space">
+                                <colMedium class="flex flex-col max-w-lg space-y-8">
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="flex flex-col">
+                                            <h3 class="font-medium sm:text-lg">Research</h3>
+                                            <p>Our research has shown that by creating the right algorithms we can
+                                                translate the data of a runner (which is generated by their movement)
+                                                into
+                                                live sound and ultimately this allows runners to make their own music.
+                                                We got to this conclusion by making proof of concepts.</p>
+                                        </contDescription>
+                                        <imgDescription class="flex flex-col"><img
+                                                src="./assets/images/jpg/sonification.jpg" alt="">
+                                            <i>Achieved with sonification</i>
+                                        </imgDescription>
+                                    </contBodySection>
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="">
+                                            <h3 class="font-medium sm:text-lg">How does this information help us?</h3>
+                                            <p>With this info we can... Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Dolores, excepturi fuga! Quibusdam esse eum a eaque
+                                                sequi laboriosam iste sapiente! Lorem ipsum dolor, sit amet consectetur
+                                            </p>
+                                        </contDescription>
+                                        <!-- <button
+                                            class="pt-2 pr-4 pb-2 pl-4 bg-orange-action-DEFAULT text-white rounded font-medium">View
+                                            research PDF</button> -->
+                                    </contBodySection>
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="">
+                                            <h3 class="font-medium sm:text-lg">What's next?</h3>
+                                            <p>The next step is to... Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Obcaecati neque vitae assumenda, laboriosam atque cumque soluta.
+                                            </p>
+                                        </contDescription>
+                                    </contBodySection>
+                                </colMedium>
+                            </modalBody>
+                            <modalFooter class=""></modalFooter>
+                        </modalContent>
+                    </sectionModal>
+
+                    <gridItem id="modal-popup" data-modal="n4sFinalPaper"
+                        class="relative bg-white border-2 border-opacity-50 border-line-grey-DEFAULT rounded shadow-md hover:opacity-75 cursor-pointer">
+                        <contHeader
+                            class="flex flex-col space-y-2 pt-4 pl-4 pb-4 pr-4 border-b-2 border-opacity-50 border-line-grey-DEFAULT">
+                            <h3 class="font-bold">Final paper and presentation</h3>
+                            <contInfo class="flex flex-row justify-between">
+                                <contDate class="flex space-x-2">
+                                    <svg role="img" class="flex w-6 h-6 fill-current text-orange-action-DEFAULT">
+                                        <use xlink:href="SVG_sprite.svg#clockSVG" href="SVG_sprite.svg#clockSVG">
+                                        </use>
+                                    </svg>
+                                    <p class="">Mar 9, 2020</p>
+                                </contDate>
+                                <contCollab class="flex justify-self-end space-x-2">
+                                    <svg role="img" class="flex w-6 h-5 stroke-current text-orange-action-DEFAULT">
+                                        <use xlink:href="SVG_sprite.svg#collabSVG" href="SVG_sprite.svg#collabSVG">
+                                        </use>
+                                    </svg>
+                                    <p class="">2 collaborators</p>
+                                </contCollab>
+                            </contInfo>
+                        </contHeader>
+                        <contImg class=""><img src="./assets/images/items/n4s_final_paper.jpg" alt=""></contImg>
+                        <contFooter class="flex flex-col pt-4 pl-4 pb-4 pr-4">
+                            <contDescript class="flex flex-col justify-between space-y-8">
+                                <p>The final results of the Nano4Sports project is presented at the ICT in Practice 2020
+                                    conference. The project will continue as part of Vitality Living Labs.</p>
+                                <contReadMore class="flex">
+                                    <span class="flex border-b-4 border-orange-action-DEFAULT font-medium">READ
+                                        MORE
+                                    </span>
+                                </contReadMore>
+                            </contDescript>
+                        </contFooter>
+                    </gridItem>
+
+                    <sectionModal id="n4sFinalPaper"
+                        class="modal hidden overflow-auto flex-col justify-start fixed inset-0 z-50 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12 bg-black bg-opacity-50">
+                        <modalContent
+                            class="flex flex-col self-center w-full max-w-screen-lg items-start text-black rounded shadow-md">
+                            <modalHeader
+                                class="flex flex-col w-full px-6 py-5 md:px-12 md:py-10 space-y-4 text-white bg-bg-black-DEFAULT">
+                                <modalHeaderTop class="flex w-full">
+                                    <h1 class="text-lg sm:text-xl font-semibold">Final paper and presentation
+                                    </h1>
+                                    <navCloseCont class="flex flex-1 w-full justify-end">
+                                        <svg id="modal-close" role="img"
+                                            class="flex w-6 h-6 self-start sm:self-center justify-center fill-current cursor-pointer ">
+                                            <use xlink:href="SVG_sprite.svg#closeMenuSVG"
+                                                href="SVG_sprite.svg#closeMenuSVG">
+                                            </use>
+                                        </svg>
+                                    </navCloseCont>
+                                </modalHeaderTop>
+                                <modalHeaderBottom class="">
+                                    <contInfo
+                                        class="grid grid-cols-2 gap-4 sm:flex sm:justify-start sm:gap-6 md:gap-10">
+                                        <contDate class="flex flex-col gap-1">
+                                            <contDateFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">Upload Date</p>
+                                                <svg role="img"
+                                                    class="flex w-5 h-5 fill-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#clockSVG"
+                                                        href="SVG_sprite.svg#clockSVG">
+                                                    </use>
+                                                </svg>
+                                            </contDateFront>
+                                            <p class="text-sm sm:text-base font-thin">Mar 9, 2020</p>
+                                        </contDate>
+                                        <contCollab class="flex flex-col gap-1">
+                                            <contCollabFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">2 Collaborators</p>
+                                                <svg role="img"
+                                                    class="flex w-6 h-5 stroke-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#collabSVG"
+                                                        href="SVG_sprite.svg#collabSVG">
+                                                    </use>
+                                                </svg>
+                                            </contCollabFront>
+                                            <p class="text-sm sm:text-base font-thin">Olaf Janssen</p>
+                                            <p class="text-sm sm:text-base font-thin">Bernd-Jan Witkamp</p>
+                                        </contCollab>
+                                        <contExtern class="flex flex-col gap-1">
+                                            <contExternFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">External Resources</p>
+                                                <svg role="img"
+                                                    class="flex w-5 h-5 relative fill-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#externalSVG"
+                                                        href="SVG_sprite.svg#externalSVG">
+                                                    </use>
+                                                </svg>
+                                            </contExternFront>
+                                            <!-- <a target="_blank" href="https://drive.google.com/">
+                                            <p class="text-sm sm:text-base font-thin underline">
+                                                https://drive.google.com/</p>
+                                        </a>
+                                        <a target="_blank" href="https://figshare.com/">
+                                            <p class="text-sm sm:text-base font-thin underline">
+                                                https://figshare.com/</p>
+                                        </a> -->
+                                        </contExtern>
+                                    </contInfo>
+                                </modalHeaderBottom>
+                            </modalHeader>
+                            <modalBody
+                                class="w-full bg-r px-6 py-5 md:px-12 md:py-10 lg:bg-running bg-contain bg-bottom bg-no-repeat bg-research-white-DEFAULT space">
+                                <colMedium class="flex flex-col max-w-lg space-y-8">
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="flex flex-col">
+                                            <h3 class="font-medium sm:text-lg">ICT in Practice 2020</h3>
+                                            <p>Researchers Olaf Janssen, Bernd-Jan Witkamp and Tom Langhorst presented
+                                                the outcomes of the Nano4Sports research initiative at the SECSI 2019
+                                                Science & Engineering Conference at Eindhoven University of Technology.
+                                                Their findings are documented in a concise research paper that is part
+                                                of the published conference proceedings. On February 7th 2020 at
+                                                Strijp-TQ in Eindhoven de Nano4Sports research project was officially
+                                                completed with an all-day demonstration and a word of appreciation by
+                                                professor Mark de Graaf, head of the research chair Interaction Design.
+                                                The Nano4Sports demonstration was part of the programme of the ICT In
+                                                Practice 2020 conference at Strijp TQ.</p>
+                                        </contDescription>
+                                        <!-- <imgDescription class="flex flex-col"><img
+                                            src="./assets/images/jpg/sonification.jpg" alt="">
+                                        <i>Achieved with sonification</i>
+                                    </imgDescription> -->
+                                    </contBodySection>
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="">
+                                            <h3 class="font-medium sm:text-lg">Project transfer</h3>
+                                            <p>Overall Mark de Graaf concluded that the results of the research project
+                                                were fully satisfactory and that Nao4Sports lived up to its
+                                                expectations. The findings and methods of Nano4Sports will be transfered
+                                                to the continuing The Vitality living lab project of the research chair
+                                                Interaction Design. That project has a projected end date in Spring
+                                                2021.
+                                            </p>
+                                        </contDescription>
+                                    </contBodySection>
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="">
+                                            <p>The Nano4Sports paper can be found in the <a
+                                                    href="https://pure.tue.nl/ws/portalfiles/portal/141451746/Vos_Restrepo_Brombacher_SECSI_proceedings_2019.pdf#page=92"
+                                                    target="_blank" rel="noreferrer noopener">Proceedings of the 4th
+                                                    Science &amp; Engineering Conference on Sports Innovation</a>.</p>
+                                        </contDescription>
+                                    </contBodySection>
+                                </colMedium>
+                            </modalBody>
+                            <modalFooter class=""></modalFooter>
+                        </modalContent>
+                    </sectionModal>
+
+                    <gridItem id="modal-popup" data-modal="iip2019"
+                        class="relative bg-white border-2 border-opacity-50 border-line-grey-DEFAULT rounded shadow-md hover:opacity-75 cursor-pointer">
+                        <contHeader
+                            class="flex flex-col space-y-2 pt-4 pl-4 pb-4 pr-4 border-b-2 border-opacity-50 border-line-grey-DEFAULT">
+                            <h3 class="font-bold">Final paper and presentation</h3>
+                            <contInfo class="flex flex-row justify-between">
+                                <contDate class="flex space-x-2">
+                                    <svg role="img" class="flex w-6 h-6 fill-current text-orange-action-DEFAULT">
+                                        <use xlink:href="SVG_sprite.svg#clockSVG" href="SVG_sprite.svg#clockSVG">
+                                        </use>
+                                    </svg>
+                                    <p class="">Mar 27, 2019</p>
+                                </contDate>
+                                <contCollab class="flex justify-self-end space-x-2">
+                                    <svg role="img" class="flex w-6 h-5 stroke-current text-orange-action-DEFAULT">
+                                        <use xlink:href="SVG_sprite.svg#collabSVG" href="SVG_sprite.svg#collabSVG">
+                                        </use>
+                                    </svg>
+                                    <p class="">2 collaborators</p>
+                                </contCollab>
+                            </contInfo>
+                        </contHeader>
+                        <contImg class=""><img src="./assets/images/items/iip_2019.jpg" alt=""></contImg>
+                        <contFooter class="flex flex-col pt-4 pl-4 pb-4 pr-4">
+                            <contDescript class="flex flex-col justify-between space-y-8">
+                                <p>The team of researchers of the Nano4Sports project presented three demos at the ICT
+                                    in Practice symposium at Natlab, Eindhoven.</p>
+                                <contReadMore class="flex">
+                                    <span class="flex border-b-4 border-orange-action-DEFAULT font-medium">READ
+                                        MORE
+                                    </span>
+                                </contReadMore>
+                            </contDescript>
+                        </contFooter>
+                    </gridItem>
+
+                    <sectionModal id="iip2019"
+                        class="modal hidden overflow-auto flex-col justify-start fixed inset-0 z-50 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12 bg-black bg-opacity-50">
+                        <modalContent
+                            class="flex flex-col self-center w-full max-w-screen-lg items-start text-black rounded shadow-md">
+                            <modalHeader
+                                class="flex flex-col w-full px-6 py-5 md:px-12 md:py-10 space-y-4 text-white bg-bg-black-DEFAULT">
+                                <modalHeaderTop class="flex w-full">
+                                    <h1 class="text-lg sm:text-xl font-semibold">ICT in Practice 2019
+                                    </h1>
+                                    <navCloseCont class="flex flex-1 w-full justify-end">
+                                        <svg id="modal-close" role="img"
+                                            class="flex w-6 h-6 self-start sm:self-center justify-center fill-current cursor-pointer ">
+                                            <use xlink:href="SVG_sprite.svg#closeMenuSVG"
+                                                href="SVG_sprite.svg#closeMenuSVG">
+                                            </use>
+                                        </svg>
+                                    </navCloseCont>
+                                </modalHeaderTop>
+                                <modalHeaderBottom class="">
+                                    <contInfo
+                                        class="grid grid-cols-2 gap-4 sm:flex sm:justify-start sm:gap-6 md:gap-10">
+                                        <contDate class="flex flex-col gap-1">
+                                            <contDateFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">Upload Date</p>
+                                                <svg role="img"
+                                                    class="flex w-5 h-5 fill-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#clockSVG"
+                                                        href="SVG_sprite.svg#clockSVG">
+                                                    </use>
+                                                </svg>
+                                            </contDateFront>
+                                            <p class="text-sm sm:text-base font-thin">Mar 27, 2019</p>
+                                        </contDate>
+                                        <contCollab class="flex flex-col gap-1">
+                                            <contCollabFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">3 Collaborators</p>
+                                                <svg role="img"
+                                                    class="flex w-6 h-5 stroke-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#collabSVG"
+                                                        href="SVG_sprite.svg#collabSVG">
+                                                    </use>
+                                                </svg>
+                                            </contCollabFront>
+                                            <p class="text-sm sm:text-base font-thin">Tom Langhorst</p>
+                                            <p class="text-sm sm:text-base font-thin">Bernd-Jan Witkamp</p>
+                                            <p class="text-sm sm:text-base font-thin">Olaf Janssen</p>
+                                        </contCollab>
+                                        <contExtern class="flex flex-col gap-1">
+                                            <contExternFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">External Resources</p>
+                                                <svg role="img"
+                                                    class="flex w-5 h-5 relative fill-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#externalSVG"
+                                                        href="SVG_sprite.svg#externalSVG">
+                                                    </use>
+                                                </svg>
+                                            </contExternFront>
+                                            <!-- <a target="_blank" href="https://drive.google.com/">
+                                        <p class="text-sm sm:text-base font-thin underline">
+                                            https://drive.google.com/</p>
+                                    </a>
+                                    <a target="_blank" href="https://figshare.com/">
+                                        <p class="text-sm sm:text-base font-thin underline">
+                                            https://figshare.com/</p>
+                                    </a> -->
+                                        </contExtern>
+                                    </contInfo>
+                                </modalHeaderBottom>
+                            </modalHeader>
+                            <modalBody
+                                class="w-full bg-r px-6 py-5 md:px-12 md:py-10 lg:bg-running bg-contain bg-bottom bg-no-repeat bg-research-white-DEFAULT space">
+                                <colMedium class="flex flex-col max-w-lg space-y-8">
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="flex flex-col">
+                                            <p>The team of researchers of the Nano4Sports project presented three demos
+                                                at the ICT in Practice symposium at Natlab, Eindhoven, on Thursday the
+                                                21st of March. The demos showed that surprising progress has been made
+                                                in the previous few months. The Nano4Sports laboratory is in use since
+                                                the beginning of 2019.</p>
+                                        </contDescription>
+                                    </contBodySection>
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="">
+                                            <h3 class="font-medium sm:text-lg">Sensor System</h3>
+                                            <p>The first demo showed a system to accurately identify steps by using
+                                                custom sensors. This information is the essential basis to analyse if a
+                                                runner or walker is moving in an ergonomical way. The next demo showed
+                                                the use of smartphones and AI algorithms to classify a moving pattern as
+                                                walking or running.</p>
+                                        </contDescription>
+                                    </contBodySection>
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="">
+                                            <h3 class="font-medium sm:text-lg">Step Sonification</h3>
+                                            <p>In the last demo directional audio was used to correct the posture of
+                                                runners. If the body of a runner is off balance, audio signals motivate
+                                                the runner to correct his posture. This is a new technique that has not
+                                                been used before.</p>
+                                        </contDescription>
+                                    </contBodySection>
+                                </colMedium>
+                            </modalBody>
+                            <modalFooter class=""></modalFooter>
+                        </modalContent>
+                    </sectionModal>
+
+                    <gridItem id="modal-popup" data-modal="newlab"
+                        class="relative bg-white border-2 border-opacity-50 border-line-grey-DEFAULT rounded shadow-md hover:opacity-75 cursor-pointer">
+                        <contHeader
+                            class="flex flex-col space-y-2 pt-4 pl-4 pb-4 pr-4 border-b-2 border-opacity-50 border-line-grey-DEFAULT">
+                            <h3 class="font-bold">Test Lab Fully Operational</h3>
+                            <contInfo class="flex flex-row justify-between">
+                                <contDate class="flex space-x-2">
+                                    <svg role="img" class="flex w-6 h-6 fill-current text-orange-action-DEFAULT">
+                                        <use xlink:href="SVG_sprite.svg#clockSVG" href="SVG_sprite.svg#clockSVG">
+                                        </use>
+                                    </svg>
+                                    <p class="">Feb 18, 2019</p>
+                                </contDate>
+                                <contCollab class="flex justify-self-end space-x-2">
+                                    <svg role="img" class="flex w-6 h-5 stroke-current text-orange-action-DEFAULT">
+                                        <use xlink:href="SVG_sprite.svg#collabSVG" href="SVG_sprite.svg#collabSVG">
+                                        </use>
+                                    </svg>
+                                    <p class="">3 collaborators</p>
+                                </contCollab>
+                            </contInfo>
+                        </contHeader>
+                        <contImg class=""><img src="./assets/images/items/newlab.jpg" alt=""></contImg>
+                        <contFooter class="flex flex-col pt-4 pl-4 pb-4 pr-4">
+                            <contDescript class="flex flex-col justify-between space-y-8">
+                                <p>A lab space has been set-up with a treadmill and sound equipment.</p>
+                                <contReadMore class="flex">
+                                    <span class="flex border-b-4 border-orange-action-DEFAULT font-medium">READ
+                                        MORE
+                                    </span>
+                                </contReadMore>
+                            </contDescript>
+                        </contFooter>
+                    </gridItem>
+
+                    <sectionModal id="newlab"
+                        class="modal hidden overflow-auto flex-col justify-start fixed inset-0 z-50 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12 bg-black bg-opacity-50">
+                        <modalContent
+                            class="flex flex-col self-center w-full max-w-screen-lg items-start text-black rounded shadow-md">
+                            <modalHeader
+                                class="flex flex-col w-full px-6 py-5 md:px-12 md:py-10 space-y-4 text-white bg-bg-black-DEFAULT">
+                                <modalHeaderTop class="flex w-full">
+                                    <h1 class="text-lg sm:text-xl font-semibold">Test Lab Fully Operational
+                                    </h1>
+                                    <navCloseCont class="flex flex-1 w-full justify-end">
+                                        <svg id="modal-close" role="img"
+                                            class="flex w-6 h-6 self-start sm:self-center justify-center fill-current cursor-pointer ">
+                                            <use xlink:href="SVG_sprite.svg#closeMenuSVG"
+                                                href="SVG_sprite.svg#closeMenuSVG">
+                                            </use>
+                                        </svg>
+                                    </navCloseCont>
+                                </modalHeaderTop>
+                                <modalHeaderBottom class="">
+                                    <contInfo
+                                        class="grid grid-cols-2 gap-4 sm:flex sm:justify-start sm:gap-6 md:gap-10">
+                                        <contDate class="flex flex-col gap-1">
+                                            <contDateFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">Upload Date</p>
+                                                <svg role="img"
+                                                    class="flex w-5 h-5 fill-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#clockSVG"
+                                                        href="SVG_sprite.svg#clockSVG">
+                                                    </use>
+                                                </svg>
+                                            </contDateFront>
+                                            <p class="text-sm sm:text-base font-thin">Feb 19, 2019</p>
+                                        </contDate>
+                                        <contCollab class="flex flex-col gap-1">
+                                            <contCollabFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">3 Collaborators</p>
+                                                <svg role="img"
+                                                    class="flex w-6 h-5 stroke-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#collabSVG"
+                                                        href="SVG_sprite.svg#collabSVG">
+                                                    </use>
+                                                </svg>
+                                            </contCollabFront>
+                                            <p class="text-sm sm:text-base font-thin">Bernd-Jan Witkamp</p>
+                                            <p class="text-sm sm:text-base font-thin">Olaf Janssen</p>
+                                            <p class="text-sm sm:text-base font-thin">Tom Langhorst</p>
+                                        </contCollab>
+                                        <contExtern class="flex flex-col gap-1">
+                                            <contExternFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">External Resources</p>
+                                                <svg role="img"
+                                                    class="flex w-5 h-5 relative fill-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#externalSVG"
+                                                        href="SVG_sprite.svg#externalSVG">
+                                                    </use>
+                                                </svg>
+                                            </contExternFront>
+                                            <!-- <a target="_blank" href="https://drive.google.com/">
+                                    <p class="text-sm sm:text-base font-thin underline">
+                                        https://drive.google.com/</p>
+                                </a>
+                                <a target="_blank" href="https://figshare.com/">
+                                    <p class="text-sm sm:text-base font-thin underline">
+                                        https://figshare.com/</p>
+                                </a> -->
+                                        </contExtern>
+                                    </contInfo>
+                                </modalHeaderBottom>
+                            </modalHeader>
+                            <modalBody
+                                class="w-full bg-r px-6 py-5 md:px-12 md:py-10 lg:bg-running bg-contain bg-bottom bg-no-repeat bg-research-white-DEFAULT space">
+                                <colMedium class="flex flex-col max-w-lg space-y-8">
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="flex flex-col">
+                                            <p>The centre of expertise Interaction Design IXD took one step forward as
+                                                the new testing environment at Fontys School of ICT at Strijp-TQ,
+                                                Eindhoven, is now fully operational. Runners can use the treadmill.
+                                                Speakers are reflecting on their movements with sounds and body sensors
+                                                measure the effect of that feedback.</p>
+                                        </contDescription>
+                                    </contBodySection>
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="">
+                                            <p>The new sonification laboratory was created with the help of research
+                                                partner InnoSportLab Sport & Beweeg! The equipment seems rather squeezed
+                                                in into a room at Strijp-TQ, but the new lab has exactly all that is
+                                                needed.</p>
+                                        </contDescription>
+                                    </contBodySection>
+                                </colMedium>
+                            </modalBody>
+                            <modalFooter class=""></modalFooter>
+                        </modalContent>
+                    </sectionModal>
+
+
+                </gridVisitors>
+
+                <gridItem id="research-researchers"
+                    class="flex flex-col justify-between sm:w-1/2 lg:w-1/3 space-y-2 text-left border-solid border-2 border-opacity-50 border-line-grey-DEFAULT bg-white rounded">
+                    <contDescript class="flex flex-col pt-4 pl-4 pb-4 pr-4 space-y-2">
+                        <h2 class="font-medium text-lg">Researchers</h2>
+                        <p id="p-researchers" class="flex">I'm interested in the research
+                            because I might be able to
+                            use it for my own research.</p>
+                    </contDescript>
+                    <contFooter
+                        class="flex justify-between content-center pt-4 pl-4 pb-4 pr-4 bg-orange-action-DEFAULT text-white">
+                        <svg id="chevronResearchers" role="img"
+                            class="flex self-center fill-current w-4 h-6 transform rotate-180 cursor-pointer">
+                            <use xlink:href="SVG_sprite.svg#chevronSVG" href="SVG_sprite.svg#chevronSVG">
+                            </use>
+                        </svg>
+                        <h2 class="flex self-center font-medium text-lg">Research Output</h2>
+                        <img class="w-10 h-10" src="./assets/icons/books.png" alt="">
+                    </contFooter>
+                    </contAll>
+                </gridItem>
+
+                <gridResearchers id="research-items" class="hidden grid-cols-1 gap-8 sm:grid-cols-2">
+                    <gridItem data-modal="firstItemR"
+                        class="modal-popup flex flex-col pt-6 pl-6 pb-6 pr-6 space-y-6 text-left border-solid border-2 border-line-grey-DEFAULT bg-white rounded shadow-md hover:opacity-75 cursor-pointer">
+                        <contDescript class="flex flex-col space-y-2 ">
+                            <h2 class="font-medium text-lg">Creating live music through movement</h2>
+                            <p class="">Insert description of update. What is new/going on? Why? Lorem
+                                ipsum
+                                dolor sit amet, consectetur adipisicing elit. Similique repellat perferendis vitae
+                                possimus
+                                perspiciatis
+                                incidunt.</p>
+                            <p class="font-medium text-line-grey-DEFAULT">Read More...</p>
+                        </contDescript>
+                        <contFooter class="space-y-4">
+                            <contTags
+                                class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-center font-medium items-center">
+                                <tag class="pt-1 pr-0 pb-1 pl-0 rounded text-sm bg-orange-action-DEFAULT text-white">
+                                    Research Paper
+                                </tag>
+                                <tag class="pt-1 pr-0 pb-1 pl-0 rounded text-sm bg-orange-action-DEFAULT text-white">
+                                    Sonification
+                                </tag>
+                            </contTags>
+                            <contInfo class="flex flex-row justify-between">
+                                <contDate class="flex space-x-2">
+                                    <svg role="img" class="flex w-6 h-6">
+                                        <use xlink:href="SVG_sprite.svg#clockSVG" href="SVG_sprite.svg#clockSVG">
+                                        </use>
+                                    </svg>
+                                    <p class="">Aug 20, 2020</p>
+                                </contDate>
+                                <contCollab class="flex justify-self-end space-x-2">
+                                    <svg role="img" class="flex w-6 h-5 stroke-current">
+                                        <use xlink:href="SVG_sprite.svg#collabSVG" href="SVG_sprite.svg#collabSVG">
+                                        </use>
+                                    </svg>
+                                    <p class="">1 collaborators</p>
+                                </contCollab>
+                            </contInfo>
+                        </contFooter>
+                        </contAll>
+                    </gridItem>
+
+                    <sectionModal id="firstItemR"
+                        class="modal hidden overflow-auto flex-col justify-start fixed inset-0 z-50 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12 bg-black bg-opacity-50">
+                        <modalContent
+                            class="flex flex-col self-center w-full max-w-screen-lg items-start text-black rounded shadow-md">
+                            <modalHeader
+                                class="flex flex-col w-full px-6 py-5 md:px-12 md:py-10 space-y-4 text-white bg-bg-black-DEFAULT">
+                                <modalHeaderTop class="flex w-full">
+                                    <h1 class="text-lg sm:text-xl font-semibold">How people run differently on their
+                                        favourite songs
+                                    </h1>
+                                    <navCloseCont class="flex flex-1 w-full justify-end">
+                                        <svg id="modal-close" role="img"
+                                            class="flex w-6 h-6 self-start sm:self-center justify-center fill-current cursor-pointer ">
+                                            <use xlink:href="SVG_sprite.svg#closeMenuSVG"
+                                                href="SVG_sprite.svg#closeMenuSVG">
+                                            </use>
+                                        </svg>
+                                    </navCloseCont>
+                                </modalHeaderTop>
+                                <modalHeaderBottom class="">
+                                    <contInfo
+                                        class="grid grid-cols-2 gap-4 sm:flex sm:justify-start sm:gap-6 md:gap-10">
+                                        <contDate class="flex flex-col gap-1">
+                                            <contDateFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">Upload Date</p>
+                                                <svg role="img"
+                                                    class="flex w-5 h-5 fill-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#clockSVG"
+                                                        href="SVG_sprite.svg#clockSVG">
+                                                    </use>
+                                                </svg>
+                                            </contDateFront>
+                                            <p class="text-sm sm:text-base font-thin">Aug 20, 2020</p>
+                                        </contDate>
+                                        <contCollab class="flex flex-col gap-1">
+                                            <contCollabFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">1 Collaborators</p>
+                                                <svg role="img"
+                                                    class="flex w-6 h-5 stroke-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#collabSVG"
+                                                        href="SVG_sprite.svg#collabSVG">
+                                                    </use>
+                                                </svg>
+                                            </contCollabFront>
+                                            <p class="text-sm sm:text-base font-thin">Bernd-Jan Witkamp</p>
+                                        </contCollab>
+                                        <contExtern class="flex flex-col gap-1">
+                                            <contExternFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">External Resources</p>
+                                                <svg role="img"
+                                                    class="flex w-5 h-5 relative fill-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#externalSVG"
+                                                        href="SVG_sprite.svg#externalSVG">
+                                                    </use>
+                                                </svg>
+                                            </contExternFront>
+                                            <a target="_blank" href="https://drive.google.com/">
+                                                <p class="text-sm sm:text-base font-thin underline">
+                                                    https://drive.google.com/</p>
+                                            </a>
+                                            <a target="_blank" href="https://figshare.com/">
+                                                <p class="text-sm sm:text-base font-thin underline">
+                                                    https://figshare.com/</p>
+                                            </a>
+                                        </contExtern>
+                                    </contInfo>
+                                </modalHeaderBottom>
+                            </modalHeader>
+                            <modalBody
+                                class="w-full bg-r px-6 py-5 md:px-12 md:py-10 bg-research-white-DEFAULT space-y-6">
+                                <colLarge class="flex flex-col max-w-lg space-y-8">
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="">
+                                            <h3 class="font-medium sm:text-lg">Research</h3>
+                                            <p>Our research has shown that by creating the right algorithms we can
+                                                translate the data of a runner (which is generated by their movement)
+                                                into
+                                                live sound and ultimately this allows runners to make their own music.
+                                                We got to this conclusion by making proof of concepts.</p>
+                                        </contDescription>
+                                    </contBodySection>
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="">
+                                            <h3 class="font-medium sm:text-lg">How does this information help us?</h3>
+                                            <p>With this info we can... Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Dolores, excepturi fuga! Quibusdam esse eum a eaque
+                                                sequi laboriosam iste sapiente! Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing elit. Repellendus, tenetur nesciunt fugiat dignissimos
+                                                deleniti voluptatum suscipit fuga autem blanditiis ex debitis aliquid
+                                                ullam, iure quod minus ipsam quisquam totam, explicabo quibusdam
+                                                praesentium. Consequatur sequi cumque architecto vel incidunt alias.
+                                                Exercitationem officia tenetur nesciunt nulla libero non. Cumque,
+                                                reprehenderit repellendus magnam quam odio inventore facilis aspernatur
+                                                iusto nemo magni non! Perspiciatis officia minima vel explicabo numquam
+                                                voluptas, iusto a non veritatis quam impedit ipsam atque inventore
+                                                magnam? Illo possimus eaque aliquid voluptates eum. In explicabo quis
+                                                minus omnis illum atque quidem recusandae, sed velit facere adipisci
+                                                labore error asperiores voluptatem cupiditate cum, harum molestiae.
+                                            </p>
+                                        </contDescription>
+                                        <a target="_blank" href="./assets/pdf/Stakeholders.pdf"
+                                            class="flex w-48 pt-2 pr-4 pb-2 pl-4 bg-orange-action-DEFAULT text-white justify-center rounded font-medium hover:bg-opacity-75"><button>View
+                                                research PDF</button></a>
+
+
+                                    </contBodySection>
+                                </colLarge>
+                                <colFull class="flex flex-col space-y-8">
+                                    <contBodysection class="space-y-4">
+                                        <!-- <embed src="./assets/pdf/Stakeholders.pdf" width="100%" height="1000"
+                                            data="/my_pdf.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
+                                            type="application/pdf"> -->
+                                        <object class="w-full" height="500" type="application/pdf"
+                                            data="./assets/pdf/Stakeholders.pdf?#zoom=80&scrollbar=0&toolbar=0&navpanes=0">
+                                            <p>Insert your error message here, if the PDF cannot be displayed.</p>
+                                        </object>
+                                    </contBodysection>
+                                </colFull>
+                            </modalBody>
+                            <modalFooter class=""></modalFooter>
+                        </modalContent>
+                    </sectionModal>
+
+                    <!-- SECSI 2019 paper -->
+                    <gridItem id="modal-popup" data-modal="secsi2019-modal"
+                        class="flex flex-col pt-6 pl-6 pb-6 pr-6 space-y-6 text-left border-solid border-2 border-line-grey-DEFAULT bg-white rounded shadow-md hover:opacity-75 cursor-pointer">
+                        <contDescript class="flex flex-col space-y-2 ">
+                            <h2 class="font-medium text-lg">Towards translating the effect of music into motor using
+                                deep learning</h2>
+                            <p class="">This contribution describes our platform that works both in a field and lab
+                                setting and is able to provide real-time audio feedback based on (machine learned)
+                                sensor data analysis. It also presents a proposed experimental approact.
+                                <p class="font-medium text-line-grey-DEFAULT">Read More...</p>
+                        </contDescript>
+                        <contFooter class="space-y-4">
+                            <contTags
+                                class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-center font-medium items-center">
+                                <tag class="pt-1 pr-0 pb-1 pl-0 rounded text-sm bg-orange-action-DEFAULT text-white">
+                                    Conference Paper
+                                </tag>
+                                <tag class="pt-1 pr-0 pb-1 pl-0 rounded text-sm bg-orange-action-DEFAULT text-white">
+                                    Deep Learning
+                                </tag>
+                            </contTags>
+                            <contInfo class="flex flex-row justify-between">
+                                <contDate class="flex space-x-2">
+                                    <svg role="img" class="flex w-6 h-6">
+                                        <use xlink:href="SVG_sprite.svg#clockSVG" href="SVG_sprite.svg#clockSVG">
+                                        </use>
+                                    </svg>
+                                    <p class="">Sep 25, 2019</p>
+                                </contDate>
+                                <contCollab class="flex justify-self-end space-x-2">
+                                    <svg role="img" class="flex w-6 h-5 stroke-current">
+                                        <use xlink:href="SVG_sprite.svg#collabSVG" href="SVG_sprite.svg#collabSVG">
+                                        </use>
+                                    </svg>
+                                    <p class="">3 collaborators</p>
+                                </contCollab>
+                            </contInfo>
+                        </contFooter>
+                        </contAll>
+                    </gridItem>
+
+                    <sectionModal id="secsi2019-modal"
+                        class="modal hidden overflow-auto flex-col justify-start fixed inset-0 z-50 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12 bg-black bg-opacity-50">
+                        <modalContent
+                            class="flex flex-col self-center w-full max-w-screen-lg items-start text-black rounded shadow-md">
+                            <modalHeader
+                                class="flex flex-col w-full px-6 py-5 md:px-12 md:py-10 space-y-4 text-white bg-bg-black-DEFAULT">
+                                <modalHeaderTop class="flex w-full">
+                                    <h1 class="text-lg sm:text-xl font-semibold">Towards translating the effect of music
+                                        into motor using deep learning
+                                    </h1>
+                                    <navCloseCont class="flex flex-1 w-full justify-end">
+                                        <svg id="modal-close" role="img"
+                                            class="flex w-6 h-6 self-start sm:self-center justify-center fill-current cursor-pointer ">
+                                            <use xlink:href="SVG_sprite.svg#closeMenuSVG"
+                                                href="SVG_sprite.svg#closeMenuSVG">
+                                            </use>
+                                        </svg>
+                                    </navCloseCont>
+                                </modalHeaderTop>
+                                <modalHeaderBottom class="">
+                                    <contInfo
+                                        class="grid grid-cols-2 gap-4 sm:flex sm:justify-start sm:gap-6 md:gap-10">
+                                        <contDate class="flex flex-col gap-1">
+                                            <contDateFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">Upload Date</p>
+                                                <svg role="img"
+                                                    class="flex w-5 h-5 fill-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#clockSVG"
+                                                        href="SVG_sprite.svg#clockSVG">
+                                                    </use>
+                                                </svg>
+                                            </contDateFront>
+                                            <p class="text-sm sm:text-base font-thin">Sep 25, 2019</p>
+                                        </contDate>
+                                        <contCollab class="flex flex-col gap-1">
+                                            <contCollabFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">3 Collaborators</p>
+                                                <svg role="img"
+                                                    class="flex w-6 h-5 stroke-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#collabSVG"
+                                                        href="SVG_sprite.svg#collabSVG">
+                                                    </use>
+                                                </svg>
+                                            </contCollabFront>
+                                            <p class="text-sm sm:text-base font-thin">Olaf Janssen</p>
+                                            <p class="text-sm sm:text-base font-thin">Tom Langhorst</p>
+                                            <p class="text-sm sm:text-base font-thin">Bernd-Jan Witkamp</p>
+                                        </contCollab>
+                                        <contExtern class="flex flex-col gap-1">
+                                            <contExternFront class="flex gap-2">
+                                                <p class="text-sm sm:text-base">External Resources</p>
+                                                <svg role="img"
+                                                    class="flex w-5 h-5 relative fill-current text-orange-action-DEFAULT">
+                                                    <use xlink:href="SVG_sprite.svg#externalSVG"
+                                                        href="SVG_sprite.svg#externalSVG">
+                                                    </use>
+                                                </svg>
+                                            </contExternFront>
+                                            <a target="_blank"
+                                                href="https://www.researchgate.net/publication/337548553_Towards_translating_the_effect_of_music_into_motor_using_deep_learning">
+                                                <p class="text-sm sm:text-base font-thin underline">
+                                                    ResearchGate</p>
+                                            </a>
+                                        </contExtern>
+                                    </contInfo>
+                                </modalHeaderBottom>
+                            </modalHeader>
+                            <modalBody
+                                class="w-full bg-r px-6 py-5 md:px-12 md:py-10 bg-research-white-DEFAULT space-y-6">
+                                <colLarge class="flex flex-col max-w-lg space-y-8">
+                                    <contBodySection class="space-y-4">
+                                        <contDescription class="">
+                                            <h3 class="font-medium sm:text-lg">Abstract</h3>
+                                            <p>Artificial neural networks can be used to detect emotion from gait and
+                                                music can act as an agent to influence gait. While the impact of
+                                                specific musical composition elements may be highly personal (every
+                                                person has their own preferred running playlist), we hypothesize that
+                                                using deep learning, it becomes possible to steer individual running
+                                                technique into a controlled direction by exposing the runner to music
+                                                with the appropriate musical parameters. To test our hypothesis, we
+                                                designed a versatile sensing and sonification platform and describe our
+                                                experimental approach.</p>
+                                            </p>
+                                        </contDescription>
+                                        <a target="_blank" href="./assets/pdf/SECSI2019-proceedings-otajanssen.pdf"
+                                            class="flex w-48 pt-2 pr-4 pb-2 pl-4 bg-orange-action-DEFAULT text-white justify-center rounded font-medium hover:bg-opacity-75"><button>View
+                                                research PDF</button></a>
+                                    </contBodySection>
+                                </colLarge>
+                                <colFull class="flex flex-col space-y-8">
+                                    <contBodysection class="space-y-4">
+                                        <!-- <embed src="./assets/pdf/Stakeholders.pdf" width="100%" height="1000"
+                                            data="/my_pdf.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
+                                            type="application/pdf"> -->
+                                        <object class="w-full" height="500" type="application/pdf"
+                                            data="./assets/pdf/SECSI2019-proceedings-otajanssen.pdf?#zoom=80&scrollbar=0&toolbar=0&navpanes=0">
+                                            <p>Insert your error message here, if the PDF cannot be displayed.</p>
+                                        </object>
+                                    </contBodysection>
+                                </colFull>
+                            </modalBody>
+                            <modalFooter class=""></modalFooter>
+                        </modalContent>
+                    </sectionModal>
+
+                </gridResearchers>
+            </gridProgr>
+        </contProjectResearch>
+    </sectionProjectResearch>
+    <sectionReqAccess id="res-access"
+        class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12 bg-bg-blue-DEFAULT text-white">
+        <contReqAccess class="flex flex-col w-full self-center max-w-screen-lg items-center text-center space-y-6">
+            <contDescript class="space-y-2">
+                <h1 class="font-medium text-2xl sm:text-3xl">Request Access</h1>
+            </contDescript>
+            <form action="https://formsubmit.co/334a69b4a96401cf5a57d74d8cdecfa2" method="POST"
+                class="flex flex-col max-w-screen-md w-full space-y-6 text-white">
+                <textarea name="message" required minlength="5"
+                    placeholder="Want access to specific data or source code? State your reason(s) on why you want access by typing here..."
+                    class="h-40 pt-2 pl-2 pr-2 rounded border-solid border-2 border-line-grey-DEFAULT  bg-bg-blue-DEFAULT"></textarea>
+                <contBottom class="flex flex-col sm:flex-row w-full space-y-6 sm:space-y-0 sm:space-x-4">
+                    <input type="email" name="email" required placeholder="example@gmail.com" required minlength="5"
+                        class="flex pt-2 pl-4 pb-2 sm:w-2/3 rounded border-solid border-2 border-white bg-bg-blue-DEFAULT">
+                    <input type="hidden" name="_next"
+                        value="http://i404350.hera.fhict.nl/MER_site/public/thanksForSub.html">
+                    <input type="hidden" name="_subject" value="MER research output request!">
+                    <button type="submit"
+                        class="pt-3 pr-6 pb-3 pl-6 sm:w-1/3 bg-orange-action-DEFAULT rounded font-medium">Submit</button>
+                </contBottom>
+            </form>
+        </contReqAccess>
+    </sectionReqAccess>
+    <sectionExternalResearch id="ext-research"
+        class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12 bg-research-white-DEFAULT">
+        <contExtResearch class="w-full self-center max-w-screen-lg space-y-4">
+            <contDescript class="flex flex-col items-start sm:max-w-sm lg:max-w-md space-y-2">
+                <h1 class="tracking-wider text-3xl sm:text-4xl">External Research</h1>
+                <p>We take inspiration from other projects on a daily basis. Read what others have proven within
+                    the
+                    field of
+                    Human Vitality.</p>
+            </contDescript>
+            <gridTheory class="grid grid-cols-1 sm:grid-cols-2 w-full gap-4">
+                <gridItem class="flex justify-center p-6 bg-white shadow-md">
+                    <contDescript class="flex flex-col self-center text-center space-y-4">
+                        <p class="font-medium">“In het brein zijn geluid, muziek en beweging
+                            aan elkaar gekoppeld”</p>
+                        <a target="_blank" href="research.html" class="flex space-x-2 self-center">
+                            <span class="font-medium text-sm border-solid border-b-4 border-orange-action-DEFAULT">READ
+                                MORE</span>
+                        </a>
+                    </contDescript>
+                </gridItem>
+                <gridItem class="flex justify-center p-6 bg-white shadow-md">
+                    <contDescript class="flex flex-col self-center text-center space-y-4">
+                        <p class="font-medium">“In het brein zijn geluid, muziek en beweging
+                            aan elkaar gekoppeld”</p>
+                        <a target="_blank" href="research.html" class="flex space-x-2 self-center">
+                            <span class="font-medium text-sm border-solid border-b-4 border-orange-action-DEFAULT">READ
+                                MORE</span>
+                        </a>
+                    </contDescript>
+                </gridItem>
+
+            </gridTheory>
+            <contInvisible id="show_extResearch_items" class="hidden grid-cols-1 sm:grid-cols-2 gap-4">
+                <gridItem class="justify-center p-6 bg-white shadow-md">
+                    <contDescript class="flex flex-col self-center text-center space-y-4">
+                        <p class="font-medium">“In het brein zijn geluid, muziek en beweging
+                            aan elkaar gekoppeld”</p>
+                        <a target="_blank" href="research.html" class="flex space-x-2 self-center">
+                            <span class="font-medium text-sm border-solid border-b-4 border-orange-action-DEFAULT">READ
+                                MORE</span>
+                        </a>
+                    </contDescript>
+                </gridItem>
+                <gridItem class="justify-center p-6 bg-white shadow-md">
+                    <contDescript class="flex flex-col self-center text-center space-y-4">
+                        <p class="font-medium">“In het brein zijn geluid, muziek en beweging
+                            aan elkaar gekoppeld”</p>
+                        <a target="_blank" href="research.html" class="flex space-x-2 self-center">
+                            <span class="font-medium text-sm border-solid border-b-4 border-orange-action-DEFAULT">READ
+                                MORE</span>
+                        </a>
+                    </contDescript>
+                </gridItem>
+            </contInvisible>
+        </contExtResearch>
+    </sectionExternalResearch>
+    <sectionMoreExternalResearch
+        class="seeMoreExtResearch absolute w-full flex flex-col h-20 -mt-12 justify-center pt-4 pl-6 pb-4 pr-6 bg-bg-blue-DEFAULT hover:bg-bg-blue-400 text-white cursor-pointer">
+        <contSeeMore class="flex flex-col items-center text-center">
+            <h2 class="font-medium text-lg mb-1">See more</h1>
+                <svg role="img"
+                    class="flex justify-self-center self-center fill-current transform -rotate-90 scale-150 w-3 h-4">
+                    <use xlink:href="SVG_sprite.svg#chevronSVG" href="SVG_sprite.svg#chevronSVG">
+                    </use>
+                </svg>
+        </contSeeMore>
+        </contSeeMore>
+    </sectionMoreExternalResearch>
+    <sectionExploration id="fut-research"
+        class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12 bg-research-white-DEFAULT">
+        <contExploration class="self-center w-full max-w-screen-lg space-y-4">
+
+            <contDescript class="flex flex-col items-start sm:max-w-sm lg:max-w-md space-y-2">
+                <h1 class="tracking-wider text-3xl">Future Research</h1>
+                <p>See what possibilities we want to explore.</p>
+            </contDescript>
+            <gridExplore class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 relative">
+                <gridItem
+                    class="flex justify-center h-40 w-full bg-hero-about bg-center bg-no-repeat bg-cover rounded shadow-md group relative">
+                    <hoverBox
+                        class="absolute left-0 bottom-0 bg-black bg-opacity-75 w-full hover:bg-orange-action-DEFAULT group-hover text-white">
+                        <ghostBtnCont class="flex justify-center w-full relative p-4">
+                            <p></p>
+                            <p class="opacity-100 hover:">Create music based on movement</p>
+
+                        </ghostBtnCont>
+                    </hoverBox>
+                </gridItem>
+                <gridItem
+                    class="flex justify-center h-40 w-full bg-hero-about bg-center bg-no-repeat bg-cover rounded shadow-md group relative">
+                    <hoverBox
+                        class="absolute left-0 bottom-0 bg-black bg-opacity-75 w-full hover:bg-orange-action-DEFAULT group-hover text-white">
+                        <ghostBtnCont class="flex justify-center w-full relative p-4">
+                            <p></p>
+                            <p class="opacity-100 hover:">Create music based on movement</p>
+
+                        </ghostBtnCont>
+                    </hoverBox>
+                </gridItem>
+                <gridItem
+                    class="flex justify-center h-40 w-full bg-hero-about bg-center bg-no-repeat bg-cover rounded shadow-md group relative">
+                    <hoverBox
+                        class="absolute left-0 bottom-0 bg-black bg-opacity-75 w-full hover:bg-orange-action-DEFAULT group-hover text-white">
+                        <ghostBtnCont class="flex justify-center w-full relative p-4">
+                            <p></p>
+                            <p class="opacity-100 hover:">Create music based on movement</p>
+
+                        </ghostBtnCont>
+                    </hoverBox>
+                </gridItem>
+                <gridItem
+                    class="flex justify-center h-40 w-full bg-hero-about bg-center bg-no-repeat bg-cover rounded shadow-md group relative">
+                    <hoverBox
+                        class="absolute left-0 bottom-0 bg-black bg-opacity-75 w-full hover:bg-orange-action-DEFAULT group-hover text-white">
+                        <ghostBtnCont class="flex justify-center w-full relative p-4">
+                            <p></p>
+                            <p class="opacity-100 hover:">Create music based on movement</p>
+
+                        </ghostBtnCont>
+                    </hoverBox>
+                </gridItem>
+                <gridItem
+                    class="flex justify-center h-40 w-full bg-hero-about bg-center bg-no-repeat bg-cover rounded shadow-md group relative">
+                    <hoverBox
+                        class="absolute left-0 bottom-0 bg-black bg-opacity-75 w-full hover:bg-orange-action-DEFAULT group-hover text-white">
+                        <ghostBtnCont class="flex justify-center w-full relative p-4">
+                            <p></p>
+                            <p class="opacity-100 hover:">Create music based on movement</p>
+
+                        </ghostBtnCont>
+                    </hoverBox>
+                </gridItem>
+                <gridItem
+                    class="flex justify-center h-40 w-full bg-hero-about bg-center bg-no-repeat bg-cover rounded shadow-md group relative">
+                    <hoverBox
+                        class="absolute left-0 bottom-0 bg-black bg-opacity-75 w-full hover:bg-orange-action-DEFAULT group-hover text-white">
+                        <ghostBtnCont class="flex justify-center w-full relative p-4">
+                            <p></p>
+                            <p class="opacity-100 hover:">Create music based on movement</p>
+
+                        </ghostBtnCont>
+                    </hoverBox>
+                </gridItem>
+
+            </gridExplore>
+            <contInvisible id="show_futureResearch_items"
+                class="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 relative">
+                <gridItem
+                    class="flex justify-center h-40 w-full bg-hero-about bg-center bg-no-repeat bg-cover rounded shadow-md group relative">
+                    <hoverBox
+                        class="absolute left-0 bottom-0 bg-black bg-opacity-75 w-full hover:bg-orange-action-DEFAULT group-hover text-white">
+                        <ghostBtnCont class="flex justify-center w-full relative p-4">
+                            <p></p>
+                            <p class="opacity-100 hover:">Create music based on movement</p>
+
+                        </ghostBtnCont>
+                    </hoverBox>
+                </gridItem>
+                <gridItem
+                    class="flex justify-center h-40 w-full bg-hero-about bg-center bg-no-repeat bg-cover rounded shadow-md group relative">
+                    <hoverBox
+                        class="absolute left-0 bottom-0 bg-black bg-opacity-75 w-full hover:bg-orange-action-DEFAULT group-hover text-white">
+                        <ghostBtnCont class="flex justify-center w-full relative p-4">
+                            <p></p>
+                            <p class="opacity-100 hover:">Create music based on movement</p>
+
+                        </ghostBtnCont>
+                    </hoverBox>
+                </gridItem>
+                <gridItem
+                    class="hidden sm:flex justify-center h-40 w-full bg-hero-about bg-center bg-no-repeat bg-cover rounded shadow-md group relative">
+                    <hoverBox
+                        class="absolute left-0 bottom-0 bg-black bg-opacity-75 w-full hover:bg-orange-action-DEFAULT group-hover text-white">
+                        <ghostBtnCont class="flex justify-center w-full relative p-4">
+                            <p></p>
+                            <p class="opacity-100 hover:">Create music based on movement</p>
+
+                        </ghostBtnCont>
+                    </hoverBox>
+                </gridItem>
+            </contInvisible>
+
+        </contExploration>
+    </sectionExploration>
+    <sectionMoreExternalResearch
+        class="seeMoreFutureResearch absolute w-full flex flex-col h-20 -mt-12 justify-center pt-4 pl-6 pb-4 pr-6 bg-bg-blue-DEFAULT hover:bg-bg-blue-400 text-white cursor-pointer">
+        <contSeeMore class="flex flex-col items-center text-center">
+            <h2 class="font-medium text-lg mb-1">See more</h1>
+                <svg role="img"
+                    class="flex justify-self-center self-center fill-current transform -rotate-90 scale-150 w-3 h-4">
+                    <use xlink:href="SVG_sprite.svg#chevronSVG" href="SVG_sprite.svg#chevronSVG">
+                    </use>
+                </svg>
+        </contSeeMore>
+        </contSeeMore>
+    </sectionMoreExternalResearch>
+    <sectionFooter
+        class="flex justify-center pt-12 pl-6 pb-12 pr-6 md:pt-24 md:pl-12 md:pb-24 md:pr-12 bg-bg-black-DEFAULT text-white">
+        <contItems
+            class="flex justify-center  md:justify-start w-full max-w-screen-lg text-center md:text-left gap-4 md:gap-12 lg:gap-20">
+            <a class="hidden md:flex" href="#top">
+                <logo class=" font-bold tracking-wider text-4xl">MER</logo>
+            </a>
+            <footerCols class="flex justify-self-end  sm:transform sm:translate-y-3 gap-4 md:gap-12 lg:gap-32">
+                <col1 class="flex flex-col space-y-4 self-center md:self-start">
+                    <a href="#top">
+                        <logo class="font-bold tracking-wider">Music Enabled Running</logo>
+                    </a>
+                    <ul class="space-y-2 grid">
+                        <a href="about.html">
+                            <li>About</li>
+                        </a>
+                        <a href="#updates">
+                            <li>Updates</li>
+                        </a>
+                        <a href="research.html">
+                            <li>Research</li>
+                        </a>
+                        <a href="about.html#contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </col1>
+                <col2 class=" hidden md:flex md:flex-col space-y-4">
+                    <a href="#top">
+                        <logo class="font-bold tracking-wider">Nano4Sports</logo>
+                    </a>
+                    <ul class="space-y-2 grid">
+                        <a href="about.html">
+                            <li>Sports & Technology</li>
+                        </a>
+                        <a href="#updates">
+                            <li>Lectoraat IxD</li>
+                        </a>
+                    </ul>
+                </col2>
+                <col3 class="hidden md:flex md:flex-col space-y-4">
+                    <a href="#top">
+                        <logo class="font-bold tracking-wider">Lectoraat IxD</logo>
+                    </a>
+                    <ul class="space-y-2 grid">
+                        <a href="about.html">
+                            <li>About</li>
+                        </a>
+                        <a href="#updates">
+                            <li>Research</li>
+                        </a>
+                        <a href="research.html">
+                            <li>Research</li>
+                        </a>
+                        <a href="about.html#contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </col3>
+            </footerCols>
+        </contItems>
+    </sectionFooter>
+
+    <!-- Scripts -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/displayResearch.js"></script>
+</body>
+
+</html>
+
+<!-- .item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+} -->

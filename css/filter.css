@@ -1,0 +1,290 @@
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:focus {
+  outline: none;
+}
+
+input[type='radio']:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+::-moz-focus-inner{
+  border: 0;
+}
+
+ol {
+  list-style: none;
+}
+
+.filters-cont{
+  display: flex;
+  justify-content: center;
+}
+
+.filters{
+  padding: 0rem 0 0 0;
+}
+
+.filters.POC-padding{
+  padding: 0rem 0 2rem 0;
+}
+
+.filters-learning-goals{
+  padding: 1rem 0 2rem 0;
+}
+
+@media (min-width: 640px) {
+  .filters{
+    padding: 2rem 0 0 0;
+  }
+  
+  .filters.POC-padding{
+    padding: 2rem 0 2rem 0;
+  }
+}
+
+.filters,
+.filters-learning-goals {
+  text-align: center;
+}
+
+
+.filters *,
+.filters-learning-goals * {
+  display: inline-block;
+  
+}
+
+.filters label{
+  border: 2px solid #2738DE;
+}
+.filters-learning-goals label{
+  border: 2px solid #707070;
+}
+
+.filters label,
+.filters-learning-goals label {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 2rem;
+  min-width: 50px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filters label:hover {
+  background-color: #2738DE;
+}
+
+.filters-learning-goals label:hover {
+  background-color: #707070;
+}
+
+/* GROUP PROJECT LEARNING GOALS FILTERS ROW
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All_groupProject"]:checked~.filters [for="All_groupProject"],
+[value="group-User_Interaction"]:checked~.filters [for="group-User_Interaction"],
+[value="group-Infrastructure"]:checked~.filters [for="group-Infrastructure"],
+[value="group-Software_Engineering"]:checked~.filters [for="group-Software_Engineering"],
+[value="group-Hardware"]:checked~.filters [for="group-Hardware"] {
+  background-color: #2738DE;
+}
+
+[value="All_groupProject"]:checked~.row [data-category] {
+  display: grid;
+}
+
+[value="group-User_Interaction"]:checked~.row .overview-grid:not([data-category~="group-User_Interaction"]),
+[value="group-Infrastructure"]:checked~.row .overview-grid:not([data-category~="group-Infrastructure"]),
+[value="group-Software_Engineering"]:checked~.row .overview-grid:not([data-category~="group-Software_Engineering"]),
+[value="group-Hardware"]:checked~.row .overview-grid:not([data-category~="group-Hardware"]) {
+  display: none;
+}
+
+
+/* PRODUCTS LEARNING ACTIVITIES FILTERS ROW 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All_group_activities"]:checked~.filters-learning-goals [for="All_group_activities"],
+[value="group-analyse"]:checked~.filters-learning-goals [for="group-analyse"],
+[value="group-advise"]:checked~.filters-learning-goals [for="group-advise"],
+[value="group-design"]:checked~.filters-learning-goals [for="group-design"],
+[value="group-realise"]:checked~.filters-learning-goals [for="group-realise"],
+[value="group-manage"]:checked~.filters-learning-goals [for="group-manage"] {
+  background-color: #707070;
+}
+
+[value="All_group_activities"]:checked~.row [data-category] {
+  display: grid;
+}
+
+[value="group-analyse"]:checked~.row .overview-grid:not([data-category~="group-analyse"]),
+[value="group-advise"]:checked~.row .overview-grid:not([data-category~="group-advise"]),
+[value="group-design"]:checked~.row .overview-grid:not([data-category~="group-design"]),
+[value="group-realise"]:checked~.row .overview-grid:not([data-category~="group-realise"]),
+[value="group-manage"]:checked~.row .overview-grid:not([data-category~="group-manage"]) {
+  display: none;
+}
+
+
+/* HYBRID PROJECT LEARNING GOALS FILTERS ROW
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All_hybridProject"]:checked~.filters [for="All_hybridProject"],
+[value="hybr-User_Interaction"]:checked~.filters [for="hybr-User_Interaction"],
+[value="hybr-Infrastructure"]:checked~.filters [for="hybr-Infrastructure"],
+[value="hybr-Software_Engineering"]:checked~.filters [for="hybr-Software_Engineering"],
+[value="hybr-Hardware"]:checked~.filters [for="hybr-Hardware"] {
+  background-color: #2738DE;
+}
+
+[value="All_hybridProject"]:checked~.row [data-category] {
+  display: grid;
+}
+
+[value="hybr-User_Interaction"]:checked~.row .overview-grid:not([data-category~="hybr-User_Interaction"]),
+[value="hybr-Infrastructure"]:checked~.row .overview-grid:not([data-category~="hybr-Infrastructure"]),
+[value="hybr-Software_Engineering"]:checked~.row .overview-grid:not([data-category~="hybr-Software_Engineering"]),
+[value="hybr-Hardware"]:checked~.row .overview-grid:not([data-category~="hybr-Hardware"]) {
+  display: none;
+}
+
+
+/* PRODUCTS LEARNING ACTIVITIES FILTERS ROW 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All_hybr_activities"]:checked~.filters-learning-goals [for="All_hybr_activities"],
+[value="hybr-analyse"]:checked~.filters-learning-goals [for="hybr-analyse"],
+[value="hybr-advise"]:checked~.filters-learning-goals [for="hybr-advise"],
+[value="hybr-design"]:checked~.filters-learning-goals [for="hybr-design"],
+[value="hybr-realise"]:checked~.filters-learning-goals [for="hybr-realise"],
+[value="hybr-manage"]:checked~.filters-learning-goals [for="hybr-manage"] {
+  background-color: #707070;
+}
+
+[value="All_hybr_activities"]:checked~.row [data-category] {
+  display: grid;
+}
+
+[value="hybr-analyse"]:checked~.row .overview-grid:not([data-category~="hybr-analyse"]),
+[value="hybr-advise"]:checked~.row .overview-grid:not([data-category~="hybr-advise"]),
+[value="hybr-design"]:checked~.row .overview-grid:not([data-category~="hybr-design"]),
+[value="hybr-realise"]:checked~.row .overview-grid:not([data-category~="hybr-realise"]),
+[value="hybr-manage"]:checked~.row .overview-grid:not([data-category~="hybr-manage"]) {
+  display: none;
+}
+
+
+/* ANDROID PROJECT LEARNING GOALS FILTERS ROW
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All_androidProject"]:checked~.filters [for="All_androidProject"],
+[value="android-User_Interaction"]:checked~.filters [for="android-User_Interaction"],
+[value="android-Infrastructure"]:checked~.filters [for="android-Infrastructure"],
+[value="android-Software_Engineering"]:checked~.filters [for="android-Software_Engineering"],
+[value="android-Hardware"]:checked~.filters [for="android-Hardware"] {
+  background-color: #2738DE;
+}
+
+[value="All_androidProject"]:checked~.row [data-category] {
+  display: grid;
+}
+
+[value="android-User_Interaction"]:checked~.row .overview-grid:not([data-category~="android-User_Interaction"]),
+[value="android-Infrastructure"]:checked~.row .overview-grid:not([data-category~="android-Infrastructure"]),
+[value="android-Software_Engineering"]:checked~.row .overview-grid:not([data-category~="android-Software_Engineering"]),
+[value="android-Hardware"]:checked~.row .overview-grid:not([data-category~="android-Hardware"]) {
+  display: none;
+}
+
+
+/* PRODUCTS LEARNING ACTIVITIES FILTERS ROW 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All_android_activities"]:checked~.filters-learning-goals [for="All_android_activities"],
+[value="android-analyse"]:checked~.filters-learning-goals [for="android-analyse"],
+[value="android-advise"]:checked~.filters-learning-goals [for="android-advise"],
+[value="android-design"]:checked~.filters-learning-goals [for="android-design"],
+[value="android-realise"]:checked~.filters-learning-goals [for="android-realise"],
+[value="android-manage"]:checked~.filters-learning-goals [for="android-manage"] {
+  background-color: #707070;
+}
+
+[value="All_android_activities"]:checked~.row [data-category] {
+  display: grid;
+}
+
+[value="android-analyse"]:checked~.row .overview-grid:not([data-category~="android-analyse"]),
+[value="android-advise"]:checked~.row .overview-grid:not([data-category~="android-advise"]),
+[value="android-design"]:checked~.row .overview-grid:not([data-category~="android-design"]),
+[value="android-realise"]:checked~.row .overview-grid:not([data-category~="android-realise"]),
+[value="android-manage"]:checked~.row .overview-grid:not([data-category~="android-manage"]) {
+  display: none;
+}
+
+
+/* IOS PROJECT LEARNING GOALS FILTERS ROW
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All_iosProject"]:checked~.filters [for="All_iosProject"],
+[value="ios-User_Interaction"]:checked~.filters [for="ios-User_Interaction"],
+[value="ios-Infrastructure"]:checked~.filters [for="ios-Infrastructure"],
+[value="ios-Software_Engineering"]:checked~.filters [for="ios-Software_Engineering"],
+[value="ios-Hardware"]:checked~.filters [for="ios-Hardware"] {
+  background-color: #2738DE;
+}
+
+[value="All_iosProject"]:checked~.row [data-category] {
+  display: grid;
+}
+
+[value="ios-User_Interaction"]:checked~.row .overview-grid:not([data-category~="ios-User_Interaction"]),
+[value="ios-Infrastructure"]:checked~.row .overview-grid:not([data-category~="ios-Infrastructure"]),
+[value="ios-Software_Engineering"]:checked~.row .overview-grid:not([data-category~="ios-Software_Engineering"]),
+[value="ios-Hardware"]:checked~.row .overview-grid:not([data-category~="ios-Hardware"]) {
+  display: none;
+}
+
+
+/* PRODUCTS LEARNING ACTIVITIES FILTERS ROW 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All_ios_activities"]:checked~.filters-learning-goals [for="All_ios_activities"],
+[value="ios-analyse"]:checked~.filters-learning-goals [for="ios-analyse"],
+[value="ios-advise"]:checked~.filters-learning-goals [for="ios-advise"],
+[value="ios-design"]:checked~.filters-learning-goals [for="ios-design"],
+[value="ios-realise"]:checked~.filters-learning-goals [for="ios-realise"],
+[value="ios-manage"]:checked~.filters-learning-goals [for="ios-manage"] {
+  background-color: #707070;
+}
+
+[value="All_ios_activities"]:checked~.row [data-category] {
+  display: grid;
+}
+
+[value="ios-analyse"]:checked~.row .overview-grid:not([data-category~="ios-analyse"]),
+[value="ios-advise"]:checked~.row .overview-grid:not([data-category~="ios-advise"]),
+[value="ios-design"]:checked~.row .overview-grid:not([data-category~="ios-design"]),
+[value="ios-realise"]:checked~.row .overview-grid:not([data-category~="ios-realise"]),
+[value="ios-manage"]:checked~.row .overview-grid:not([data-category~="ios-manage"]) {
+  display: none;
+}
+
+/* POC'S TECH FILTERS ROW 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All_tech"]:checked~.filters [for="All_tech"],
+[value="iOS"]:checked~.filters [for="iOS"],
+[value="Android"]:checked~.filters [for="Android"],
+[value="Hybrid"]:checked~.filters [for="Hybrid"],
+[value="Backend"]:checked~.filters [for="Backend"],
+[value="Frontend"]:checked~.filters [for="Frontend"] {
+  background-color: #2738DE;
+}
+
+[value="All_tech"]:checked~.row.poc.grid-holder [data-category] {
+  display: grid;
+}
+[value="iOS"]:checked~.row.poc .overview-grid:not([data-category~="iOS"]),
+[value="Android"]:checked~.row.poc .overview-grid:not([data-category~="Android"]),
+[value="Hybrid"]:checked~.row.poc .overview-grid:not([data-category~="Hybrid"]),
+[value="Backend"]:checked~.row.poc .overview-grid:not([data-category~="Backend"]),
+[value="Frontend"]:checked~.row.poc .overview-grid:not([data-category~="Frontend"]) {
+  display: none;
+}

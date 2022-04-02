@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en" id="top">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Open Graph -->
+  <meta property='og:title' content='Title of the article' />
+  <meta property='og:image' content='http://i404350.hera.fhict.nl/MER_site/public/assets/images/jpg/og/ogResearch.jpg'>
+  <meta property=' og:description'
+    content='Description that will show in the preview  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero minus adipisci tempore, aperiam voluptatem porro? Blanditiis quisquam optio sit vitae assumenda, fuga explicabo tempore corporis ex possimus nisi deleniti enim dicta provident suscipit sint iure autem molestias voluptate laborum placeat velit in laudantium sapiente! Repellat reiciendis facilis voluptatem aliquid error earum quidem perferendis voluptatibus, quisquam eum, itaque iusto. Consequatur incidunt nisi fugiat nulla libero officia odio provident labore omnis atque perspiciatis veniam, eos cupiditate temporibus, sunt reiciendis non commodi impedit eum! Neque quas ipsa odio voluptatibus maiores et tempore.' />
+  <meta property='og:url' content='http://i404350.hera.fhict.nl/MER_site/public/index.html' />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="./build/tailwind.css">
+  <link rel="stylesheet" href="SVG_sprite.svg">
+
+  <title>MER Project</title>
+</head>
+
+<body class="min-h-screen w-full p-0 font-roboto text-base">
+
+
+  <nav class="flex inset-0 w-full h-16 bg-black fixed z-50">
+    <contNavPadding class="flex justify-center self-center w-full px-6 md:px-12 text-white relative">
+      <contNavItems class="justify-between flex self-center w-full max-w-screen-lg text-white relative">
+        <a href="#top" class="flex self-center w-28 z-10">
+          <logo class="font-bold tracking-wider">Music Enabled Running</logo>
+        </a>
+        <ul class="absolute contMenu hidden md:flex space-x-6 w-full justify-end pr-10">
+          <li class="text-center w-1/6">
+            <a href="about.html" class="">About</a>
+            <span class="">&#129171;</span>
+            <ul class="pt-4">
+              <li><a href="about.html#vision">Vision</a></li>
+              <li><a href="about.html#mission">Mission</a></li>
+              <li><a href="about.html#motivation">Motivation</a></li>
+              <li><a href="about.html#team">Team</a></li>
+              <li><a href="about.html#contact">Contact</a></li>
+            </ul>
+          </li>
+          <li class="text-center w-1/6">
+            <a href="#updates" class="">Updates</a>
+            <span class="font-sans">🞃</span>
+            <ul class="pt-4">
+              <li><a href="#updates">Latest Updates</a></li>
+              <li><a href="#newsletter">Newsletter</a></li>
+              <li><a href="#timeline">Timeline</a></li>
+            </ul>
+          </li>
+          <li class="text-center w-1/6">
+            <a href="research.html" class="">Research</a>
+            <span class="font-sans">🞃</span>
+            <ul class="pt-4">
+              <li><a href="research.html#our-research">Our Research</a></li>
+              <li><a href="research.html#ext-research">External Research</a></li>
+              <li><a href="research.html#fut-research">Future Research</a></li>
+              <li><a href="research.html#res-access">Get Research Access</a></li>
+            </ul>
+          </li>
+        </ul>
+        <svg id="toggle-bar" role="img" class="flex justify-self-end self-center fill-current w-6 h-4 cursor-pointer">
+          <use xlink:href="SVG_sprite.svg#menuSVG" href="SVG_sprite.svg#menuSVG">
+          </use>
+        </svg>
+      </contNavItems>
+    </contNavPadding>
+    <navMobile class="hidden flex-col fixed inset-0 z-50 w-full bg-black fill-current text-white gap-24">
+      <navMobileContFlex class="flex flex-col h-16">
+        <navMobileCont class="flex flex-col justify-center relative h-screen pl-6 pr-6 bg-black">
+          <navMobileHeader class="flex">
+            <logo class="font-bold tracking-wider"><a href="index.html">Music Enabled Running</a></logo>
+            <navCloseCont class="flex flex-1 w-full justify-end">
+              <svg id="toggle-bar" role="img" class="flex w-6 h-6 self-center justify-center cursor-pointer ">
+                <use xlink:href="SVG_sprite.svg#closeMenuSVG" href="SVG_sprite.svg#closeMenuSVG">
+                </use>
+              </svg>
+            </navCloseCont>
+          </navMobileHeader>
+        </navMobileCont>
+      </navMobileContFlex>
+      <div class="pl-6 pr-6 h-full">
+        <ul class="flex flex-col gap-8 font-light text-2xl">
+          <li><a id="toggle-bar" href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a id="toggle-bar" href="#updates">UPDATES</a></li>
+          <li><a href="research.html">RESEARCH</a></li>
+          <li><a href="about.html#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </navMobile>
+  </nav>
+  <sectionLandingView class="flex flex-col lg:flex-row justify-center w-full">
+    <sectionHero class="flex flex-col  text-white w-full text-center relative ">
+      <overlay class="bg-black opacity-75 w-full h-screen lg:h-screen-80 absolute"></overlay>
+      <video playsinline autoplay muted loop poster="polina.jpg" class="object-cover h-screen lg:h-screen-80">
+        <source src="assets/videos/Trainer.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <contHeroPadding
+        class="flex self-center absolute bottom-0 w-full h-screen-90 lg:justify-center px-6 pb-6 lg:pb-0">
+        <contHero
+          class=" flex flex-col justify-between lg:justify-center lg:self-center w-full lg:max-w-screen-md lg:pl-8">
+          <contAnimation class="flex flex-col self-center lg:self-start text-left ">
+            <h1 class="font-medium text-2xl">We explore movement &</h1>
+            <heroAnimation class="flex flex-col h-16 overflow-hidden relative">
+              <animationItem class="flex bg-transparent animate-heroAnimation">
+                <img src="./assets/images/png/sonification.png" alt="" class="h-16">
+                <h1 class="flex self-center pl-2 text-sonification-green-DEFAULT text-2xl font-medium">Sonification</h1>
+              </animationItem>
+              <animationItem class="flex bg-transparent">
+                <p class="flex pl-4 text-music-red-DEFAULT text-5xl">♬</p>
+                <h1 class="flex pl-8 self-center text-music-red-DEFAULT text-2xl font-medium">Music</h1>
+              </animationItem>
+              <animationItem class="flex bg-transparent">
+                <p class="flex pl-2 text-ai-blue-DEFAULT text-4xl">🤖</p>
+                <h1 class="flex pl-8 self-center text-ai-blue-DEFAULT text-2xl font-medium">
+                  Artificial Intelligence</h1>
+              </animationItem>
+            </heroAnimation>
+          </contAnimation>
+          <contBelow
+            class=" flex flex-col self-center justify-self-center sm:w-2/3 md:w-3/5 lg:w-2/3 sm:space-y-4 sm:max-w-xl lg:self-start">
+            <p class="hidden justify-center self-center lg:self-start text-left sm:flex lg:w-2/3">We come up with
+              innovative, movement based
+              concepts in which we, humans,
+              are the most important so that we can make people happier & healthier.</p>
+            <contButtons class="flex space-x-8 justify-between sm:justify-start">
+              <a href="about.html"
+                class="flex pt-3 pr-4 pb-3 pl-4 sm:pt-3 sm:pr-6 sm:pb-3 sm:pl-6  justify-center rounded border-orange-action-DEFAULT border-4 bg-orange-action-DEFAULT hover:bg-opacity-75 hover:border-opacity-0">
+                <btnVideo class="" href="about.html">OUR VISION
+                </btnVideo>
+              </a>
+
+
+              <btnVideo
+                class="videoPopup flex pt-3 pr-4 pb-3 pl-4 sm:pt-3 sm:pr-6 sm:pb-3 sm:pl-6 justify-center rounded border-white border-4 hover:bg-white hover:text-black cursor-pointer"
+                href="about.html">WATCH VIDEO
+              </btnVideo>
+
+            </contButtons>
+          </contBelow>
+        </contHero>
+        <contVideoPopup class="videoShow justify-center hidden h-full w-full fixed inset-0 bg-black z-50">
+          <contVideoPadding class="flex w-full h-full justify-center items-center relative">
+            <contContent
+              class="flex justify-center items-center w-full max-w-480px md:max-w-800px h-270px md:h-450px max-h-9/10 relative">
+              <iframe src="https://www.youtube.com/embed/duSDK3mSlb0?version=3&enablejsapi=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="heroFrame w-full h-full max-w-full max-h-full min-w-full min-h-full"></iframe>
+            </contContent>
+          </contVideoPadding>
+        </contVideoPopup>
+      </contHeroPadding>
+    </sectionHero>
+    <sectionCall2action
+      class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6 lg:pt-24 lg:pl-12 lg:pb-24 lg:pr-12 lg:h-screen-80 bg-bg-black-DEFAULT text-white text-center">
+      <contActions class="flex flex-col self-center max-w-screen-lg space-y-16">
+        <!-- <contCall2Action class="flex flex-col items-center space-y-4">
+          <h2 class="font-medium text-lg">Curious to see our gathered data?</h2>
+          <img class="w-10 h-10 " src="./assets/icons/database_icon.png" alt="">
+          <button class="w-40 pt-2 pr-4 pb-2 pl-4 bg-orange-action-DEFAULT rounded font-medium hover:bg-opacity-75">See
+            Data</button>
+        </contCall2Action> -->
+        <contCall2Action class="flex flex-col items-center space-y-4">
+          <h2 class="font-medium text-lg">Wondering what's new?</h2>
+          <img class="w-10 h-10 " src="./assets/icons/reading_icon.png" alt="">
+          <a href="#updates">
+            <button
+              class="w-40 pt-2 pr-4 pb-2 pl-4 bg-orange-action-DEFAULT rounded font-medium hover:bg-opacity-75">See
+              Updates</button>
+          </a>
+        </contCall2Action>
+        <contCall2Action class="flex flex-col items-center space-y-4">
+          <h2 class="font-medium text-lg">Interested in our research?</h2>
+          <img class="w-10 h-10" src="./assets/icons/search_icon.png" alt="">
+          <a href="research.html">
+            <button
+              class="w-40 pt-2 pr-4 pb-2 pl-4 bg-orange-action-DEFAULT rounded font-medium hover:bg-opacity-75">View
+              Research</button>
+          </a>
+        </contCall2Action>
+        <contCall2Action class="flex flex-col items-center space-y-4">
+          <h2 class="font-medium text-lg">Want to try our running app?</h2>
+          <img class="w-10 h-10 " src="./assets/icons/smartphone_icon.png" alt="">
+          <a href="#app-section">
+            <button
+              class="w-40 pt-2 pr-4 pb-2 pl-4 bg-orange-action-DEFAULT rounded font-medium hover:bg-opacity-75">Try
+              app</button>
+          </a>
+        </contCall2Action>
+      </contActions>
+    </sectionCall2action>
+  </sectionLandingView>
+  <sectionApp id="app-section"
+    class="flex flex-col pt-12 pl-6 pb-12 pr-6 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12 bg-bg-blue-DEFAULT text-white">
+    <contApp
+      class="flex flex-col w-full max-w-screen-lg items-center lg:items-start sm:self-center space-y-10 text-center sm:text-left">
+      <contDescript class="flex flex-col space-y-2 sm:text-left sm:max-w-xl sm:space-y-10">
+        <contDescript>
+          <h1 class="font-medium text-2xl sm:text-4xl">MER Beta App</h1>
+          <p>Insert description of app. What's the goal of this app? What can you do with the app? Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Similique repellat perferendis vitae possimus perspiciatis
+            incidunt.</p>
+        </contDescript>
+        <contBtn class="hidden sm:block">
+          <a href="#signupBeta">
+            <button class="pt-3 pr-6 pb-3 pl-6 bg-orange-action-DEFAULT rounded font-medium hover:bg-opacity-75">SIGN
+              UP FOR THE BETA</button>
+          </a>
+        </contBtn>
+      </contDescript>
+      <contAppContent
+        class="flex flex-row sm:flex-col lg:flex-row sm:gap-6 sm:justify-between lg:w-full sm:self-center">
+        <contFeatures class="hidden sm:grid grid-cols-2 gap-10 max-w-xl">
+          <feature1>
+            <h1 class="text-lg font-medium">Feature 1</h1>
+            <p>Insert one of the most important/unique features within the app. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Rem dolor, et blanditiis ut quas, ad ullam ex
+              vel natus vero labore enim obcaecati praesentium consequuntur voluptatem suscipit repellat perferendis
+              totam accusantium quibusdam velit nam nostrum deserunt nisi.</p>
+          </feature1>
+          <feature1>
+            <h1 class="text-lg font-medium">Feature 2</h1>
+            <p>Insert one of the most important/unique features within the app. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Rem dolor, et blanditiis ut quas, ad ullam ex
+              vel natus vero labore enim obcaecati praesentium consequuntur voluptatem suscipit repellat perferendis
+              totam accusantium quibusdam velit nam nostrum deserunt nisi.</p>
+          </feature1>
+          <feature1>
+            <h1 class="text-lg font-medium">Feature 3</h1>
+            <p>Insert one of the most important/unique features within the app. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Rem dolor, et blanditiis ut quas, ad ullam ex
+              vel natus vero labore enim obcaecati praesentium consequuntur voluptatem suscipit repellat perferendis
+              totam accusantium quibusdam velit nam nostrum deserunt nisi.</p>
+          </feature1>
+          <feature1>
+            <h1 class="text-lg font-medium">Feature 4</h1>
+            <p>Insert one of the most important/unique features within the app. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Rem dolor, et blanditiis ut quas, ad ullam ex
+              vel natus vero labore enim obcaecati praesentium consequuntur voluptatem suscipit repellat perferendis
+              totam accusantium quibusdam velit nam nostrum deserunt nisi.</p>
+          </feature1>
+        </contFeatures>
+        <img class="w-auto h-300 sm:h-full sm:order-first lg:order-last sm:max-w-sm"
+          src="./assets/images/png/mockupApp.png" alt="">
+      </contAppContent>
+      <button class="pt-3 pr-6 pb-3 pl-6 bg-orange-action-DEFAULT rounded font-medium sm:hidden">SIGN UP FOR THE
+        BETA</button>
+      <contBetaSub id="signupBeta"
+        class="flex flex-col sm:flex-row self-start max-w-screen-md items-center text-center sm:text-left space-y-6 sm:space-x-4 sm:space-y-0 pt-20">
+        <contDescript class="space-y-2 w-full">
+          <h1 class="font-medium text-2xl sm:text-3xl">Sign up for the beta</h1>
+          <p>Don't worry about spam, you'll only be registered so that we know you're interested and can notify you once
+            the beta version of the app goes live. </p>
+        </contDescript>
+        <form action="https://formsubmit.co/334a69b4a96401cf5a57d74d8cdecfa2" method="POST"
+          class="flex flex-col w-full space-y-6">
+          <input type="email" name="email" required placeholder="example@gmail.com"
+            class="pt-2 pl-4 pb-2 rounded border-solid border-2 border-white bg-bg-blue-DEFAULT">
+          <input type="hidden" name="_next" value="http://i404350.hera.fhict.nl/MER_site/public/thanksForSub.html">
+          <input type="hidden" name="_subject" value="MER beta request!">
+          <button type="submit"
+            class="pt-3 pr-6 pb-3 pl-6 bg-orange-action-DEFAULT rounded font-medium sm:w-1/3">Submit</button>
+        </form>
+      </contBetaSub>
+    </contApp>
+  </sectionApp>
+  <sectionLatestProgr id="updates"
+    class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12 bg-research-white-DEFAULT text-center space-y-16">
+    <contLatestProgr class="flex flex-col self-center max-w-screen-lg items-start space-y-6">
+      <h1 class="font-medium text-2xl sm:text-4xl">Latest Updates</h1>
+      <gridProgr class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <a href="research.html">
+          <gridItem
+            class="flex flex-col pt-6 pl-6 pb-6 pr-6 space-y-6 text-left border-solid border-2 border-opacity-50 border-line-grey-DEFAULT bg-white rounded shadow-md">
+            <contDescript class="flex flex-col space-y-2 ">
+              <h2 class="font-medium text-lg">Creating live music through movement</h2>
+              <p class="">Insert description of update. What is new/going on? Why? Lorem
+                ipsum
+                dolor sit amet, consectetur adipisicing elit. Similique repellat perferendis vitae possimus
+                perspiciatis
+                incidunt.</p>
+              <p class="font-medium text-line-grey-DEFAULT">Read More...</p>
+            </contDescript>
+            <contFooter class="space-y-4">
+              <contTags class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-center font-medium items-center">
+                <tag class="pt-1 pr-0 pb-1 pl-0 rounded text-sm bg-orange-action-DEFAULT text-white">Research Paper
+                </tag>
+                <tag class="pt-1 pr-0 pb-1 pl-0 rounded text-sm bg-orange-action-DEFAULT text-white">Sonification
+                </tag>
+              </contTags>
+              <contInfo class="flex flex-row justify-between">
+                <contDate class="flex space-x-2">
+                  <svg role="img" class="flex w-6 h-6">
+                    <use xlink:href="SVG_sprite.svg#clockSVG" href="SVG_sprite.svg#clockSVG">
+                    </use>
+                  </svg>
+                  <p class="">Aug 20, 2020</p>
+                </contDate>
+                <contCollab class="flex justify-self-end space-x-2">
+                  <svg role="img" class="flex w-6 h-5 stroke-current">
+                    <use xlink:href="SVG_sprite.svg#collabSVG" href="SVG_sprite.svg#collabSVG">
+                    </use>
+                  </svg>
+                  <p class="">1 collaborators</p>
+                </contCollab>
+            </contFooter>
+            </contAll>
+          </gridItem>
+        </a>
+        <a href="research.html">
+          <gridItem
+            class="flex flex-col pt-6 pl-6 pb-6 pr-6 space-y-6 text-left border-solid border-2 border-opacity-50 border-line-grey-DEFAULT bg-white rounded shadow-md">
+            <contDescript class="flex flex-col space-y-2 ">
+              <h2 class="font-medium text-lg">Creating live music through movement</h2>
+              <p class="">Insert description of update. What is new/going on? Why? Lorem
+                ipsum
+                dolor sit amet, consectetur adipisicing elit. Similique repellat perferendis vitae possimus
+                perspiciatis
+                incidunt.</p>
+              <p class="font-medium text-line-grey-DEFAULT">Read More...</p>
+            </contDescript>
+            <contFooter class="space-y-4">
+              <contTags class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-center font-medium items-center">
+                <tag class="pt-1 pr-0 pb-1 pl-0 rounded text-sm bg-orange-action-DEFAULT text-white">Research Paper
+                </tag>
+                <tag class="pt-1 pr-0 pb-1 pl-0 rounded text-sm bg-orange-action-DEFAULT text-white">Sonification
+                </tag>
+              </contTags>
+              <contInfo class="flex flex-row justify-between">
+                <contDate class="flex space-x-2">
+                  <svg role="img" class="flex w-6 h-6">
+                    <use xlink:href="SVG_sprite.svg#clockSVG" href="SVG_sprite.svg#clockSVG">
+                    </use>
+                  </svg>
+                  <p class="">Aug 20, 2020</p>
+                </contDate>
+                <contCollab class="flex justify-self-end space-x-2">
+                  <svg role="img" class="flex w-6 h-5 stroke-current">
+                    <use xlink:href="SVG_sprite.svg#collabSVG" href="SVG_sprite.svg#collabSVG">
+                    </use>
+                  </svg>
+                  <p class="">1 collaborators</p>
+                </contCollab>
+            </contFooter>
+            </contAll>
+          </gridItem>
+        </a>
+      </gridProgr>
+      <a href="research.html" class="flex space-x-2 border-solid border-b-4 border-orange-action-DEFAULT">
+        <span class="font-medium">VIEW MORE</span>
+        <svg role="img"
+          class="flex justify-self-end self-center fill-current text-orange-action-DEFAULT w-4 h-6 transform -translate-x-1 -translate-y-0 rotate-180">
+          <use xlink:href="SVG_sprite.svg#chevronSVG" href="SVG_sprite.svg#chevronSVG">
+          </use>
+        </svg>
+      </a>
+    </contLatestProgr>
+  </sectionLatestProgr>
+  <sectionNewsletter id="newsletter"
+    class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6 sm:pt-24 sm:pl-12 sm:pb-24 sm:pr-12 bg-bg-blue-DEFAULT text-white">
+    <contNewsletter
+      class="flex flex-col sm:flex-row self-center max-w-screen-md items-center text-center sm:text-left space-y-6 sm:space-x-4 sm:space-y-0">
+      <contDescript class="space-y-2 w-full">
+        <h1 class="font-medium text-2xl sm:text-3xl">Subscribe to stay updated</h1>
+        <p>Don't worry about spam, you'll only receive a newsletter when the project takes a drastic turn or
+          when there's an event upcoming which is likely
+          to happen only twice a year.</p>
+      </contDescript>
+      <form action="https://formsubmit.co/334a69b4a96401cf5a57d74d8cdecfa2" method="POST"
+        class="flex flex-col w-full space-y-6">
+        <input type="email" name="email" required placeholder="example@gmail.com"
+          class="pt-2 pl-4 pb-2 rounded border-solid border-2 border-white bg-bg-blue-DEFAULT">
+        <input type="hidden" name="_next" value="http://i404350.hera.fhict.nl/MER_site/public/thanksForSub.html">
+        <input type="hidden" name="_subject" value="MER stay updated request!">
+        <button type="submit"
+          class="pt-3 pr-6 pb-3 pl-6 bg-orange-action-DEFAULT rounded font-medium sm:w-1/3">Submit</button>
+      </form>
+    </contNewsletter>
+  </sectionNewsletter>
+  <sectionTimelineDescript id="timeline" class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6">
+    <contTimelineDescript class="flex flex-col self-center w-full max-w-screen-lg items-left space-y-2">
+      <contDescript class="flex flex-col self-center max-w-screen-lg text-center">
+        <h1 class="font-medium text-2xl">Timeline</h1>
+        <p class="max-w-md">Where has the running track taken us? What obstacles did the project have to
+          overcome
+          to get where we are
+          now?
+          How long has the project been running so far? Here's a summarized overview of the project's running course.
+        </p>
+      </contDescript>
+    </contTimelineDescript>
+  </sectionTimelineDescript>
+  <sectionTimelineContent class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6 bg-research-white-DEFAULT">
+    <contContent class="flex self-center max-w-screen-lg space-x-4">
+      <ul class="line before:border-dashed">
+        <contVisible class="li-items flex flex-col">
+          <li>
+            <div id="stage_assignment" class="flex line-image bg-orange-action-DEFAULT" data-modal="internintro">
+              <img class="flex justify-self-center self-center" src="./assets/icons/startLine.png" alt="">
+            </div>
+            <div class="line-panel">
+              <div class="line-heading">
+                <h3 class="text-lg font-medium">September, 2016</h3>
+                <h3 class="text-lg font-medium">The Start of Nano4Sports</h3>
+              </div>
+              <div class="line-body">
+                <p class="text-muted">
+                  During this period I was introduced to the Music Enabled Running
+                  project
+                  and
+                  I contacted the project members to get more info about the project
+                  including
+                  a possible assignment for me.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="line-inverted">
+            <div id="stage_assignment" class="flex line-image bg-orange-action-DEFAULT" data-modal="internintro">
+              <img class="flex justify-self-center self-center" src="./assets/icons/startLine.png" alt="">
+            </div>
+            <div class="line-panel">
+              <div class="line-heading">
+                <h3 class="text-lg font-medium">September, 2016</h3>
+                <h3 class="text-lg font-medium">The Start of Nano4Sports</h3>
+              </div>
+              <div class="line-body">
+                <p class="text-muted">
+                  During this period I was introduced to the Music Enabled Running
+                  project
+                  and
+                  I contacted the project members to get more info about the project
+                  including
+                  a possible assignment for me.
+                </p>
+              </div>
+            </div>
+          </li>
+        </contVisible>
+        <contInvisible id="show_time_items" class="flex flex-col li-items hidden">
+          <li class="">
+            <div id="stage_assignment" class="flex line-image bg-orange-action-DEFAULT" data-modal="internintro">
+              <img class="flex justify-self-center self-center" src="./assets/icons/startLine.png" alt="">
+            </div>
+            <div class="line-panel">
+              <div class="line-heading">
+                <h3 class="text-lg font-medium">September, 2016</h3>
+                <h3 class="text-lg font-medium">The Start of Nano4Sports</h3>
+              </div>
+              <div class="line-body">
+                <p class="text-muted">
+                  During this period I was introduced to the Music Enabled Running
+                  project
+                  and
+                  I contacted the project members to get more info about the project
+                  including
+                  a possible assignment for me.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="line-inverted">
+            <div id="stage_assignment" class="flex line-image bg-orange-action-DEFAULT" data-modal="internintro">
+              <img class="flex justify-self-center self-center" src="./assets/icons/startLine.png" alt="">
+            </div>
+            <div class="line-panel">
+              <div class="line-heading">
+                <h3 class="text-lg font-medium">September, 2016</h3>
+                <h3 class="text-lg font-medium">The Start of Nano4Sports</h3>
+              </div>
+              <div class="line-body">
+                <p class="text-muted">
+                  During this period I was introduced to the Music Enabled Running
+                  project
+                  and
+                  I contacted the project members to get more info about the project
+                  including
+                  a possible assignment for me.
+                </p>
+              </div>
+            </div>
+          </li>
+        </contInvisible>
+      </ul>
+      <!-- <contLeft class="justify-start">Hi</contLeft>
+        <contDashedLine class="flex lg:self-center">
+          <ul class="relative border-dashed border-2 border-orange-action-DEFAULT h-10">
+          </ul>
+        </contDashedLine>
+        <contRight class="justify-start">Hi</contRight> -->
+    </contContent>
+  </sectionTimelineContent>
+  <sectionMoreTimeline
+    class="seeMoreTimeline absolute w-full flex flex-col h-20 -mt-12 justify-center pt-4 pl-6 pb-4 pr-6 bg-bg-blue-DEFAULT hover:bg-bg-blue-400 text-white cursor-pointer">
+    <contSeeMore class="flex flex-col items-center text-center">
+      <h2 class="font-medium text-lg mb-1">See more</h1>
+        <svg role="img"
+          class="flex justify-self-center self-center fill-current transform -rotate-90 scale-150 w-3 h-4">
+          <use xlink:href="SVG_sprite.svg#chevronSVG" href="SVG_sprite.svg#chevronSVG">
+          </use>
+        </svg>
+    </contSeeMore>
+    </contSeeMore>
+  </sectionMoreTimeline>
+  <sectionPartners class="flex flex-col justify-center pt-12 pl-6 pb-12 pr-6 space-y-4">
+    <contPartnersContent class="flex flex-col self-center w-full max-w-screen-lg items-start space-y-4 space-x-3">
+      <contDescript class="flex flex-col self-start max-w-screen-lg">
+        <h1 class="font-medium text-2xl">Partners</h1>
+      </contDescript>
+      <contPartners class="flex flex-col self-start max-w-screen-lg">
+        <gridPartners class="grid gap-8 grid-cols-3 sm:grid-rows-1 sm:grid-cols-9">
+          <gridItem class="row-span-2 col-span-1 sm:row-span-1 sm:col-span-1 place-self-center">
+            <a target="_blank" href="https://www.ixdfontysict.nl/"><img src="./assets/images/png/ixdLogo.png"
+                alt="IxD Lectorship" class="transform scale-125"></a>
+          </gridItem>
+          <gridItem class="row-span-2 col-span-2 sm:row-span-1 sm:col-span-2 place-self-center">
+            <a target="_blank" href="https://fontys.nl/Over-Fontys/Fontys-Hogeschool-ICT.htm"><img
+                src="./assets/images/jpg/FontysLogo.jpg" alt="Fontys ICT"></a>
+          </gridItem>
+          <gridItem class="sm:row-span-1 sm:col-span-3 col-span-3 place-self-center">
+            <a target="_blank" href="https://sportsandtechnology.com/"><img
+                src="./assets/images/jpg/Logo-Cluster-Sports-Technology-Part-of.png"
+                alt="Cluster Sports & Technology"></a>
+          </gridItem>
+          <gridItem class="sm:row-span-1 sm:col-span-3 col-span-3 place-self-center">
+            <a target="_blank" href="https://sportsandtechnology.com/vitality-living-lab/"><img
+                class="transform scale-95 sm:scale-75" src="./assets/images/jpg/Logo-Vitality-Living-Lab.png"
+                alt="Vitality Living Lab"></a>
+          </gridItem>
+      </contPartners>
+    </contPartnersContent>
+  </sectionPartners>
+  <sectionFooter
+    class="flex justify-center pt-12 pl-6 pb-12 pr-6 md:pt-24 md:pl-12 md:pb-24 md:pr-12 bg-bg-black-DEFAULT text-white">
+    <contItems
+      class="flex justify-center  md:justify-start w-full max-w-screen-lg text-center md:text-left gap-4 md:gap-12 lg:gap-20">
+      <a class="hidden md:flex" href="#top">
+        <logo class=" font-bold tracking-wider text-4xl">MER</logo>
+      </a>
+      <footerCols class="flex justify-self-end  sm:transform sm:translate-y-3 gap-4 md:gap-12 lg:gap-32">
+        <col1 class="flex flex-col space-y-4 self-center md:self-start">
+          <a href="#top">
+            <logo class="font-bold tracking-wider">Music Enabled Running</logo>
+          </a>
+          <ul class="space-y-2 grid">
+            <a href="about.html">
+              <li>About</li>
+            </a>
+            <a href="#updates">
+              <li>Updates</li>
+            </a>
+            <a href="research.html">
+              <li>Research</li>
+            </a>
+            <a href="about.html#contact">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </col1>
+        <col2 class=" hidden md:flex md:flex-col space-y-4">
+          <a target="_blank" href="http://www.nano4sports.eu/">
+            <logo class="font-bold tracking-wider">Nano4Sports</logo>
+          </a>
+          <ul class="space-y-2 grid">
+            <a target="_blank" href="https://sportsandtechnology.com/nano4sports/">
+              <li>Sports & Technology</li>
+            </a>
+            <a target="_blank" href="https://www.ixdfontysict.nl/nano4sports//">
+              <li>Lectoraat IxD</li>
+            </a>
+          </ul>
+        </col2>
+        <col3 class="hidden md:flex md:flex-col space-y-4">
+          <a target="_blank" href="https://www.ixdfontysict.nl/">
+            <logo class="font-bold tracking-wider">Lectoraat IxD</logo>
+          </a>
+          <ul class="space-y-2 grid">
+            <a target="_blank" href="https://www.ixdfontysict.nl/about/">
+              <li>About</li>
+            </a>
+            <a target="_blank" href="https://www.ixdfontysict.nl/contact/">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </col3>
+      </footerCols>
+    </contItems>
+  </sectionFooter>
+
+  <!-- Scripts -->
+  <script src="./js/app.js"></script>
+  <script src="./js/video_lightbox.js"></script>
+  <script src="./js/displayTimeline.js"></script>
+</body>
+
+</html>
+
+<!-- .item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+} -->

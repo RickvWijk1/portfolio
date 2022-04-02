@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#4758fb">
+    <meta name="msapplication-TileColor" content="#4758fb">
+    <meta name="theme-color" content="#242424">
+
+    <!-- Splash Screens -->
+    <link rel="apple-touch-startup-image" href="images/splash/launch-640x1136.png"
+        media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="images/splash/launch-750x1294.png"
+        media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="images/splash/launch-1242x2148.png"
+        media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="images/splash/launch-1125x2436.png"
+        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="images/splash/launch-1536x2048.png"
+        media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="images/splash/launch-1668x2224.png"
+        media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="images/splash/launch-2048x2732.png"
+        media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- Linking Styles & Scripts -->
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/svg.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="stylesheet" href="css/lightBox.css">
+    <link rel="stylesheet" href="css/MediaQuery.css">
+    <script src="scripts/core.js"></script>
+    <title>Rick van Wijk</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bg" id="particles-js"></div>
+        <div class="nav">
+            <div class="nav-home">
+                <span class="fa fa-angle-right" id="fa_drop"></span>
+                <div class="nav-anchor"><a href="home" class="home-link">
+                        <span class="nav-name">van-Wijk<span></a>
+                    <span class="first-brace">{<div class="nav-braces">...</div></span>
+                    <div class="last-brace" style="">}</div>
+                    <div class="dropdown-content" style="display: none;">
+                        <div class="dropdown-line-1"> <span style="color: #4758fc;">age</span>: <span
+                                style="color: #B000FF;">20<span style="color: #C78224;">yr</span></span>;</div>
+                        <div class="dropdown-line-2"><span style="color: #4758fc;">passion</span>: <span
+                                style="color: #B000FF;">web-development</span>;</div>
+                        <div class="dropdown-line-3">
+                            <span style="color: #4758fc;">nationality</span>: <span
+                                style="color: #B000FF;">dutch</span>;
+                            <div style="font-size: 1.3rem; margin-top: 0.5em; margin-left: -1.5em;"
+                                class="dropdown-line-4">}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="home" class="home-link">Home</a></li>
+                <li><a href="about" class="about-link">About</a></li>
+                <li><a href="projects" class="projects-link">Projects</a></li>
+                <li><a href="interests" class="interests-link">Interests</a></li>
+                <li><a id="stage_link">Internship</a></li>
+                <li><a id="minor_link">Minor</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <!------------------------------------------HOME-------------------------------------------------------------------------------------->
+            <div class="tab" id="home">
+                <div class="home-content">
+                    <div class="home-title-container">
+                        <div class="home-h1-container">
+                            <h1 class="home-base-title" style="margin: 0;">Rick</h1>
+                            <h1 class="home-base-title" style="margin: 0;">van Wijk</h1>
+                        </div>
+                        <h2 class="home-sub-title">Student ICT & Media Design</h2>
+                        <div class="home-icon-container">
+                            <a target="_blank" href="https://github.com/RickvWijk1" class="icon">
+                                <span class="home-icon-name">Github</span>
+                                <img src="assets/icons/github.svg" alt="Github" class="home-icon-image">
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/rick-van-wijk-2b06821a0/" class="icon">
+                                <span class="home-icon-name">LinkedIn</span>
+                                <img src="assets/icons/LinkedIn.svg" alt="LinkedIn" class="home-icon-image">
+                            </a>
+                            <a target="_blank" href="mailto:rick_van_wijk@hotmail.com" class="icon">
+                                <span class="home-icon-name">Email</span>
+                                <img src="assets/icons/email.svg" alt="Email" class="home-icon-image">
+                            </a>
+                            <a target="_blank" href="/pdf/WebDeveloperCV.pdf" style="margin-right: 0;" class="icon">
+                                <span class="home-icon-name">CV</span>
+                                <img src="assets/icons/cv.svg" alt="CV" class="home-icon-image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home-photo-container">
+                        <img src="assets/images/ik/BlackWhiteInHuis.png" class="home-photo" alt="">
+                    </div>
+                </div>
+            </div>
+            <!------------------------------------------ABOUT-------------------------------------------------------------------------------------->
+            <div class="tab" id="about">
+                <div class="about-content-cont">
+                    <h1 class="home-base-title">About</h1>
+                    <div class="about-web-req">
+                        <div class="about-bottom-pic">
+                            <div class="about-bottom-pic circle"></div>
+                        </div>
+                        <div class="about-bottom-bio">
+                            <h2>Who's this guy?</h2>
+                            <p>I'm an ICT & Media Design student located in Eindhoven,
+                                The Netherlands. I have serious passion for creating smooth, responsive interfaces to
+                                give users
+                                the best experience.
+                                My goal is to become a full-stack developer.
+                                If I would have to
+                                choose between fast-sloppy and slow-quality
+                                I would choose the latter.
+                            </p>
+                        </div>
+                        <div class="about-bottom-graph">
+                            <div class="about-bottom-graph-grey">
+                                <div class="about-bottom-graph-blue">
+                                    <p>HTML/CSS</p>
+                                </div>
+                                <div class="about-bottom-graph-fill" style="width: 72.5%;">
+                                </div>
+                                <span>90%</span>
+                            </div>
+                            <div class="about-bottom-graph-grey">
+                                <div class="about-bottom-graph-blue">
+                                    <p>React-Native</p>
+                                </div>
+                                <div class="about-bottom-graph-fill" style="width: 25%;">
+                                </div>
+                                <span>35%</span>
+                            </div>
+                            <div class="about-bottom-graph-grey">
+                                <div class="about-bottom-graph-blue">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="about-bottom-graph-fill">
+                                </div>
+                                <span>50%</span>
+                            </div>
+                            <div class="about-bottom-graph-grey">
+                                <div class="about-bottom-graph-blue">
+                                    <p>Swift</p>
+                                </div>
+                                <div class="about-bottom-graph-fill" style="width: 35%;">
+                                </div>
+                                <span>45%</span>
+                            </div>
+                            <div class="about-bottom-graph-grey">
+                                <div class="about-bottom-graph-blue">
+                                    <p>UI Design</p>
+                                </div>
+                                <div class="about-bottom-graph-fill" style="width: 50%;">
+                                </div>
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-bottom-cont">
+                        <div class="about-web-content-cont">
+                            <div class="about-web-icon-cont">
+                                <img src="assets/icons/speedometer.svg" alt="" class="about-web-icon">
+                            </div>
+                            <h2>Fast</h2>
+                            <pre>Fast load times and lag free
+interaction, my highest priority.</pre>
+                        </div>
+                        <div class="about-web-content-cont">
+                            <div class="about-web-icon-cont">
+                                <img src="assets/icons/cellphone-link.svg" alt="" class="about-web-icon">
+                            </div>
+                            <h2>Responsive</h2>
+                            <pre>My layouts will work on any device,
+big or small.</pre>
+                        </div>
+                        <div class="about-web-content-cont">
+                            <div class="about-web-icon-cont">
+                                <img src="assets/icons/lightbulb-outline.svg" alt="" class="about-web-icon">
+                            </div>
+                            <h2>Intuitive</h2>
+                            <pre>Strong preference for easy to use,
+intuitive UX/UI.</pre>
+                        </div>
+                        <div class="about-web-content-cont">
+                            <div class="about-web-icon-cont">
+                                <img src="assets/icons/rocket-sharp.svg" alt="" class="about-web-icon">
+                            </div>
+                            <h2>Dynamic</h2>
+                            <pre>Websites don't have to be static,
+I love making pages come to life.</pre>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!------------------------------------------PROJECTS-------------------------------------------------------------------------------------->
+            <div class="tab" id="projects">
+                <h1 class="home-base-title">Projects</h1>
+                <p class="home-base-p">A few of my study related projects highlighted.</p>
+                <div class="row grid-holder">
+                    <!------------------------------------------QuaQuiz-------------------------------------------------------------------------------------->
+                    <div id="overview-grid" class="overview-grid" data-modal="quaquiz"
+                        style="background-image: url('assets/images/questionMarkArt.jpg')">
+                        <div class="a-ghostbtn">
+                            <a class="a-ghostbtn">
+                                <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
+                                    <div class="ghostbutton">QuaQuiz<span class="fa fa-external-link-alt"></span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="quaquiz" class="modal">
+                        <div class="modal-dialog modal-lg"></div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a id="modal-close" class="modal-close" data-dismiss="modal">×</a>
+                                <div class="modal-title"><img src="assets/images/logo.png" style="max-width: 250px;"
+                                        width="20%" alt=""></div>
+                            </div>
+                            <div class="modalbody-container">
+                                <br>
+                                <div class="col-lg-8 mx-auto">
+                                    <i>An interactive quiz app that keeps you and your family fit during quarantine!
+                                    </i>
+                                    <br><br><br>
+                                    <img src="assets/images/mockup1.png" width="80%" alt="">
+                                    <br><br><br>
+                                    <div class="paddedText">
+                                        <p>
+                                            A lot of people have been infected with the Corona virus and had to go into
+                                            quarantine. Even more people have been forced to live and work at home while
+                                            their local gyms closed. This caused people to fail to do their required
+                                            amount of excercise. Another problem is that tensions within a family can
+                                            run high
+                                            when you're constantly at home together.
+                                            With the QuaQuiz app young families can relieve their stress by running
+                                            around the house answering questions as quick as possible.
+                                        </p>
+                                        <div class="paddedTextLine"></div>
+                                    </div>
+
+
+                                </div>
+                                <br><br><br><br>
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="modal-body">
+                                        <i>How It Works</i>
+                                        <br><br>
+                                        <img src="assets/images/Quarantine_Explanation.jpg" style="" width="100%"
+                                            alt="">
+                                        <br><br>
+                                        <br>
+
+                                        <p>Some screenshots of the app.</p>
+                                        <br>
+                                        <img src="assets/images/screen1.png" style="" width="45%" alt="">
+                                        <img src="assets/images/screen2.png" style="margin-left: 1.2em;" width="45%"
+                                            alt="">
+                                        <img src="assets/images/screen3.png" style="margin-top: 1.2em;" width="45%"
+                                            alt="">
+                                        <br><br><br><br>
+                                        <i>Technology Behind The App</i>
+                                        <br><br>
+                                        <p>The app uses React-Native to make the app cross-platform.
+                                            The react-native NFC library 'react-native-nfc-manager' makes the
+                                            interaction possible.</p>
+                                        <br>
+                                        <img src="assets/images/react-native2.png" style="" width="80%" alt="">
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <a target="_blank" href="https://git.fhict.nl/I404350/Quarantine-Quiz">
+                                            <div class="paddedText">
+                                                <p>View the repo for more information here</p>
+                                                <br>
+
+                                                <img src="assets/icons/github.svg" style="width: 10%;" alt="Github">
+                                            </div>
+                                        </a>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-8 mx-auto">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="btnModalClose" class="btnModalClose" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------------------MFT-------------------------------------------------------------------------------------->
+                    <div id="overview-grid" class="overview-grid" data-modal="mft"
+                        style="background-image: url('assets/images/MFM.jpg'); width: 90%; height: auto;">
+                        <div class="a-ghostbtn">
+                            <a class="a-ghostbtn">
+                                <div id="hover-box" class="hover-box">
+                                    <div class="ghostbutton">MFT<span class="fa fa-external-link-alt"></span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="mft" class="modal">
+                        <div class="modal-dialog modal-lg"></div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a id="modal-close" class="modal-close">×</a>
+                                <div class="modal-title"><img src="assets/images/MFM_Logo.png" width="30%" alt="">
+                                </div>
+                            </div>
+                            <div class="modalbody-container">
+                                <br>
+                                <div class="col-lg-8 mx-auto">
+                                    <i>A football management app for amateur teams!
+                                    </i>
+                                    <br><br><br>
+                                    <div class="imgRound"><img src="assets/images/trainer.jpg"
+                                            style="width: auto; height: 100%; margin-left: -25%;" alt=""></div>
+                                    <br><br><br>
+                                    <div class="paddedText">
+                                        <p>
+                                            Many amateur football coaches still use pen and paper to mark attendance
+                                            and
+                                            write down tactics. Some trainers don't even take notes.
+                                            This medieval method is chaotic, unconvenient and takes too long.
+                                            There's also trainers who take the training/matches a little too
+                                            seriously or neglect them.
+                                            Players often say nothing to the trainer about this, because they do not
+                                            know any better
+                                            or are afraid to tell the trainer.
+                                        </p>
+                                        <div class="paddedTextLine"></div>
+                                    </div>
+
+
+                                </div>
+                                <br><br><br><br>
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="modal-body">
+                                        <i>How It Works</i>
+                                        <br><br>
+                                        <p>The user chooses to log in as trainer or player</p>
+                                        <br>
+                                        <img src="assets/images/Screenshots/Inlog.png" style="" width="100%" alt="">
+
+                                        <div class="flexText-row">
+                                            <i>Player's view</i>
+                                            <i style="justify-content: end; align-self: flex-end;">Trainer's
+                                                view</i>
+                                        </div>
+                                        <br>
+                                        <img src="assets/images/Screenshots/Match1.png" style="" width="100%" alt="">
+                                        <div class="flexText-row">
+                                            <p>The player can edit their stats, add their club, nationality,
+                                                position and picture</p>
+                                            <p style="padding-left: 33.33%;"></p>
+                                            <p style="justify-content: end; align-self: flex-end;">The trainer has
+                                                an overview of all players</p>
+                                        </div>
+                                        <br><br><br>
+                                        <img src="assets/images/Screenshots/Match2.png" style="" width="100%" alt="">
+                                        <div class="flexText-row">
+                                            <p>The player can send a position change and training excercise request
+                                                to their trainer</p>
+                                            <p style="padding-left: 33.33%;"></p>
+                                            <p style="justify-content: end; align-self: flex-end;">The trainer can
+                                                keep up with the attendance of each player</p>
+                                        </div>
+                                        <br><br><br>
+                                        <img src="assets/images/Screenshots/Match3.png" style="" width="100%" alt="">
+                                        <div class="flexText-row">
+                                            <p style="flex: 4;">The player gets a confirmation after sending a
+                                                request. As a little mini game the
+                                                player can shoot the ball by shaking their device as fast as they
+                                                can</p>
+                                            <p style="padding-left: 17.33%; flex: 3;"></p>
+                                            <p style="justify-content: end; flex: 3; white-space: wrap;">The trainer
+                                                can view the statistics of each player</p>
+                                        </div>
+                                        <br><br><br><br>
+                                        <i>Technology Behind The App</i>
+                                        <br><br>
+                                        <p>The app is build for iOS only. It's has been build in the Xcode IDE and coded
+                                            with
+                                            Swift. The app uses the built-in accelerometer
+                                            hardware from the iPhone.</p>
+                                        <br>
+                                        <img src="assets/images/swift.jpg" style="" width="100%" alt="">
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <a target="_blank" href="https://git.fhict.nl/I425384/smartmobile-repo">
+                                            <div class="paddedText">
+                                                <p>View the repo for more information here</p>
+                                                <br>
+
+                                                <img src="assets/icons/github.svg" style="width: 10%;" alt="Github">
+                                            </div>
+                                        </a>
+                                        <br>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-8 mx-auto">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="btnModalClose" class="btnModalClose">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------------------SolidSight-------------------------------------------------------------------------------------->
+                    <div id="overview-grid" class="overview-grid" data-modal="solidsight"
+                        style="background-image: url('assets/images/solid.jpeg')">
+                        <div class="a-ghostbtn">
+                            <a class="a-ghostbtn">
+                                <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
+                                    <div class="ghostbutton">SolidSight<span class="fa fa-external-link-alt"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="solidsight" class="modal">
+                        <div class="modal-dialog modal-lg"></div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a id="modal-close" class="modal-close" data-dismiss="modal">×</a>
+                                <div class="modal-title"><img src="assets/images/solidsight.png"
+                                        style="max-width: 250px;" width="20%" alt=""></div>
+                            </div>
+                            <div class="modalbody-container">
+                                <br>
+                                <div class="col-lg-8 mx-auto">
+                                    <i>An ecommerce solution for Greenhouse Group and its clients in the form of a web
+                                        app.
+                                    </i>
+                                    <br><br><br>
+                                    <img src="assets/images/solidsight/wireframe.png" width="60%" alt="">
+                                    <br><br><br>
+                                    <div class="paddedText">
+                                        <p>
+                                            Greenhouse Group has asked me and fellow students to come up with a solution
+                                            that will
+                                            enable Greenhouse and its clients to keep earning money on advertising
+                                            without forcing
+                                            users to share their personal data.
+                                            <br><br>
+                                            Greenhouse predicts the business models of
+                                            commerce companies will have to change since users might value their
+                                            privacy/data
+                                            much more in the future.
+                                            A key element of good advertising is showing ads/products that are relevant
+                                            to the user.
+                                            In other words, personalized advertisements.
+                                            <br><br>
+                                            SolidSight offers a solution to this problem by showing products to users in
+                                            the shape
+                                            of personalized review videos.
+                                        </p>
+                                        <div class="paddedTextLine"></div>
+                                    </div>
+
+
+                                </div>
+                                <br><br><br><br>
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="modal-body">
+                                        <i>How It Works</i>
+                                        <br><br>
+                                        <p>One of the requirements for this project was to use a JavaScript framework
+                                            called Solid.
+                                            This framework is, in a way, a social platform. Solid has it's own GUI and
+                                            users have their own account/profile
+                                            where they can post files like photo's and documents. They can also control
+                                            what personal data they share with
+                                            applications (such as the SolidSight webapp) that use the Solid framework.
+                                        </p>
+
+
+                                        <br><br>
+                                        <p>The user chooses to log in (or register) with a Solid account.</p>
+                                        <br>
+                                        <img src="assets/images/solidsight/landing_page.png" style="" width="100%"
+                                            alt="">
+
+                                        <br><br><br>
+                                        <p>Let's assume the user is new to SolidSight. The user will immediately get to
+                                            choose
+                                            what they're interested in and what data they want to share.
+                                        </p>
+                                        <br>
+                                        <img src="assets/images/solidsight/setup1_page.png" style="" width="100%"
+                                            alt="">
+                                        <img src="assets/images/solidsight/setup2_page.png" style="" width="100%"
+                                            alt="">
+                                        <br><br><br>
+                                        <p>Now that the user is set up, the user can search for/gets recommended
+                                            products.
+                                        </p>
+                                        <br><br><br>
+                                        <img src="assets/images/solidsight/home_page.png" style="" width="100%" alt="">
+                                        <img src="assets/images/solidsight/category_page.png" style="" width="100%"
+                                            alt="">
+                                        <br><br><br>
+                                        <p>The review videos explain what a product can do and why it's a must
+                                            have.</p>
+                                        <br>
+                                        <img src="assets/images/solidsight/video_page.png" style="" width="100%" alt="">
+                                        <br><br><br><br>
+                                        <i>Technology Behind The App</i>
+                                        <br><br>
+                                        <img src="assets/images/solidsight/solid.png" style="" width="80%" alt="">
+                                        <br><br>
+                                        <a target="_blank" href="https://inrupt.com/solid/">
+                                            <p>Solid framework</p>
+                                        </a>
+                                        <italic>Sir Tim Berners-Lee's vision of a vibrant web</italic>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <a target="_blank" href="https://git.fhict.nl/I404350/solidsight">
+                                            <div class="paddedText">
+                                                <p>View the repo for more information here</p>
+                                                <br>
+
+                                                <img src="assets/icons/github.svg" style="width: 10%;" alt="Github">
+                                            </div>
+                                        </a>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-8 mx-auto">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="btnModalClose" class="btnModalClose" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------------------------------INTERESTS-------------------------------------------------------------------------------------->
+            <div class="tab" id="interests">
+                <h1 class="home-base-title">Interests</h1>
+                <p class="home-base-p">A few of my spare time projects.</p>
+                <div class="row grid-holder">
+                    <!------------------------------------------VFX editing-------------------------------------------------------------------------------------->
+                    <div id="overview-grid" class="overview-grid" data-modal="hp"
+                        style="background-image: url('assets/images/hp.jpg');">
+                        <div class="a-ghostbtn">
+                            <a class="a-ghostbtn">
+                                <div id="hover-box" class="hover-box" style="background-color:rgba(0, 0, 0, .4);">
+                                    <div class="ghostbutton">VFX editing<span class="fa fa-external-link-alt"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div id="hp" class="modal">
+                        <div class="modal-dialog modal-lg"></div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a id="modal-close" class="modal-close" data-dismiss="modal">×</a>
+                                <div class="modal-title"><img src="assets/images/hpTitle.png" width="40%" alt=""></div>
+                            </div>
+                            <div class="modalbody-container">
+                                <br>
+                                <div class="col-lg-8 mx-auto">
+                                    <i>The movie series 'Harry Potter' is my favourite movie series and since I like
+                                        video editing I decided to recreate some of the most known Harry Potter effects.
+                                    </i>
+
+
+
+                                </div>
+                                <br><br><br><br>
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="modal-body">
+                                        <br><br>
+                                        <i>The 'Harry Potter intro' effect</i>
+                                        <br><br>
+                                        <video style="border-style: none;" width="100%" height="auto" controls=""
+                                            src="assets/vids/HarryPotterWithFullTitle.mp4" data-video="0"></video>
+                                        <br><br><br><br>
+                                        <i>The 'Lumos' effect</i>
+                                        <br><br>
+                                        <video style="border-style: none;" width="100%" height="auto" controls=""
+                                            src="assets/vids/LumosWithVoiceOver.mp4" data-video="0"></video>
+                                        <br><br><br><br>
+                                        <i>The 'Expecto Patronum' effect</i>
+                                        <br><br>
+                                        <video controls muted style="border-style: none;" width="100%" height="auto"
+                                            controls="" src="assets/vids/ExpectoPatronummm.mp4" data-video="0"></video>
+                                        <br><br>
+                                        <hr><br><br>
+                                        <i style="font-size: 150%;">The Result</i>
+                                        <br><br>
+                                        <div class="iframe-container">
+                                            <iframe class="video" src="https://www.youtube.com/embed/L2-a06F4e44"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <a target="_blank" href="sprintx.html">
+                                            <div class="paddedText">
+                                                <p>I made a simple tutorial on the 'Lumos' effect (this was made for
+                                                    'TheLeakyCauldron.org') so if you are a big Harry
+                                                    Potter/Wizarding World fan like me feel free to try it yourself.</p>
+                                                <br>
+
+                                                <span class="fa fa-external-link-alt"></span>
+                                            </div>
+                                        </a>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-8 mx-auto">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="btnModalClose" class="btnModalClose" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------------------p5-------------------------------------------------------------------------------------->
+                    <div id="overview-grid" class="overview-grid" data-modal="p5login"
+                        style="background-image: url('assets/images/p5.jpeg');">
+                        <div class="a-ghostbtn">
+                            <a class="a-ghostbtn">
+                                <div id="hover-box" class="hover-box">
+                                    <div class="ghostbutton">p5<span class="fa fa-external-link-alt"></span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="p5login" class="modal">
+                        <div class="modal-dialog modal-lg"></div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a id="modal-close" class="modal-close">×</a>
+                                <div class="modal-title"><img src="assets/images/p5.png" width="30%" alt=""></div>
+                            </div>
+                            <div class="modalbody-container">
+                                <br>
+                                <div class="col-lg-8 mx-auto">
+                                    <i>p5 is a cool JavaScript library used for web art.
+                                    </i>
+                                    <br><br><br>
+                                    <img src="assets/images/p5_tile.png" width="100%" alt="">
+                                    <br>
+                                    <italic>Made with p5</italic>
+                                    <br><br><br>
+                                    <div class="paddedText">
+                                        <p>
+                                            p5 can be a useful skill to learn for web design since instead of using a
+                                            static image you
+                                            can use p5 to create dynamic elements for the design of your website. This
+                                            gives you the chance
+                                            of creating beautiful, interactive user experiences.
+                                        </p>
+                                        <div class="paddedTextLine"></div>
+                                    </div>
+
+
+                                </div>
+                                <br><br><br><br>
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="modal-body">
+
+                                        <p>With p5 I created the login page below.</p>
+                                        <br>
+                                        <video width="100%" height="340" controls="" src="assets/vids/p5.mp4"
+                                            data-video="0"></video>
+
+
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <a target="_blank" href="https://github.com/RickvWijk1/p5_Login">
+                                            <div class="paddedText">
+                                                <p>View the repo for more information here</p>
+                                                <br>
+
+                                                <img src="assets/icons/github.svg" style="width: 10%;" alt="Github">
+                                            </div>
+                                        </a>
+                                        <br>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-8 mx-auto">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="btnModalClose" class="btnModalClose">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------------------Pixel Art-------------------------------------------------------------------------------------->
+                    <div id="overview-grid" class="overview-grid" data-modal="pixelart"
+                        style="background-image: url('assets/images/pixelart/AppleCiderPixel.png')">
+                        <div class="a-ghostbtn">
+                            <a class="a-ghostbtn">
+                                <div id="hover-box" class="hover-box">
+                                    <div class="ghostbutton">Pixel Art<span class="fa fa-external-link-alt"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="pixelart" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a id="modal-close" class="modal-close">×</a>
+                                <!-- <div class="modal-title"><img src="assets/images/p5.png" width="30%" alt=""></div> -->
+                            </div>
+                            <div class="modalbody-container">
+                                <br>
+                                <div class="col-lg-8 mx-auto">
+                                    <i>Project under construction!
+                                    </i>
+                                    <br><br><br>
+                                    <svg role="img" class="constrPlaceh">
+                                        <use xlink:href="assets/images/stage/constr_placeh.svg#constr_placeh"
+                                            href="assets/images/stage/constr_placeh.svg#constr_placeh"></use>
+                                    </svg>
+                                </div>
+                                <br><br><br><br>
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="modal-body">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="btnModalClose" class="btnModalClose">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div> <!-- end of grid -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/bgAnimation.js"></script>
+    <script src="scripts/navigate.js"></script>
+    <script src="scripts/logo_dropdown.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/lightBox.js"></script>
+</body>
+
+</html>

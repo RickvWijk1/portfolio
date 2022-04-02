@@ -1,0 +1,77 @@
+@media (min-width: 640px) {
+    .resources {
+        display: flex;
+        padding: 5rem 0 2rem 0;
+    }
+
+    .subtitle {
+        padding: 0 8rem;
+        max-width: 1000px;
+    }
+
+    .row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 60rem;
+        justify-content: space-between;
+        min-height: 192px;
+    }
+
+    .overview-grid {
+        max-width: unset;
+        min-height: 12rem;
+    }
+
+    .modal-content {
+        margin: 7% auto;
+        width: 85%;
+    }
+
+    .filters li,
+    .filters-learning-goals li {
+        text-align: center;
+        padding: 0 0 0 0;
+    }
+
+    .research-tags-cont {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem 1rem;
+    }
+
+    .research-tag {
+        gap: .5rem;
+        padding: 0.5em 0rem;
+        max-width: 14rem;
+    }
+
+    .research-tag img {
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+
+    .research-tags-cont {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .research-tag {
+        gap: .5rem;
+        padding: .5rem 0rem;
+        max-width: 16rem;
+    }
+
+    .research-tag img {
+        max-width: 30%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .row {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}

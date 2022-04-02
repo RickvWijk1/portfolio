@@ -1,6 +1,6 @@
 # build output
 # dist
-
+MER_site/public/build
 # dependencies
 node_modules/
 .snowpack/

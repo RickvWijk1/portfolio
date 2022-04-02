@@ -1,277 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Proftaak</title>
-    <meta charset="UTF-8">
+  <title>Proftaak</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/all.min.css">
-  <link rel='stylesheet' href='/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='/css/style.css'>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel='stylesheet' href='./css/bootstrap.min.css'>
+  <link rel='stylesheet' href='./css/style.css'>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/javascript.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/javascript.js"></script>
 </head>
+
 <body>
-    <nav>
-        <div id="logo">
-          <button id="modal-btn-nav" class="buttonModal">ULES</button>
-          <div id="imageID1">
-            <a href="index.html">
-            <img id="normalLogo" src="/assets/icons/Rvw_Logo_Simple.png">
-            <img id="whiteLogo" src="/assets/icons/Rvw_Logo_Simple_White.png">
+  <nav>
+    <div id="logo">
+      <button id="modal-btn-nav" class="buttonModal">ULES</button>
+      <div id="imageID1">
+        <a href="index.html">
+          <img id="normalLogo" src="./assets/icons/Rvw_Logo_Simple.png">
+          <img id="whiteLogo" src="./assets/icons/Rvw_Logo_Simple_White.png">
         </a>
+      </div>
+    </div>
+    <div class="hamIcon" onclick="toggleNav()">
+      <h1>&#9776;</h1>
+    </div>
+    <div id="my-modal-nav" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div id="closeNav" class="closeModal">&times;</div>
+          <h2>Lorem</h2>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/images/ColourPalette-1.png" width="100%" height="auto" style="border:2px solid #fff">
+          <p>Lorem</p>
+        </div>
+        <div class="modal-footer">
         </div>
       </div>
-        <div class="hamIcon" onclick="toggleNav()">
-          <h1>&#9776;</h1>
-        </div>
-        <div id="my-modal-nav" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <div id="closeNav" class="closeModal">&times;</div>
-              <h2>Lorem</h2>
-            </div>
-            <div class="modal-body">
-              <img src="/assets/images/ColourPalette-1.png" width="100%" height="auto" style="border:2px solid #fff">
-              <p>Lorem</p>
-            </div>
-            <div class="modal-footer">
-            </div>
-          </div>
-        </div>
-              <ul class="mainMenu">
-                <li><a href="#About">About<span class="tooltipTextShort">Who's this guy?</span></a></li>
-                <li><a href="sco.html">SCO<span class="tooltipTextLong">Strategy & Concepting</span></a></li>
-                <li><a href="ux.html">UX<span class="tooltipTextLong" style="margin-left: -75%;">User Experience</span></a></li>
-                <li><a href="dev.html">DEV<span class="tooltipTextShort" style="margin-left: -75%; padding: 9% 0.6%;">Development</span></a></li>
-                <li><a href="ptm.html">PTM<span class="tooltipTextLong">Project Methodology</span></a></li>
-                <li><a class="active" href="po.html">PO<span class="tooltipTextLong">Professional Development</span></a></li>
-                <li><a href="sm.html">SM<span class="tooltipTextLong" style="margin-left: -70%;">Smart Mobile</span></a></li>
-                <li><a href="#Contact">Contact<span class="tooltipTextShort" style="margin-left: -70%; padding: 5.4% 0%;">Call me maybe?</span></a></li>
-              </ul>
-    
-              <div class="progress-container">
-                <div class="progress-bar" id="myBar"></div>
-              </div>
-      </nav>
-      <section id="section01" class="background1" style="background-color: #325917; background-image: none;">
-        <h1>PO Assignments</h1>
-        <a href="#section02"><span></span>Scroll</a>
-        </section>
-      
+    </div>
+    <ul class="mainMenu">
+      <li><a href="#About">About<span class="tooltipTextShort">Who's this guy?</span></a></li>
+      <li><a href="sco.html">SCO<span class="tooltipTextLong">Strategy & Concepting</span></a></li>
+      <li><a href="ux.html">UX<span class="tooltipTextLong" style="margin-left: -75%;">User Experience</span></a></li>
+      <li><a href="dev.html">DEV<span class="tooltipTextShort"
+            style="margin-left: -75%; padding: 9% 0.6%;">Development</span></a></li>
+      <li><a href="ptm.html">PTM<span class="tooltipTextLong">Project Methodology</span></a></li>
+      <li><a class="active" href="po.html">PO<span class="tooltipTextLong">Professional Development</span></a></li>
+      <li><a href="sm.html">SM<span class="tooltipTextLong" style="margin-left: -70%;">Smart Mobile</span></a></li>
+      <li><a href="#Contact">Contact<span class="tooltipTextShort" style="margin-left: -70%; padding: 5.4% 0%;">Call me
+            maybe?</span></a></li>
+    </ul>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </nav>
+  <section id="section01" class="background1" style="background-color: #325917; background-image: none;">
+    <h1>PO Assignments</h1>
+    <a href="#section02"><span></span>Scroll</a>
+  </section>
 
 
 
-        <section id="section02"><h2 class="leerHeaders">Zelf opgestelde leerdoelen</h2></section>
-      <div class="row grid-holder">
-      <div id="overview-grid" class="overview-grid"
-      style="background-image: url('https://www.elegantthemes.com/blog/wp-content/uploads/2017/02/wordpress-development-environment-featured.jpg'); background-repeat: no-repeat;
+
+  <section id="section02">
+    <h2 class="leerHeaders">Zelf opgestelde leerdoelen</h2>
+  </section>
+  <div class="row grid-holder">
+    <div id="overview-grid" class="overview-grid" style="background-image: url('https://www.elegantthemes.com/blog/wp-content/uploads/2017/02/wordpress-development-environment-featured.jpg'); background-repeat: no-repeat;
       background-position: center;">
       <div id="PO1" class="modal fade">
         <div class="modal-dialog modal-lg"></div>
-          <div class="modal-content">
-            <div class="modal-header">
-              <a class="closeModal" data-dismiss="modal">&times;</a>
-              <h1 class="modal-title">Oordeelsvorming</h1>
-            </div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="closeModal" data-dismiss="modal">&times;</a>
+            <h1 class="modal-title">Oordeelsvorming</h1>
+          </div>
           <div class="modalbody-container">
             <br><br>
             <div class="alignBeginningTxt">
-            <i>Student is in staat om relevante gegevens te verzamelen en interpreteren (meestal op het vakgebied) met het doel een
-              oordeel te vormen dat mede gebaseerd is op het afwegen van relevante sociaal-maatschappelijke, internationale,
-              wetenschappelijke en ethische aspecten en demonstreert daarmee een onderzoekende houding.              
-            </i>
-            <br><br><br>
-            <p>Het bovenstaande leerdoel heb ik vertaald naar mijn eigen versie:</p>
-            <br>
-            <i>Ik wil correct kunnen inschatten wat de briefings van opdrachtgevers betekenen/Ik wil de briefings van opdrachtgevers correct
-              kunnen interpreteren. Met het volgen van het DOT-framework wil ik het onderzoek in de juiste volgorde uitvoeren. Om mijn
-              onderzoeken juist uit te voeren, maak ik gebruik van websites zoals designmethods.nl die de theorie van nuttige
-              onderzoeksmethodes aanbieden.
-              Vervolgens wil ik in staat zijn de waarde van mijn concepten te beoordelen op relevantie (voor de opdrachtgevers en haar klanten).
+              <i>Student is in staat om relevante gegevens te verzamelen en interpreteren (meestal op het vakgebied) met
+                het doel een
+                oordeel te vormen dat mede gebaseerd is op het afwegen van relevante sociaal-maatschappelijke,
+                internationale,
+                wetenschappelijke en ethische aspecten en demonstreert daarmee een onderzoekende houding.
               </i>
-            <br>
-          </div>
-          <hr>
-          
-          <br><br>
-            <div class="col-lg-8 mx-auto">
-            <div class="modal-body">
-              <h2>Debriefing</h2>
-              Ik heb door het opstellen van een design challenge de briefing kunnen interpreteren en kort kunnen samenvatten.
+              <br><br><br>
+              <p>Het bovenstaande leerdoel heb ik vertaald naar mijn eigen versie:</p>
               <br>
+              <i>Ik wil correct kunnen inschatten wat de briefings van opdrachtgevers betekenen/Ik wil de briefings van
+                opdrachtgevers correct
+                kunnen interpreteren. Met het volgen van het DOT-framework wil ik het onderzoek in de juiste volgorde
+                uitvoeren. Om mijn
+                onderzoeken juist uit te voeren, maak ik gebruik van websites zoals designmethods.nl die de theorie van
+                nuttige
+                onderzoeksmethodes aanbieden.
+                Vervolgens wil ik in staat zijn de waarde van mijn concepten te beoordelen op relevantie (voor de
+                opdrachtgevers en haar klanten).
+              </i>
               <br>
-              <h2>Onderzoeken</h2>
-              Ik heb door het opstellen van 'how might we' questions een overzicht gecreeërd van de belangrijkste punten die onderzocht
-              moeten worden.
-
-              Deze punten heb ik onderzocht door eerst field research en library research te doen. Hieronder staan de onderzoeken. Ik heb hierbij
-              onderzoeksmethodes zoals het maken van <b>persona</b> en het houden van <b>interviews</b> gebruikt.
-              <br>
-              <br>
-              <h2>Relevantie concepten</h2>
-              Door het houden van een enquête, interviews en houden van andere onderzoeken heb ik informatie verkregen waarmee ik ideeën 
-              voor het concept heb kunnen ontwikkelen die waardevol zijn voor de opdrachtgever.
-              waardev
-
-              Deze punten heb ik onderzocht door eerst field research en library research te doen. Hieronder staan de onderzoeken. Ik heb hierbij
-              onderzoeksmethodes zoals het maken van <b>persona</b> en het houden van <b>interviews</b> gebruikt.
-              <br>
-              <br>
-              <embed src="pdf/Vooronderzoek_Doelgroep_Proftaak_Greenhouse.pdf" width="100%" height=700px">
             </div>
-              
-            <br>
-            <br>
+            <hr>
+
+            <br><br>
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2>Debriefing</h2>
+                Ik heb door het opstellen van een design challenge de briefing kunnen interpreteren en kort kunnen
+                samenvatten.
+                <br>
+                <br>
+                <h2>Onderzoeken</h2>
+                Ik heb door het opstellen van 'how might we' questions een overzicht gecreeërd van de belangrijkste
+                punten die onderzocht
+                moeten worden.
+
+                Deze punten heb ik onderzocht door eerst field research en library research te doen. Hieronder staan de
+                onderzoeken. Ik heb hierbij
+                onderzoeksmethodes zoals het maken van <b>persona</b> en het houden van <b>interviews</b> gebruikt.
+                <br>
+                <br>
+                <h2>Relevantie concepten</h2>
+                Door het houden van een enquête, interviews en houden van andere onderzoeken heb ik informatie verkregen
+                waarmee ik ideeën
+                voor het concept heb kunnen ontwikkelen die waardevol zijn voor de opdrachtgever.
+                waardev
+
+                Deze punten heb ik onderzocht door eerst field research en library research te doen. Hieronder staan de
+                onderzoeken. Ik heb hierbij
+                onderzoeksmethodes zoals het maken van <b>persona</b> en het houden van <b>interviews</b> gebruikt.
+                <br>
+                <br>
+                <embed src="pdf/Vooronderzoek_Doelgroep_Proftaak_Greenhouse.pdf" width="100%" height=700px">
+              </div>
+
+              <br>
+              <br>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btnModalClose" data-dismiss="modal">Close</button>
           </div>
         </div>
-            <div class="modal-footer">
-              <button class="btnModalClose" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        
+
       </div>
       <a data-toggle="modal" data-target="#PO1">
-      <div id="hover-box" class="hover-box">
-        <div class="ghostbutton">Oordeelsvorming<span
-          class="fa fa-external-link-alt"></span></div>
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Oordeelsvorming<span class="fa fa-external-link-alt"></span></div>
         </div>
       </a>
     </div>
-  
-  
-  
-    <div id="overview-grid" class="overview-grid"
-    style="background-image: url('https://www.elegantthemes.com/blog/wp-content/uploads/2017/02/wordpress-development-environment-featured.jpg'); background-repeat: no-repeat;
+
+
+
+    <div id="overview-grid" class="overview-grid" style="background-image: url('https://www.elegantthemes.com/blog/wp-content/uploads/2017/02/wordpress-development-environment-featured.jpg'); background-repeat: no-repeat;
     background-position: center;">
-    <div id="PO2" class="modal fade">
-      <div class="modal-dialog modal-lg"></div>
+      <div id="PO2" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
         <div class="modal-content">
           <div class="modal-header">
             <a class="closeModal" data-dismiss="modal">&times;</a>
             <h1 class="modal-title">Communicatie</h1>
           </div>
-        <div class="modalbody-container">
-          <br><br>
-          <div class="alignBeginningTxt">
-            <i>Student is in staat om informatie, ideeën en oplossingen over te brengen op een publiek bestaande uit specialisten of
-              niet-specialisten, kan samenwerken en demonstreert een (inter)cultureel bewustzijn.
-            </i>
-            <br><br><br>
-            <p>Het bovenstaande leerdoel heb ik vertaald naar mijn eigen versie:</p>
-            <br>
-            <i>Ik wil in contact blijven en corresponderen via communicatiekanalen (zoals email) met de opdrachtgevers, maar ook als de
-              opdrachtgevers fysiek aanwezig zijn (tijdens pitches bijvoorbeeld). Binnen de proftaakgroep wil ik elke ochtend een meeting
-              inplannen. Op het einde van de laatste dag van de proftaak (woensdag) wil ik ook een meeting organiseren om met de groep te
-              kijken naar wat er bereikt is en wat er nog gedaan moet worden.
+          <div class="modalbody-container">
+            <br><br>
+            <div class="alignBeginningTxt">
+              <i>Student is in staat om informatie, ideeën en oplossingen over te brengen op een publiek bestaande uit
+                specialisten of
+                niet-specialisten, kan samenwerken en demonstreert een (inter)cultureel bewustzijn.
               </i>
-          <br>
-        </div>
-        <hr>
-        
-        <br><br>
-          <div class="col-lg-8 mx-auto">
-          <div class="modal-body">
-            <p>Ik ben wegens omstandigheden fysiek gezien slechts 1 keer in dezelfde ruimte geweest met de opdrachtgever om de opdracht te bespreken.
-              Helaas heb ik toen niks kunnen bespreken aangezien ik me eerst nog moest verdiepen in de opdracht. Wel heb ik online veel kunnen praten
-              met de opdrachtgever.
-            </p>
-            <br>
-            <br>
-            <h3>Sparren</h3>
-            <p>Ik nam regelmatig het woord wanneer de opdrachtgever een vraag had over het concept. Ik gaf altijd antwoord met argumenten en een uitgebreide uitleg
-              van onze keuzes. Ook tijdens de wekelijkse tutormeeting was dit het geval.
-            </p>
+              <br><br><br>
+              <p>Het bovenstaande leerdoel heb ik vertaald naar mijn eigen versie:</p>
+              <br>
+              <i>Ik wil in contact blijven en corresponderen via communicatiekanalen (zoals email) met de
+                opdrachtgevers, maar ook als de
+                opdrachtgevers fysiek aanwezig zijn (tijdens pitches bijvoorbeeld). Binnen de proftaakgroep wil ik elke
+                ochtend een meeting
+                inplannen. Op het einde van de laatste dag van de proftaak (woensdag) wil ik ook een meeting organiseren
+                om met de groep te
+                kijken naar wat er bereikt is en wat er nog gedaan moet worden.
+              </i>
+              <br>
+            </div>
+            <hr>
+
             <br><br>
-            <h3>Mailen</h3>
-            <p>Ik was niet het contactpersoon binnen de groep, maar heb wel altijd bijgedragen aan de inhoud/het opstellen van de emails. Verder heb ik regelmatig
-              voorgesteld contact op te nemen met de opdrachtgever via email om een afspraak te maken. Hieronder staan de emails die ik heb opgesteld of waar ik aan heb bijgedragen.
-              
-            </p>
-            <br><br>
-            <h3>Meetings</h3>
-            Door omstandigheden was er veel meer communicatie nodig binnen de groep. Ik heb daarom ook bijna elke dag een start-up meeting ingepland voor ons en op het einde van de dag
-            een wrap-up meeting. 
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <p>Ik ben wegens omstandigheden fysiek gezien slechts 1 keer in dezelfde ruimte geweest met de
+                  opdrachtgever om de opdracht te bespreken.
+                  Helaas heb ik toen niks kunnen bespreken aangezien ik me eerst nog moest verdiepen in de opdracht. Wel
+                  heb ik online veel kunnen praten
+                  met de opdrachtgever.
+                </p>
+                <br>
+                <br>
+                <h3>Sparren</h3>
+                <p>Ik nam regelmatig het woord wanneer de opdrachtgever een vraag had over het concept. Ik gaf altijd
+                  antwoord met argumenten en een uitgebreide uitleg
+                  van onze keuzes. Ook tijdens de wekelijkse tutormeeting was dit het geval.
+                </p>
+                <br><br>
+                <h3>Mailen</h3>
+                <p>Ik was niet het contactpersoon binnen de groep, maar heb wel altijd bijgedragen aan de inhoud/het
+                  opstellen van de emails. Verder heb ik regelmatig
+                  voorgesteld contact op te nemen met de opdrachtgever via email om een afspraak te maken. Hieronder
+                  staan de emails die ik heb opgesteld of waar ik aan heb bijgedragen.
+
+                </p>
+                <br><br>
+                <h3>Meetings</h3>
+                Door omstandigheden was er veel meer communicatie nodig binnen de groep. Ik heb daarom ook bijna elke
+                dag een start-up meeting ingepland voor ons en op het einde van de dag
+                een wrap-up meeting.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
           <div class="modal-footer">
             <button class="btnModalClose" data-dismiss="modal">Close</button>
           </div>
         </div>
-      
-    </div>
-    <a data-toggle="modal" data-target="#PO2">
-    <div id="hover-box" class="hover-box">
-      <div class="ghostbutton">Communicatie<span
-        class="fa fa-external-link-alt"></span></div>
+
       </div>
-    </a>
-  </div>
-    <div id="overview-grid" class="overview-grid"
-    style="background-image: url('https://www.elegantthemes.com/blog/wp-content/uploads/2017/02/wordpress-development-environment-featured.jpg'); background-repeat: no-repeat;
+      <a data-toggle="modal" data-target="#PO2">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Communicatie<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
+    </div>
+    <div id="overview-grid" class="overview-grid" style="background-image: url('https://www.elegantthemes.com/blog/wp-content/uploads/2017/02/wordpress-development-environment-featured.jpg'); background-repeat: no-repeat;
     background-position: center;">
-    <div id="PO3" class="modal fade">
-      <div class="modal-dialog modal-lg"></div>
+      <div id="PO3" class="modal fade">
+        <div class="modal-dialog modal-lg"></div>
         <div class="modal-content">
           <div class="modal-header">
             <a class="closeModal" data-dismiss="modal">&times;</a>
             <h1 class="modal-title">Leervaardigheden</h1>
           </div>
-        <div class="modalbody-container">
-          <br><br>
-          <div class="alignBeginningTxt">
-          <i>Student bezit de leervaardigheden die noodzakelijk zijn om een vervolgstudie die een hoog
-            niveau van autonomie veronderstelt aan te gaan en is ondernemend. 
-          </i>
-          <br><br><br>
-          <p>Het bovenstaande leerdoel heb ik vertaald naar mijn eigen versie:</p>
-          <br>
-          <i>Ik wil constant feedback van docenten, opdrachtgevers en medestudenten vragen en verwerken.
-            Voordat ik aan een opdracht begin, wil ik eerst feedback vragen aan een docent of mijn plan van aanpak goed is.
-            Als het plan voor de opdracht goedgekeurd wordt, begin ik aan de opdracht en vraag ik gaandeweg om de meningen van
-            medestudenten. Wanneer ik denk dat de opdracht af is of als ik vragen heb, ga ik nogmaals feedback vragen aan minstens één
-            van de docenten. Ik blijf feedback vragen over de opdracht totdat de docent geen verbeterpunten meer heeft of er geen tijd meer
-            is om de feedback te verwerken.
-            </i>
-          <br>
-        </div>
-        <hr>
-        
-        <br><br>
-          <div class="col-lg-8 mx-auto">
-          <div class="modal-body">
-            <h2>Feedback</h2>
-            <p>Ik heb regelmatig vragen gesteld aan docenten of mijn plan van aanpak goed is voordat ik aan een opdracht begon.
-              Ik heb soms ook verschillende iteraties van de opdrachten kunnen laten zien en hierop feedback gekregen totdat de inhoud van de opdracht
-              voldeed aan de eisen van de docenten.
-            </p>
-            <br>
+          <div class="modalbody-container">
+            <br><br>
+            <div class="alignBeginningTxt">
+              <i>Student bezit de leervaardigheden die noodzakelijk zijn om een vervolgstudie die een hoog
+                niveau van autonomie veronderstelt aan te gaan en is ondernemend.
+              </i>
+              <br><br><br>
+              <p>Het bovenstaande leerdoel heb ik vertaald naar mijn eigen versie:</p>
+              <br>
+              <i>Ik wil constant feedback van docenten, opdrachtgevers en medestudenten vragen en verwerken.
+                Voordat ik aan een opdracht begin, wil ik eerst feedback vragen aan een docent of mijn plan van aanpak
+                goed is.
+                Als het plan voor de opdracht goedgekeurd wordt, begin ik aan de opdracht en vraag ik gaandeweg om de
+                meningen van
+                medestudenten. Wanneer ik denk dat de opdracht af is of als ik vragen heb, ga ik nogmaals feedback
+                vragen aan minstens één
+                van de docenten. Ik blijf feedback vragen over de opdracht totdat de docent geen verbeterpunten meer
+                heeft of er geen tijd meer
+                is om de feedback te verwerken.
+              </i>
+              <br>
+            </div>
+            <hr>
+
+            <br><br>
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2>Feedback</h2>
+                <p>Ik heb regelmatig vragen gesteld aan docenten of mijn plan van aanpak goed is voordat ik aan een
+                  opdracht begon.
+                  Ik heb soms ook verschillende iteraties van de opdrachten kunnen laten zien en hierop feedback
+                  gekregen totdat de inhoud van de opdracht
+                  voldeed aan de eisen van de docenten.
+                </p>
+                <br>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
           <div class="modal-footer">
             <button class="btnModalClose" data-dismiss="modal">Close</button>
           </div>
         </div>
-      
-    </div>
-    <a data-toggle="modal" data-target="#PO3">
-    <div id="hover-box" class="hover-box">
-      <div class="ghostbutton">Leervaardigheden<span
-        class="fa fa-external-link-alt"></span></div>
+
       </div>
-    </a>
-  </div>
-    
-    
-    
+      <a data-toggle="modal" data-target="#PO3">
+        <div id="hover-box" class="hover-box">
+          <div class="ghostbutton">Leervaardigheden<span class="fa fa-external-link-alt"></span></div>
+        </div>
+      </a>
     </div>
-    
+
+
+
+  </div>
+
 </body>
+
 </html>
